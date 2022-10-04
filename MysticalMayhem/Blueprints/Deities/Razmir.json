@@ -36,6 +36,14 @@
         "CheckInProgression": false,
         "HideInUI": false,
         "m_CharacterClass": "!bp_30b5e47d47a0e37438cc5a80c96cfb99"
+      },
+      {
+        "$type": "b1808a1edca51c944b47599c893e7528, PrerequisiteNoClassLevel",
+        "m_Overrides": [],
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_CharacterClass": "!bp_f1a70d9e1b0b41e49874e1fa9052a1ce"
       }
     ],
     "Comment": "",

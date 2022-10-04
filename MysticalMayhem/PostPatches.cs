@@ -121,7 +121,7 @@ namespace MysticalMayhem
         {
             var classes = new BlueprintCharacterClass[]
             {
-                BPLookup.Class("ClericClass"), BPLookup.Class("WarpriestClass"), BPLookup.Class("PaladinClass")
+                BPLookup.Class("ClericClass"), BPLookup.Class("WarpriestClass"), BPLookup.Class("PaladinClass"), BPLookup.Class("InquisitorClass")
             };
 
             foreach (var cl in classes)
