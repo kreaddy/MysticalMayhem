@@ -361,3 +361,9 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# Custom
+Unity/
+lib/
+MysticalMayhem/AssetBundles/mm_star
+MysticalMayhem/SKP/
