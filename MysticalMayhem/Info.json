@@ -1,0 +1,14 @@
+{
+  "Id": "MysticalMayhem",
+  "DisplayName": "Mystical Mayhem",
+  "Author": "kreaddy",
+  "Version": "0.1.0",
+  "ManagerVersion": "0.23.0",
+  "GameVersion": "2.0.0",
+  "Requirements": [ "ModMenu-1.2.4" ],
+  "AssemblyName": "MysticalMayhem.dll",
+  "LoadAfter": [ "TabletopTweaks-Base", "Worldcrawl", "ExpandedContent" ],
+  "HomePage": "https://github.com/kreaddy/MysticalMayhem/releases",
+  "Repository": "https://raw.githubusercontent.com/kreaddy/MysticalMayhem/master/Repository.json",
+  "EntryMethod": "MysticalMayhem.Main.Load"
+}

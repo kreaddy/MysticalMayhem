@@ -1,0 +1,61 @@
+{
+  "AssetId": "36d942fc-f080-4c92-9261-6233beca128f",
+  "PatchList": [ "AddIcon:a_mortified" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "name": "flagellant_gmortified_casting_add_facts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_85878d9d-3880-4bbf-8832-37425bc303b6"
+        ],
+        "Dummy": "null",
+        "CasterLevel": "0",
+        "DoNotRestoreMissingFacts": "false",
+        "HasDifficultyRequirements": "false",
+        "InvertDifficultyRequirements": "false",
+        "MinDifficulty": "Story"
+      },
+      {
+        "$type": "f46c5f588edca9e47b0dc0509fbcf591, RemoveFeatureOnApply",
+        "name": "flagellant_gmortified_casting_remove_facts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_05f7863c-f963-4a3f-abcc-a611f9ba85b5"
+        ],
+        "Dummy": "null",
+        "CasterLevel": "0",
+        "DoNotRestoreMissingFacts": "false",
+        "HasDifficultyRequirements": "false",
+        "InvertDifficultyRequirements": "false",
+        "MinDifficulty": "Story"
+      },
+      {
+        "$type": "a216ddc2-2465-4259-b317-663bec0c38d7, AddExtraFeature",
+        "name": "gmortified_ex_feature",
+        "Feature": "GreaterMortifiedCasting"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_FlagellantGMortifiedCasting_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_FlagellantGMortifiedCasting_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": true,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": true,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

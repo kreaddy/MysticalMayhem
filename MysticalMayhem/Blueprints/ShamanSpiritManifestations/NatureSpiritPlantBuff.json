@@ -1,0 +1,55 @@
+{
+  "AssetId": "0abc7ed6-3016-4af4-bf3f-a1ab0e714a0c",
+  "PatchList": [ "CopyIconFromAbility:OracleNaturePlantAbility" ],
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "PrototypeLink": null,
+    "m_Overrides": [
+      "$AddFacts$f26501cf-3cd4-4bb0-8384-7ae35183817c"
+    ],
+    "Components": [
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "name": "nature_manif_plant_add_facts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_706e61781d692a042b35941f14bc41c5"
+        ],
+        "Dummy": null,
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Shaman20_Nature_Plant"
+    },
+    "m_Description": {
+      "m_Key": "MM_Shaman20_Nature_Desc"
+    },
+    "m_DescriptionShort": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "6d9403c18a2ccfc4bbd0917562f51866",
+      "fileid": 21300000
+    },
+    "IsClassFeature": false,
+    "m_Flags": 0,
+    "Stacking": "Replace",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "Rounds",
+    "FxOnStart": null,
+    "FxOnRemove": null,
+    "ResourceAssetIds": []
+  }
+}

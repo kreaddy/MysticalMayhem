@@ -1,0 +1,59 @@
+{
+  "AssetId": "fefad1bc-0ec3-44f9-8472-d4cc20cbb833",
+  "PatchList": ["AddIcon:d_razmir", "AddAsDeity", "SpecialPatch:RazmirDeity"],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "bbe1931feea2c5b49aa158c5c5f9b260, PrerequisiteAlignment",
+        "m_Overrides": [],
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "Alignment": "LawfulNeutral, TrueNeutral, ChaoticNeutral, Evil"
+      },
+      {
+        "$type": "b1808a1edca51c944b47599c893e7528, PrerequisiteNoClassLevel",
+        "m_Overrides": [],
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_CharacterClass": "!bp_bfa11238e7ae3544bbeb4d0b92e897ec"
+      },
+      {
+        "$type": "b1808a1edca51c944b47599c893e7528, PrerequisiteNoClassLevel",
+        "m_Overrides": [],
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_CharacterClass": "!bp_67819271767a9dd4fbfd4ae700befea0"
+      },
+      {
+        "$type": "b1808a1edca51c944b47599c893e7528, PrerequisiteNoClassLevel",
+        "m_Overrides": [],
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_CharacterClass": "!bp_30b5e47d47a0e37438cc5a80c96cfb99"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Razmir_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_Razmir_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": ["Deities"],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": []
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "AssetId": "822bb65c-a7c1-4317-9340-8103d71b899f",
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+              "Comment": "",
+              "ConditionsChecker": {
+                "Operation": "And",
+                "Conditions": [
+                  {
+                    "$type": "43f75bd73450e1f4aa1f6163f51956e3, ContextConditionCasterHasFact",
+                    "Not": false,
+                    "m_Fact": "!bp_f77090ad41954d9ca1e3a9461809e3c5"
+                  }
+                ]
+              },
+              "IfTrue": {
+                "Actions": [
+                  {
+                    "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+                    "Comment": "",
+                    "ConditionsChecker": {
+                      "Operation": "And",
+                      "Conditions": [
+                        {
+                          "$type": "04b94f36388965b429afabdb670fdd29, ContextConditionCompareTargetHP",
+                          "Not": false,
+                          "m_CompareType": "Less",
+                          "Value": {
+                            "ValueType": "Simple",
+                            "Value": 151,
+                            "ValueRank": "Default",
+                            "ValueShared": "Damage",
+                            "Property": "None",
+                            "m_CustomProperty": null
+                          }
+                        }
+                      ]
+                    },
+                    "IfTrue": {
+                      "Actions": [
+                        {
+                          "$type": "930b32b3226bd714283798d0cc050b71, ContextActionKill",
+                          "Dismember": "None"
+                        }
+                      ]
+                    },
+                    "IfFalse": {
+                      "Actions": []
+                    }
+                  }
+                ]
+              },
+              "IfFalse": {
+                "Actions": [
+                  {
+                    "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+                    "Comment": "",
+                    "ConditionsChecker": {
+                      "Operation": "And",
+                      "Conditions": [
+                        {
+                          "$type": "04b94f36388965b429afabdb670fdd29, ContextConditionCompareTargetHP",
+                          "Not": false,
+                          "m_CompareType": "Less",
+                          "Value": {
+                            "ValueType": "Simple",
+                            "Value": 101,
+                            "ValueRank": "Default",
+                            "ValueShared": "Damage",
+                            "Property": "None",
+                            "m_CustomProperty": null
+                          }
+                        }
+                      ]
+                    },
+                    "IfTrue": {
+                      "Actions": [
+                        {
+                          "$type": "930b32b3226bd714283798d0cc050b71, ContextActionKill",
+                          "Dismember": "None"
+                        }
+                      ]
+                    },
+                    "IfFalse": {
+                      "Actions": []
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$type": "91216784d99a12e428bf782c8a8c7f5c, SpellDescriptorComponent",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "Descriptor": {
+          "m_IntValue": 536870992
+        }
+      },
+      {
+        "$type": "8f4044deade58fe459ea7824a0c5900f, AbilityTargetHPCondition",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "CurrentHPLessThan": 101,
+        "Inverted": false,
+        "CheckFact": true,
+        "m_FactToCheck": "!bp_f77090ad41954d9ca1e3a9461809e3c5",
+        "OverrideCurrentHPLessThan": 151
+      },
+      {
+        "$type": "c86d7ab572ddfea4ca09cb8c04facb87, AbilityTargetHasNoFactUnless",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_CheckedFacts": [
+          "!bp_734a29b693e9ec346ba2951b27987e33"
+        ],
+        "m_UnlessFact": "!bp_1a5e7191279e7cd479b17a6ca438498c"
+      },
+      {
+        "$type": "471113ce4758b9b4d8a3162276d8d570, AbilityTargetHasFact",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "m_CheckedFacts": [
+          "!bp_fd389783027d63343b4a5634bd81645f"
+        ],
+        "Inverted": true
+      },
+      {
+        "$type": "c788cf748ec86bc45b986ac4de28cf45, AbilitySpawnFx",
+        "m_Flags": 0,
+        "PrototypeLink": {
+          "guid": "",
+          "name": ""
+        },
+        "m_Overrides": [],
+        "PrefabLink": {
+          "AssetId": "66a07f7bd702477449f5dd7ef336cc50"
+        },
+        "Time": "OnApplyEffect",
+        "Anchor": "SelectedTarget",
+        "WeaponTarget": "None",
+        "DestroyOnCast": false,
+        "Delay": 0.0,
+        "PositionAnchor": "None",
+        "OrientationAnchor": "None",
+        "OrientationMode": "Copy"
+      },
+      {
+        "$type": "c788cf748ec86bc45b986ac4de28cf45, AbilitySpawnFx",
+        "m_Flags": 0,
+        "m_Overrides": [],
+        "PrefabLink": {
+          "AssetId": "dcc54ae134478cf4da41d7a4d62a8a86"
+        },
+        "Time": "OnApplyEffect",
+        "Anchor": "SelectedTarget",
+        "WeaponTarget": "None",
+        "DestroyOnCast": false,
+        "Delay": 0.0,
+        "PositionAnchor": "None",
+        "OrientationAnchor": "None",
+        "OrientationMode": "Copy"
+      },
+      {
+        "$type": "2945aafe5b353dc49b283c982269ade6, AbilityResourceLogic",
+        "m_Overrides": [],
+        "m_RequiredResource": "0d2d7414-9159-4af2-89fd-56c1b0101f1f",
+        "m_IsSpendResource": true,
+        "CostIsCustom": false,
+        "Amount": 1,
+        "ResourceCostIncreasingFacts": [],
+        "ResourceCostDecreasingFacts": []
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "7f3ba145-d2d7-44ed-a7ce-9858837ee8bf"
+    },
+    "m_Description": {
+      "m_Key": "0b97c744-5ecc-4fe7-a2f8-3d42c0677fb1"
+    },
+    "m_Icon": {
+      "guid": "021a765a062fed34cb623b890bf05043",
+      "fileid": 21300000
+    },
+    "m_DefaultAiAction": null,
+    "Type": "SpellLike",
+    "Range": "Close",
+    "CustomRange": {
+      "m_Value": 0.0
+    },
+    "ShowNameForVariant": false,
+    "OnlyForAllyCaster": false,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": true,
+    "CanTargetFriends": false,
+    "CanTargetSelf": false,
+    "SpellResistance": true,
+    "ActionBarAutoFillIgnored": false,
+    "Hidden": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "EffectOnAlly": "None",
+    "EffectOnEnemy": "Harmful",
+    "m_Parent": null,
+    "Animation": "Directional",
+    "HasFastAnimation": false,
+    "AnimationStyle": "CastActionDirectional",
+    "m_TargetMapObjects": false,
+    "ActionType": "Standard",
+    "AvailableMetamagic": "Quicken",
+    "m_IsFullRoundAction": false,
+    "LocalizedDuration": {
+      "m_Key": "3d7fbfb9-10e8-4509-bab6-a8e4d3dbc3c8"
+    },
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "DisableLog": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

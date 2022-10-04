@@ -1,0 +1,34 @@
+{
+  "AssetId": "068fa0c2-81b4-4c77-9187-ee5900d445cc",
+  "PatchList": [ "CopySelectionChoices:OracleCurseSelection" ],
+  "Data": {
+    "$type": "ea44b1ffb0675104cb178df6459f3a21, BlueprintFeatureSelection",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [],
+    "Comment": "1",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_PactWizardCurse_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_PactWizardCurse_Desc"
+    },
+    "m_Icon": null,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": [],
+    "IgnorePrerequisites": false,
+    "Obligatory": false,
+    "Mode": "Default",
+    "Group": "OracleCurse",
+    "Group2": "None",
+    "m_Features": [],
+    "m_AllFeatures": []
+  }
+}

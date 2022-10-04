@@ -1,0 +1,39 @@
+{
+  "AssetId": "4dc25825-ceb7-4933-a85b-2fd8d1f10e6c",
+  "PatchList": [ "AddIcon:ad_stafflikewand", "AddAsArcaneDiscovery" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "fb876f3084f01754db3a4acbbb328a89, PrerequisiteClassLevel",
+        "name": "adslw_prerequisite_class_level",
+        "m_CharacterClass": "!bp_ba34257984f4c41408ce1dc2004e342e",
+        "Level": 11
+      },
+      {
+        "$type": "a216ddc2-2465-4259-b317-663bec0c38d7, AddExtraFeature",
+        "name": "stafflikewand_ex_feature",
+        "Feature": "StaffLikeWand"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_StaffLikeWand_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_StaffLikeWand_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

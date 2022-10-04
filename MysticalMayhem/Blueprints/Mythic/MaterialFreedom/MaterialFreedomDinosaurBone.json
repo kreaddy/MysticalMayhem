@@ -1,0 +1,39 @@
+{
+  "AssetId": "b953e38e-75d8-4072-bf86-7d190d6cca0a",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "e2755d66-d9c0-446b-aff0-e2327d91e177, IgnoreSpellMaterialComponent",
+        "name": "mf_ignore_dinosaur_bone",
+        "m_Overrides": [],
+        "Item": "!bp_66e2ab66e3e0c514f977cd22b3d7a0cd"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_Icon": {
+      "guid": "25d14d6ebecdfdc4dbce2763e9b34ec6",
+      "fileid": 21300000
+    },
+    "m_DisplayName": {
+      "m_Key": "MM_MaterialFreedomBone_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_MaterialFreedomBone_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [
+      "MythicAbility"
+    ],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

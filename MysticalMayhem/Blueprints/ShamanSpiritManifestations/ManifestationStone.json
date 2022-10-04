@@ -1,0 +1,75 @@
+{
+  "AssetId": "c208a20f-1d47-4513-a942-f5fa3d3c8a93",
+  "PatchList": [ "AddToProgression:SpiritStone:20" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "b51a712035f3d98459e516a34fda37bf, AutoMetamagic",
+        "name": "stone_manifestation_autometamagic",
+        "m_Overrides": [],
+        "m_AllowedAbilities": "SpellOnly",
+        "Metamagic": "Empower",
+        "Abilities": [],
+        "Descriptor": {
+          "m_IntValue": 2
+        },
+        "Once": false,
+        "MaxSpellLevel": 0,
+        "School": "None",
+        "CheckSpellbook": false,
+        "m_Spellbook": null
+      },
+      {
+        "$type": "28c478c0c3f715e43bef94a3a6f8b8bc, AddDamageResistanceEnergy",
+        "name": "stone_manifestation_acid_res",
+        "m_Overrides": [],
+        "Value": {
+          "ValueType": "Simple",
+          "Value": 30,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null
+        },
+        "UsePool": false,
+        "Pool": {
+          "ValueType": "Simple",
+          "Value": 12,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null
+        },
+        "Type": "Acid",
+        "UseValueMultiplier": false,
+        "ValueMultiplier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null
+        }
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Shaman20_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_Shaman20_Stone_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

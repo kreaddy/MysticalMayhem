@@ -1,0 +1,106 @@
+{
+  "AssetId": "651d9520-7206-4406-a739-44215c9a84a9",
+  "Homebrew": true,
+  "PatchList": [ "UIGroupPatchGeneric:ClericClass:MortifiedCastingFeature:GreaterMortifiedCastingFeature", "AddArchetypeTo:ClericClass" ],
+  "Data": {
+    "$type": "f04f17ea4eae4fb89afa5b4021444740, BlueprintArchetype",
+    "m_Overrides": [],
+    "Components": [],
+    "Comment": "",
+    "LocalizedName": {
+      "m_Key": "MM_Flagellant_Name"
+    },
+    "LocalizedDescription": {
+      "m_Key": "MM_Flagellant_Desc"
+    },
+    "LocalizedDescriptionShort": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "m_ReplaceSpellbook": null,
+    "RemoveSpellbook": false,
+    "BuildChanging": false,
+    "AddFeatures": [
+      {
+        "Level": 1,
+        "m_Features": [
+          "!bp_9abe3ee7-51ca-4530-a1ff-8cf14b56f494",
+          "!bp_00733a5b-271b-436d-9d83-7de1f0912996",
+          "!bp_3a1a8493-930f-4776-b3d9-6aaada5a2815"
+        ]
+      },
+      {
+        "Level": 2,
+        "m_Features": [
+          "!bp_86669ce8759f9d7478565db69b8c19ad"
+        ]
+      },
+      {
+        "Level": 7,
+        "m_Features": [
+          "!bp_21febf4a-2948-42b7-9c7b-af5b302fd16c"
+        ]
+      },
+      {
+        "Level": 10,
+        "m_Features": [
+          "!bp_21febf4a-2948-42b7-9c7b-af5b302fd16c"
+        ]
+      },
+      {
+        "Level": 11,
+        "m_Features": [
+          "!bp_36d942fc-f080-4c92-9261-6233beca128f"
+        ]
+      },
+      {
+        "Level": 13,
+        "m_Features": [
+          "!bp_21febf4a-2948-42b7-9c7b-af5b302fd16c"
+        ]
+      },
+      {
+        "Level": 16,
+        "m_Features": [
+          "!bp_21febf4a-2948-42b7-9c7b-af5b302fd16c"
+        ]
+      },
+      {
+        "Level": 19,
+        "m_Features": [
+          "!bp_21febf4a-2948-42b7-9c7b-af5b302fd16c"
+        ]
+      }
+    ],
+    "RemoveFeatures": [
+      {
+        "Level": 1,
+        "m_Features": [
+          "!bp_8c971173613282844888dc20d572cfc9"
+        ]
+      }
+    ],
+    "ReplaceStartingEquipment": false,
+    "StartingGold": 0,
+    "m_StartingItems": [],
+    "ReplaceClassSkills": false,
+    "ClassSkills": [],
+    "ChangeCasterType": false,
+    "IsDivineCaster": false,
+    "IsArcaneCaster": false,
+    "AddSkillPoints": 2,
+    "OverrideAttributeRecommendations": false,
+    "RecommendedAttributes": [],
+    "NotRecommendedAttributes": [],
+    "m_SignatureAbilities": [],
+    "m_BaseAttackBonus": null,
+    "m_FortitudeSave": null,
+    "m_ReflexSave": null,
+    "m_WillSave": null,
+    "m_Difficulty": 1
+  }
+}

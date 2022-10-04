@@ -1,0 +1,109 @@
+{
+  "AssetId": "5c5353fc-83bb-4f66-a2d8-f7fd4295e031",
+  "PatchList": [ "AddIcon:a_mortified" ],
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "PrototypeLink": null,
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "mm_flagellant_mortified_cl_ab_action",
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "mm_flagellant_mortified_cl_ab_apply_buff",
+              "m_Buff": "!bp_7025ef18-ea4a-430a-ac31-5eebb8001e6e",
+              "Permanent": false,
+              "UseDurationSeconds": false,
+              "DurationValue": {
+                "Rate": "Rounds",
+                "DiceType": "Zero",
+                "DiceCountValue": {
+                  "ValueType": "Simple",
+                  "Value": 1,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 1,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "m_IsExtendable": true
+              },
+              "DurationSeconds": 0.0,
+              "IsFromSpell": false,
+              "IsNotDispelable": false,
+              "ToCaster": false,
+              "AsChild": true,
+              "SameDuration": false
+            }
+          ]
+        }
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_FlagellantMortifiedCastingCLAb_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_FlagellantMortifiedCastingCLAb_Desc"
+    },
+    "m_DefaultAiAction": null,
+    "Type": "Supernatural",
+    "Range": "Personal",
+    "CustomRange": {
+      "m_Value": 0.0
+    },
+    "ShowNameForVariant": false,
+    "OnlyForAllyCaster": false,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": false,
+    "CanTargetFriends": false,
+    "CanTargetSelf": true,
+    "SpellResistance": false,
+    "ActionBarAutoFillIgnored": false,
+    "Hidden": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "EffectOnAlly": "None",
+    "EffectOnEnemy": "None",
+    "m_Parent": "!bp_05f7863c-f963-4a3f-abcc-a611f9ba85b5",
+    "Animation": "Omni",
+    "HasFastAnimation": true,
+    "m_TargetMapObjects": false,
+    "ActionType": "Swift",
+    "AvailableMetamagic": "Quicken",
+    "m_IsFullRoundAction": false,
+    "LocalizedDuration": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "LocalizedSavingThrow": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "DisableLog": false,
+    "ResourceAssetIds": []
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "AssetId": "dfcee716-54dd-477b-bb6f-3e64f8d479af",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "e2755d66-d9c0-446b-aff0-e2327d91e177, IgnoreSpellMaterialComponent",
+        "name": "mf_ignore_jade",
+        "m_Overrides": [],
+        "Item": "!bp_4f68b70286eba114bb2f5fe5f18a566c"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_Icon": {
+      "guid": "95edd262b2aabb744b78b3363114e415",
+      "fileid": 21300000
+    },
+    "m_DisplayName": {
+      "m_Key": "MM_MaterialFreedomJade_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_MaterialFreedomJade_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [
+      "MythicAbility"
+    ],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

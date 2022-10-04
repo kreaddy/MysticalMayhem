@@ -1,0 +1,60 @@
+{
+  "AssetId": "d3bb2a57-2b19-4a3b-b0ae-7cb016a90a6d",
+  "PatchList": [ "AddIcon:f_earth_magic", "AddAsWizardFeat" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "f4c04a72ef8a5e94e828de578da166d2, PrerequisiteCasterTypeSpellLevel",
+        "m_Overrides": [],
+        "Group": "Any",
+        "IsArcane": true,
+        "RequiredSpellLevel": 1
+      },
+      {
+        "$type": "f4c04a72ef8a5e94e828de578da166d2, PrerequisiteCasterTypeSpellLevel",
+        "m_Overrides": [],
+        "Group": "Any",
+        "IsArcane": false,
+        "RequiredSpellLevel": 1
+      },
+      {
+        "$type": "24d005ae28c58444bb8db4b94c9165cc, PrerequisiteFeaturesFromList",
+        "m_Overrides": [],
+        "Group": "All",
+        "m_Features": [
+          "!bp_a6ea422d7308c0d428a541562faedefd",
+          "!bp_4cd06a915daa74f4094952f2b3314b3b"
+        ],
+        "Amount": 1
+      },
+      {
+        "$type": "6d43a0c88e994d04bd2859978dec9337, FeatureTagsComponent",
+        "FeatureTags": "Magic"
+      },
+      {
+        "$type": "a216ddc2-2465-4259-b317-663bec0c38d7, AddExtraFeature",
+        "Feature": "EarthMagic"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_EarthMagic_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_EarthMagic_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [ "Feat", "WizardFeat" ],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

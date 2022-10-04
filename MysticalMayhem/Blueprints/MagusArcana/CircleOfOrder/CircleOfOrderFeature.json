@@ -1,0 +1,45 @@
+{
+  "AssetId": "404bfc13-072e-4c83-a9a8-9da62c886a5a",
+  "PatchList": [ "AddAsMagusArcana", "CopyIconFromAbility:ShieldOfLaw" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "fb876f3084f01754db3a4acbbb328a89, PrerequisiteClassLevel",
+        "m_CharacterClass": "!bp_45a4607686d96a1498891b3286121780",
+        "Level": 9
+      },
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_5d6d4789-923c-4cc4-8319-e9f4c655473b"
+        ],
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_CircleOfOrder_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_CircleOfOrder_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": true,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": ["MagusArcana"],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

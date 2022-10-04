@@ -1,0 +1,31 @@
+ManifestFileVersion: 0
+CRC: 328817554
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 57d71487d992f8c5fd494793a935dc09
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c90fc19e2679e5295d10bd00f33cb4c3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/MM_star/w_grand_grimoire.png
+- Assets/MM_star/w_book_of_the_dead.png
+- Assets/MM_star/w_bonus_feat.png
+- Assets/MM_star/w_sacred_study.png
+- Assets/MM_star/w_warpbeast.png
+- Assets/MM_star/w_eldritch_reservoir.png
+- Assets/MM_star/w_proficiencies.png
+- Assets/MM_star/w_polluted_mind.png
+- Assets/MM_star/w_stethelos.png
+- Assets/MM_star/w_eldritch_weaving.png
+- Assets/MM_star/w_bonus_spells.png
+- Assets/MM_star/w_obsession.png
+- Assets/MM_star/w_mystic_arcanum.png
+Dependencies: []

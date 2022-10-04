@@ -1,0 +1,73 @@
+{
+  "AssetId": "1f22b25c-db39-4c18-b476-3f83e62f48b0",
+  "PatchList": [ "AddToProgression:SpiritWind:20" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "b51a712035f3d98459e516a34fda37bf, AutoMetamagic",
+        "m_Overrides": [],
+        "m_AllowedAbilities": "SpellOnly",
+        "Metamagic": "Empower",
+        "Abilities": [],
+        "Descriptor": {
+          "m_IntValue": 8
+        },
+        "Once": false,
+        "MaxSpellLevel": "0",
+        "School": "None",
+        "CheckSpellbook": false,
+        "m_Spellbook": null
+      },
+      {
+        "$type": "28c478c0c3f715e43bef94a3a6f8b8bc, AddDamageResistanceEnergy",
+        "m_Overrides": [],
+        "Value": {
+          "ValueType": "Simple",
+          "Value": 30,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null
+        },
+        "UsePool": false,
+        "Pool": {
+          "ValueType": "Simple",
+          "Value": 12,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null
+        },
+        "Type": "Electricity",
+        "UseValueMultiplier": false,
+        "ValueMultiplier": {
+          "ValueType": "Simple",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null
+        }
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Shaman20_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_Shaman20_Wind_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

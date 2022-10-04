@@ -1,0 +1,36 @@
+{
+  "AssetId": "1994eb62-a7ac-4a7c-a48d-32c8437169dd",
+  "Data": {
+    "$type": "f7bbaafe7a7cbad4693107291c548dcc, BlueprintActivatableAbility",
+    "Components": [
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_RazmiranChannel_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_RazmiranChannelAb_Desc"
+    },
+    "m_Icon": {
+      "guid": "28f0bda89f59f3842b83887cc4aba9bc",
+      "fileid": 21300000
+    },
+    "m_Buff": "!bp_d4ad5c1d-71f0-4eb9-839b-7ace2ec7d0dd",
+    "Group": "None",
+    "WeightInGroup": 1,
+    "IsOnByDefault": false,
+    "DeactivateIfCombatEnded": false,
+    "DeactivateAfterFirstRound": false,
+    "DeactivateImmediately": true,
+    "IsTargeted": false,
+    "DeactivateIfOwnerDisabled": true,
+    "DeactivateIfOwnerUnconscious": true,
+    "OnlyInCombat": false,
+    "DoNotTurnOffOnRest": false,
+    "ActivationType": "Immediately",
+    "m_ActivateWithUnitCommand": "Free",
+    "m_ActivateOnUnitAction": "Attack",
+    "m_SelectTargetAbility": null
+  }
+}

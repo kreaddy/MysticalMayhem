@@ -1,0 +1,67 @@
+{
+  "AssetId": "9a2bb833-e380-4d31-bc11-d04366202001",
+  "PatchList": ["AddToProgression:SpiritBattle:20"],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "05fab0d4998390a4cbf88da0ab1e4123, AddMechanicsFeature",
+        "name": "battle_manifestation_pounce",
+        "PrototypeLink": {
+          "guid": "null",
+          "name": "null"
+        },
+        "m_Overrides": [],
+        "m_Feature": "Pounce"
+      },
+      {
+        "$type": "049c2d2ac36fbc945b99549dd496a956, IgnoreDamageReductionOnCriticalHit",
+        "name": "battle_manifestation_crits_bypass_dr",
+        "PrototypeLink": {
+          "guid": "null",
+          "name": "null"
+        },
+        "m_Overrides": []
+      },
+      {
+        "$type": "c6af3fb7b307cc24583e62c91b232e58, CriticalConfirmationACBonus",
+        "name": "battle_manifestation_acbonus",
+        "PrototypeLink": {
+          "guid": "null",
+          "name": "null"
+        },
+        "m_Overrides": [],
+        "Value": {
+          "ValueType": "Simple",
+          "Value": "0",
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": "null"
+        },
+        "Bonus": "4",
+        "OnlyPositiveValue": "false",
+        "Descriptor": "UntypedStackable"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Shaman20_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_Shaman20_Battle_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

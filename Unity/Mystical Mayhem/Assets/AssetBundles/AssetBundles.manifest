@@ -1,0 +1,10 @@
+ManifestFileVersion: 0
+CRC: 1147926882
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: mm_icons
+      Dependencies: {}
+    Info_1:
+      Name: mm_star
+      Dependencies: {}

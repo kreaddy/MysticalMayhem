@@ -1,0 +1,171 @@
+﻿{
+  "AssetId": "39ac47b0-e1b9-4fc3-bb36-7dbfc549e70d",
+  "PatchList": [ "CopyIconFromAbility:OracleNatureHumanoidAbility" ],
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "name": "nature_manifest_humanoid_run_action",
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "23ddfb172c2d3c144ab007dec380d712, ContextActionRemoveBuff",
+              "name": "nature_manifest_humanoid_removebuff1",
+              "m_Buff": "!bp_301bb3a7-0ba1-49de-b86b-1f0d6b727713",
+              "RemoveRank": false,
+              "ToCaster": false
+            },
+            {
+              "$type": "23ddfb172c2d3c144ab007dec380d712, ContextActionRemoveBuff",
+              "name": "nature_manifest_humanoid_removebuff2",
+              "m_Buff": "!bp_0abc7ed6-3016-4af4-bf3f-a1ab0e714a0c",
+              "RemoveRank": false,
+              "ToCaster": false
+            }
+          ]
+        }
+      },
+      {
+        "$type": "3244a7f6b105c654db650034076be4a5, AbilityCasterHasFacts",
+        "name": "nature_manifest_humanoid_hasfacts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_0abc7ed6-3016-4af4-bf3f-a1ab0e714a0c",
+          "!bp_301bb3a7-0ba1-49de-b86b-1f0d6b727713"
+        ],
+        "NeedsAll": false
+      },
+      {
+        "$type": "e4181e2a638237a4c9f02ceb97e297b7, AbilityExecuteActionOnCast",
+        "name": "nature_manifest_humanoid_execute_on_cast",
+        "m_Overrides": [],
+        "Conditions": {
+          "Operation": "And",
+          "Conditions": []
+        },
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "5f950c181b3157a4486fcd36b702b702, ContextActionOnContextCaster",
+              "name": "nature_manifest_humanoid_context_on_caster",
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                    "name": "nature_manifest_humanoid_applybuff",
+                    "m_Buff": "!bp_ec586acdbf57b7d43be2a0f5ab563060",
+                    "Permanent": false,
+                    "UseDurationSeconds": false,
+                    "DurationValue": {
+                      "Rate": "Rounds",
+                      "DiceType": "Zero",
+                      "DiceCountValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null
+                      },
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 1,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null
+                      },
+                      "m_IsExtendable": true
+                    },
+                    "DurationSeconds": 0.0,
+                    "IsFromSpell": false,
+                    "IsNotDispelable": false,
+                    "ToCaster": false,
+                    "AsChild": true,
+                    "SameDuration": false
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$type": "2945aafe5b353dc49b283c982269ade6, AbilityResourceLogic",
+        "name": "nature_manifest_humanoid_resource_logic",
+        "m_Overrides": [],
+        "m_RequiredResource": "!bp_32a75c63-161b-4eb7-85c5-9ca58c21781c",
+        "m_IsSpendResource": true,
+        "CostIsCustom": false,
+        "Amount": 1,
+        "ResourceCostIncreasingFacts": [],
+        "ResourceCostDecreasingFacts": []
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Shaman20_Nature_Humanoid"
+    },
+    "m_Description": {
+      "m_Key": "MM_Shaman20_Nature_Desc"
+    },
+    "m_Icon": {
+      "guid": "b1bba7da645ee424a9a6816576ce165d",
+      "fileid": 21300000
+    },
+    "m_DefaultAiAction": null,
+    "Type": "Supernatural",
+    "Range": "Personal",
+    "CustomRange": {
+      "m_Value": 0.0
+    },
+    "ShowNameForVariant": false,
+    "OnlyForAllyCaster": false,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": false,
+    "CanTargetFriends": false,
+    "CanTargetSelf": true,
+    "SpellResistance": false,
+    "ActionBarAutoFillIgnored": false,
+    "Hidden": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "EffectOnAlly": "None",
+    "EffectOnEnemy": "None",
+    "m_Parent": null,
+    "Animation": "Omni",
+    "HasFastAnimation": false,
+    "AnimationStyle": "CastActionOmni",
+    "m_TargetMapObjects": false,
+    "ActionType": "Standard",
+    "AvailableMetamagic": "Quicken",
+    "m_IsFullRoundAction": true,
+    "LocalizedDuration": {
+      "LocalisedValue": "",
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "LocalizedSavingThrow": {
+      "LocalisedValue": "",
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "DisableLog": false,
+    "ResourceAssetIds": []
+  }
+}

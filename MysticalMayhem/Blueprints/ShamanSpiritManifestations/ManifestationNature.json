@@ -1,0 +1,53 @@
+{
+  "AssetId": "902efe83-d0e2-4641-b59d-ee8c76803875",
+  "PatchList": [ "AddToProgression:SpiritNature:20" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "name": "nature_manifestation_add_facts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_374354c2-00f6-4064-9e1a-f7a6e9b8cb84",
+          "!bp_39ac47b0-e1b9-4fc3-bb36-7dbfc549e70d",
+          "!bp_bfd71779-acbc-4aa0-819e-00d5386dfb4d"
+        ],
+        "Dummy": null,
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      },
+      {
+        "$type": "fd82ca085bd60c04fb03d1091acc66cb, AddAbilityResources",
+        "name": "nature_manifestation_add_resource",
+        "m_Overrides": [],
+        "UseThisAsResource": false,
+        "m_Resource": "!bp_32a75c63-161b-4eb7-85c5-9ca58c21781c",
+        "Amount": 0,
+        "RestoreAmount": true,
+        "RestoreOnLevelUp": false
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Shaman20_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_Shaman20_Nature_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

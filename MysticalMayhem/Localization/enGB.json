@@ -1,0 +1,397 @@
+﻿{
+  // Tiret cadratin: ALT+0151
+  "strings": [
+    {
+      "Key": "MM_MaterialFreedom_Name",
+      "Value": "Material Freedom"
+    },
+    {
+      "Key": "MM_MaterialFreedom_Desc",
+      "Value": "Your mythic powers allow you to eschew the material components of your spells.\nBenefit: Choose a specific material component: you now ignore it entirely when casting a spell that normally requires it. You may choose this ability multiple times."
+    },
+    {
+      "Key": "MM_MaterialFreedomJade_Name",
+      "Value": "Material Freedom (Jade)"
+    },
+    {
+      "Key": "MM_MaterialFreedomJade_Desc",
+      "Value": "You can ignore the need for jade in spell components."
+    },
+    {
+      "Key": "MM_MaterialFreedomDust_Name",
+      "Value": "Material Freedom (Diamond Dust)"
+    },
+    {
+      "Key": "MM_MaterialFreedomDust_Desc",
+      "Value": "You can ignore the need for diamond dust in spell components."
+    },
+    {
+      "Key": "MM_MaterialFreedomDiamond_Name",
+      "Value": "Material Freedom (Diamond)"
+    },
+    {
+      "Key": "MM_MaterialFreedomDiamond_Desc",
+      "Value": "You can ignore the need for diamond in spell components."
+    },
+    {
+      "Key": "MM_MaterialFreedomBone_Name",
+      "Value": "Material Freedom (Dinosaur Bone)"
+    },
+    {
+      "Key": "MM_MaterialFreedomBone_Desc",
+      "Value": "You can ignore the need for dinosaur bone in spell components."
+    },
+    {
+      "Key": "MM_AcadamaeGraduate_Name",
+      "Value": "Acadamae Graduate"
+    },
+    {
+      "Key": "MM_AcadamaeGraduate_Desc",
+      "Value": "Whenever you cast a prepared arcane spell from the Conjuration school with the Summoning descriptor that takes a full-round action to cast, reduce the casting time to a standard action. Casting a spell in this way is taxing and requires a Fortitude save (DC 15 + spell level) to resist becoming fatigued for 1 minute. If you are already fatigued or exhausted the casting time is not reduced."
+    },
+    {
+      "Key": "MM_CircleOfOrder_Name",
+      "Value": "Circle of Order"
+    },
+    {
+      "Key": "MM_CircleOfOrder_Desc",
+      "Value": "As a swift action, the magus can spend 1 point from his arcane pool to fortify his defenses against chaotic attacks. This grants him a dodge bonus to his AC equal to half his magus level (maximum +10 at 20th level) against chaotic-aligned attacks and effects and outsiders with the chaotic subtype until the beginning of his next turn."
+    },
+    {
+      "Key": "MM_Warsighted_Name",
+      "Value": "Warsighted"
+    },
+    {
+      "Key": "MM_Warsighted_Desc",
+      "Value": "A warsighted’s unique gifts are not in strange magical revelations, but in her ability to adapt in the midst of a battle with new fighting techniques."
+    },
+    {
+      "Key": "MM_WarsightedFeatSelection_Name",
+      "Value": "Bonus Combat Feat"
+    },
+    {
+      "Key": "MM_WarsightedFeatSelection_Desc",
+      "Value": "At 1st, 7th, 11th and 15th level, a warsighted learns an additional feat belonging to the combat feats category. She must still meet the prerequisites for the feat."
+    },
+    {
+      "Key": "MM_Flagellant_Name",
+      "Value": "Flagellant"
+    },
+    {
+      "Key": "MM_Flagellant_Desc",
+      "Value": "A flagellant believes pain and suffering lead to the realization of the divine. A common method of flagellation is to whip a leather strap across her shoulders while praying. Other flagellants scour their limbs with blades. Their wounds proclaim their devotion, and the self-inflicted agony focuses their belief."
+    },
+    {
+      "Key": "MM_FlagellantProfs_Name",
+      "Value": "Flagellant Proficiencies"
+    },
+    {
+      "Key": "MM_FlagellantProfs_Desc",
+      "Value": "Flagellants are proficient with light armor and shields and with the following weapons: club, dagger, heavy mace, light mace, quarterstaff and light crossbows."
+    },
+    {
+      "Key": "MM_FlagellantFocused_Name",
+      "Value": "Focused"
+    },
+    {
+      "Key": "MM_FlagellantFocused_Desc",
+      "Value": "A flagellant gains 2 additional skill points per level."
+    },
+    {
+      "Key": "MM_FlagellantDR_Name",
+      "Value": "Deadened Flesh"
+    },
+    {
+      "Key": "MM_FlagellantDR_Desc",
+      "Value": "At 7th level, the flagellant becomes so used to physical injury that she gains DR 1/—. At 10th level, and every 3 cleric levels thereafter (13th, 16th, and 19th level), this damage reduction rises by 1 point."
+    },
+    {
+      "Key": "MM_FlagellantMortifiedCasting_Name",
+      "Value": "Mortified Spellcasting"
+    },
+    {
+      "Key": "MM_FlagellantMortifiedCasting_Desc",
+      "Value": "A flagellant powers spellcasting through her own blood.\nAs a swift action, she may inflict 1 damage on herself per level of a spell she wants to increase in power. If she does so, she can cast a spell in the same round as if she is 1 level higher or she can increase the spell’s saving throw DC by 1.\nIf her remaining hit points are lower than the spell level the spell fizzles out."
+    },
+    {
+      "Key": "MM_FlagellantMortifiedCastingDCBuff_Desc",
+      "Value": "The next spell you cast this round will have its DC increased by 1 but you will take damage equal to its level upon casting it."
+    },
+    {
+      "Key": "MM_FlagellantMortifiedCastingCLBuff_Desc",
+      "Value": "Your caster level is increased by 1 for the next spell you cast but you will take damage equal to its spell level upon casting it."
+    },
+    {
+      "Key": "MM_FlagellantMortifiedCastingDCAb_Name",
+      "Value": "Mortified Spellcasting — Increase DC"
+    },
+    {
+      "Key": "MM_FlagellantMortifiedCastingDCAb_Desc",
+      "Value": "Increase the save DC of your next spell by 1."
+    },
+    {
+      "Key": "MM_FlagellantMortifiedCastingCLAb_Name",
+      "Value": "Mortified Spellcasting — Increase CL"
+    },
+    {
+      "Key": "MM_FlagellantMortifiedCastingCLAb_Desc",
+      "Value": "Increase the caster level of your next spell by 1."
+    },
+    {
+      "Key": "MM_FlagellantGMortifiedCasting_Name",
+      "Value": "Greater Mortified Spellcasting"
+    },
+    {
+      "Key": "MM_FlagellantGMortifiedCasting_Desc",
+      "Value": "At 11th level a flagellant can increase the caster level or save DC of her next spell by 2 instead of 1 but also deals twice the damage to herself."
+    },
+    {
+      "Key": "MM_FlagellantGMortifiedCastingDCBuff_Desc",
+      "Value": "The next spell you cast this round will have its DC increased by 2 but you will take damage equal to twice its level upon casting it."
+    },
+    {
+      "Key": "MM_FlagellantGMortifiedCastingCLBuff_Desc",
+      "Value": "Your caster level is increased by 2 for the next spell you cast but you will take damage equal to twice its spell level upon casting it."
+    },
+    {
+      "Key": "MM_FlagellantGMortifiedCastingAb_Desc",
+      "Value": "As a swift action, a flagellant may inflict 2 damage on herself per level of a spell she wants to increase in power. If she does so, she can cast a spell in the same round as if she is 2 level higher or she can increase the spell’s saving throw DC by 2.\nIf her remaining hit points are lower than the spell level the spell fizzles out."
+    },
+    {
+      "Key": "MM_FlagellantGMortifiedCastingDCAb_Name",
+      "Value": "Greater Mortified Spellcasting — Increase DC"
+    },
+    {
+      "Key": "MM_FlagellantGMortifiedCastingDCAb_Desc",
+      "Value": "Increase the save DC of your next spell by 2."
+    },
+    {
+      "Key": "MM_FlagellantGMortifiedCastingCLAb_Name",
+      "Value": "Greater Mortified Spellcasting — Increase CL"
+    },
+    {
+      "Key": "MM_FlagellantGMortifiedCastingCLAb_Desc",
+      "Value": "Increase the caster level of your next spell by 2."
+    },
+    {
+      "Key": "MM_StaffLikeWand_Name",
+      "Value": "Staff-Like Wand"
+    },
+    {
+      "Key": "MM_StaffLikeWand_Desc",
+      "Value": "Your research has unlocked a new power in conjunction with using a wand.\nYou use your own Intelligence score and relevant feats to set the DC for saves against spells you cast from a wand, and you can use your caster level when activating the power of a wand if it’s higher than the caster level of the wand."
+    },
+    {
+      "Key": "MM_PurityOfSin_Name",
+      "Value": "Purity of Sin"
+    },
+    {
+      "Key": "MM_PurityOfSin_Desc",
+      "Value": "You reached a major turning point in your understanding of Thassilonian spellcasting traditions.\nBenefit: Whenever you cast a spell belonging to the school represented by your sin, you do so at +2 caster level."
+    },
+    {
+      "Key": "MM_MythicPurityOfSin_Name",
+      "Value": "Purity of Sin (Mythic)"
+    },
+    {
+      "Key": "MM_MythicPurityOfSin_Desc",
+      "Value": "You have fully mastered Thassilonian Sin Magic.\nBenefit: The bonus from Purity of Sin also applies to save DC."
+    },
+    {
+      "Key": "MM_PactWizard_Name",
+      "Value": "Pact Wizard"
+    },
+    {
+      "Key": "MM_PactWizard_Desc",
+      "Value": "While the art of wizardry is usually a scholar’s pursuit, there are those who seek mastery of arcane power without tedious study and monotonous research. Motivated by foolish ambition, such individuals turn to the greatest enigmas of the cosmos in the hopes of attaining greater power. Though few successfully attract the attention of these forces, those who do receive phenomenal arcane power for their efforts, but become the dutiful playthings and servants of the forces with which they consort."
+    },
+    {
+      "Key": "MM_PactWizardPatron_Name",
+      "Value": "Patron"
+    },
+    {
+      "Key": "MM_PactWizardPatron_Desc",
+      "Value": "At 1st level, a pact wizard must select a patron. This functions like the witch class ability of the same name, except the pact wizard automatically adds his patron’s spells to his spellbook instead of to his familiar."
+    },
+    {
+      "Key": "MM_PactWizardConversion_Name",
+      "Value": "Spontaneous Spell Conversion"
+    },
+    {
+      "Key": "MM_PactWizardConversion_Desc",
+      "Value": "A pact wizard can expend any prepared spell that isn’t a spell prepared using the additional spell slot the wizard receives from his arcane school in order to spontaneously cast one of his patron’s spells of the same level or lower."
+    },
+    {
+      "Key": "MM_PactWizardCurse_Name",
+      "Value": "Great Power, Greater Expense"
+    },
+    {
+      "Key": "MM_PactWizardCurse_Desc",
+      "Value": "As a pact wizard grows in power, his choice of patron begins to affect his physical body.\nAt 5th level, the pact wizard chooses one oracle curse, using half his character level as his effective oracle level when determining the effects of this curse.\nIf an oracle curse would add spells to the oracle’s list of spells known, the pact wizard instead add those spells to the wizard’s spell list as well as to his spellbook."
+    },
+    {
+      "Key": "MM_PactWizardReroll_Desc",
+      "Value": "At 10th level, the pact wizard can invoke his patron’s power to roll twice and take the better result when attempting any caster level check, concentration check, initiative check, or saving throw. He can activate this ability as a free action before attempting the checks. He can use this ability a number of times per day equal to 3 + half his Intelligence modifier."
+    },
+    {
+      "Key": "MM_PactWizardRollBonus_Desc",
+      "Value": "At 15th level, when the pact wizard invokes his patron’s power to roll twice on a check, he adds his Intelligence bonus to the result as an insight bonus."
+    },
+    {
+      "Key": "MM_PactWizardMetamagic_Desc",
+      "Value": "When the pact wizard applies metamagic feats to any spells he learned via his patron or curse, he treats that spell’s final effective level as 1 lower (to a minimum level equal to the spell’s original level)."
+    },
+    {
+      "Key": "MM_PactWizardAutoSuccess_Desc",
+      "Value": "At 20th level, whenever the pact wizard invokes his patron’s power to roll twice on a check and his result is a natural 20, he automatically succeeds, regardless of whether or not a check of that type would normally allow an automatic success."
+    },
+    {
+      "Key": "MM_Shaman20_Name",
+      "Value": "Manifestation"
+    },
+    {
+      "Key": "MM_Shaman20_Battle_Desc",
+      "Value": "Upon reaching 20th level, the shaman becomes a spirit of battle. She gains the Pounce ability. Whenever she scores a critical hit, the attack ignores damage reduction. She gains a +4 insight bonus to AC for the purposes of confirming critical hits against her."
+    },
+    {
+      "Key": "MM_Shaman20_Bones_Desc",
+      "Value": "Upon reaching 20th level, the shaman becomes a spirit of death. She can cast Animate Dead at will and Power World: Kill once per day as a spell-like ability."
+    },
+    {
+      "Key": "MM_Shaman20_Flame_Desc",
+      "Value": "Upon reaching 20th level, the shaman becomes a spirit of flame. The shaman gains fire resistance 30. All spells with the Fire descriptor she casts are always empowered, as though using the Empower Spell feat."
+    },
+    {
+      "Key": "MM_Shaman20_Frost_Desc",
+      "Value": "Upon reaching 20th level, the shaman becomes a being of ice and snow. The shaman gains immunity to cold. All spells with the Cold descriptor she casts are always empowered, as though using the Empower Spell feat."
+    },
+    {
+      "Key": "MM_Shaman20_Life_Desc",
+      "Value": "Upon reaching 20th level, the shaman becomes a perfect channel for life energy. She becomes immune to bleed, death attacks, exhaustion, fatigue, nausea effects, negative levels, and sickened effects."
+    },
+    {
+      "Key": "MM_Shaman20_Nature_Desc",
+      "Value": "Upon reaching 20th level, the shaman becomes a spirit of nature. Once per day, she can change her type to plant, animal, or humanoid, gaining superficial physical characteristics as appropriate, as a full-round action. This change does not alter her Hit Dice, hit points, saving throws, skill points, class skills, or proficiencies. Each time the transformation is made, she is cleansed of all poisons or diseases, is restored to full hit points, and heal all ability damage. She must select a new type every time the transformation is made."
+    },
+    {
+      "Key": "MM_Shaman20_Nature_Animal",
+      "Value": "Manifestation — Animal"
+    },
+    {
+      "Key": "MM_Shaman20_Nature_Plant",
+      "Value": "Manifestation — Plant"
+    },
+    {
+      "Key": "MM_Shaman20_Nature_Humanoid",
+      "Value": "Manifestation — Humanoid"
+    },
+    {
+      "Key": "MM_Shaman20_Stone_Desc",
+      "Value": "Upon reaching 20th level, the shaman becomes a being of acid and earth. The shaman gains acid resistance 30. All spells with the Acid descriptor she casts are always empowered, as though using the Empower Spell feat."
+    },
+    {
+      "Key": "MM_MinuteLevel",
+      "Value": "1 minute/level"
+    },
+    {
+      "Key": "MM_1Round",
+      "Value": "1 round"
+    },
+    {
+      "Key": "MM_Blank",
+      "Value": ""
+    },
+    {
+      "Key": "MM_SchoolExpertise_Name",
+      "Value": "School Expertise"
+    },
+    {
+      "Key": "MM_SchoolExpertise_Desc",
+      "Value": "You've spent time further studying your chosen school of magic.\nBenefit: You gain 3 additional daily uses of your school powers. You can select this discovery multiple times."
+    },
+    {
+      "Key": "MM_Corrupted_Dragon_Prereq",
+      "Value": "Corrupted Dragon"
+    },
+    {
+      "Key": "MM_EarthMagic_Name",
+      "Value": "Earth Magic"
+    },
+    {
+      "Key": "MM_EarthMagic_Desc",
+      "Value": "You can draw raw magical energy from the ground to empower your spells.\nBenefit: While you’re in your favored terrain, your effective caster level increases by 1 for the purpose of improving spell effects dependent on caster level. This increase in effective caster level doesn’t grant you access to more spells."
+    },
+    {
+      "Key": "MM_Shaman_Waves_Desc",
+      "Value": "Upon reaching 20th level, the shaman becomes a master of cold and water. The shaman gains cold resistance 30. All spells with the Cold descriptor she casts are always empowered, as though using the Empower Spell feat."
+    },
+    {
+      "Key": "MM_Shaman_Wind_Desc",
+      "Value": "Upon reaching 20th level, the shaman becomes a being of air and electricity. The shaman gains electricity resistance 30. All spells with the Electricity descriptor she casts are always empowered, as though using the Empower Spell feat."
+    },
+    {
+      "Key": "MM_RazmiranPriest_Name",
+      "Value": "Razmiran Priest"
+    },
+    {
+      "Key": "MM_RazmiranPriest_Desc",
+      "Value": "The so-called “priests” of Razmir are magical charlatans—missionary servants of the Living God who spread his fervent devotion wherever they travel. Altered by Razmir’s magic, they can perform feats impossible for other sorcerers."
+    },
+    {
+      "Key": "MM_Razmir_Name",
+      "Value": "Razmir"
+    },
+    {
+      "Key": "MM_Razmir_Desc",
+      "Value": "Razmir is the ruler of Razmiran and a self-proclaimed living deity.\nAlthough he is a powerful wizard and excellent swindler Razmir is not a real god and therefore cannot grant spells to his followers, who instead bluff their way into passing arcane magic as divine."
+    },
+    {
+      "Key": "MM_FalsePiety_Name",
+      "Value": "False Piety"
+    },
+    {
+      "Key": "MM_FalsePiety_Desc",
+      "Value": "At 1st level a Razmiran priest adds Lore (religion) to the list of his class skills. He adds half his sorcerer level to Use Magic Device checks to cast spells from items, but only if they're on the cleric spell list."
+    },
+    {
+      "Key": "MM_LayHealer_Name",
+      "Value": "Lay Healer"
+    },
+    {
+      "Key": "MM_LayHealerLv3_Desc",
+      "Value": "At 3rd level a Razmiran priest adds Aid to his list of spell known. This replaces the bloodline spell normally learnt at level 3."
+    },
+    {
+      "Key": "MM_LayHealerLv5_Desc",
+      "Value": "At 5th level a Razmiran priest adds Remove Disease to his list of spell known. This replaces the bloodline spell normally learnt at level 5."
+    },
+    {
+      "Key": "MM_RazmiranChannel_Name",
+      "Value": "Razmiran Channel"
+    },
+    {
+      "Key": "MM_RazmiranChannel_Desc",
+      "Value": "A 9th level the Razmiran priest can choose to use his own magic to fuel items imbued with divine spells. If a wand, scroll or any other item contains a spell found on the cleric spell list, the Razmiran priest expends a spell slot of one level higher than the spell's level instead of using a charge or consuming the item.\nThis replaces the bloodline powers gained at level 9."
+    },
+    {
+      "Key": "MM_RazmiranChannelAb_Desc",
+      "Value": "A 9th level the Razmiran priest can choose to use his own magic to fuel items imbued with divine spells. If a wand, scroll or any other item contains a spell found on the cleric spell list, the Razmiran priest expends a spell slot of one level higher than the spell's level instead of using a charge or consuming the item."
+    },
+    {
+      "Key": "MM_RazmiranChannelBuff_Desc",
+      "Value": "When Razmiran Channel is active, you spend spell slots instead of depleting item charges in order to cast cleric spells."
+    },
+    {
+      "Key": "MM_S_Title",
+      "Value": "Mystical Mayhem"
+    },
+    {
+      "Key": "MM_S_NoHomebrew",
+      "Value": "Disable Homebrew"
+    },
+    {
+      "Key": "MM_S_NoHomebrew_Desc",
+      "Value": "Disables all content not taken from Paizo. Turning this on prevents you from selecting homebrew content but doesn't remove it from existing characters: you need to respec for this.\nThis option only takes effect after restarting the game."
+    }
+  ]
+}

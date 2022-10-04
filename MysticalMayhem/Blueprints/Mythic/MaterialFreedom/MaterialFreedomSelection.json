@@ -1,0 +1,41 @@
+{
+  "AssetId": "522e8fe5-2bf4-4089-8cef-9a0288431ec2",
+  "Homebrew": true,
+  "PatchList": ["AddAsMythicAbility"],
+  "Data": {
+    "$type": "ea44b1ffb0675104cb178df6459f3a21, BlueprintFeatureSelection",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [],
+    "Comment": "1",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_MaterialFreedom_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_MaterialFreedom_Desc"
+    },
+    "m_Icon": null,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": [],
+    "IgnorePrerequisites": false,
+    "Obligatory": false,
+    "Mode": "Default",
+    "Group": "MythicAbility",
+    "Group2": "None",
+    "m_Features": [],
+    "m_AllFeatures": [
+      "!bp_400d70af-188e-406a-b2a1-c35f56244da2",
+      "!bp_3cfc0469-6f23-473f-9255-3c0ac8ce37f2",
+      "!bp_b953e38e-75d8-4072-bf86-7d190d6cca0a",
+      "!bp_dfcee716-54dd-477b-bb6f-3e64f8d479af"
+
+    ]
+  }
+}

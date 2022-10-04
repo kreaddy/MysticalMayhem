@@ -1,0 +1,48 @@
+{
+  "AssetId": "610f0698-6b7a-476d-893d-fe775a355074",
+  "PatchList": [ "AddToProgression:SpiritFrost:20" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "b51a712035f3d98459e516a34fda37bf, AutoMetamagic",
+        "name": "frost_manifestation_autometamagic",
+        "m_Overrides": [],
+        "m_AllowedAbilities": "SpellOnly",
+        "Metamagic": "Empower",
+        "Abilities": [],
+        "Descriptor": {
+          "m_IntValue": 4
+        },
+        "Once": false,
+        "MaxSpellLevel": "0",
+        "School": "None",
+        "CheckSpellbook": false,
+        "m_Spellbook": null
+      },
+      {
+        "$type": "483fb23d5cb1dcb43817b1b835a30ceb, AddEnergyImmunity",
+        "name": "frost_manifestation_cold_res",
+        "Type": "Cold"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Shaman20_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_Shaman20_Frost_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

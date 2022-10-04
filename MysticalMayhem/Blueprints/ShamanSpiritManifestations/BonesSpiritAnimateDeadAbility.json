@@ -1,0 +1,231 @@
+{
+  "AssetId": "5398e070-522a-4e04-a9f5-8412344bf11c",
+  "PatchList": [ "CopyIconFromAbility:SpellAnimateDead" ],
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "m_Flags": 0,
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "c7a3b2de9c37f154797b063a5730e307, ContextActionSpawnMonster",
+              "m_Blueprint": "!bp_53e228ba7fe18104c93dc4b7294a1b30",
+              "AfterSpawn": {
+                "Actions": [
+                  {
+                    "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+                    "Comment": "",
+                    "ConditionsChecker": {
+                      "Operation": "And",
+                      "Conditions": [
+                        {
+                          "$type": "43f75bd73450e1f4aa1f6163f51956e3, ContextConditionCasterHasFact",
+                          "Not": false,
+                          "m_Fact": "!bp_406711ebdd8f4f419e95c9b4778b5927"
+                        }
+                      ]
+                    },
+                    "IfTrue": {
+                      "Actions": [
+                        {
+                          "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                          "m_Buff": "!bp_169d03bbccdbdc542ae1a57d83673d80",
+                          "Permanent": true,
+                          "UseDurationSeconds": false,
+                          "DurationValue": {
+                            "Rate": "Rounds",
+                            "DiceType": "Zero",
+                            "DiceCountValue": {
+                              "ValueType": "Simple",
+                              "Value": 0,
+                              "ValueRank": "Default",
+                              "ValueShared": "Damage",
+                              "Property": "None",
+                              "m_CustomProperty": null
+                            },
+                            "BonusValue": {
+                              "ValueType": "Simple",
+                              "Value": 0,
+                              "ValueRank": "Default",
+                              "ValueShared": "Damage",
+                              "Property": "None",
+                              "m_CustomProperty": null
+                            },
+                            "m_IsExtendable": true
+                          },
+                          "DurationSeconds": 0.0,
+                          "IsFromSpell": false,
+                          "IsNotDispelable": true,
+                          "ToCaster": false,
+                          "AsChild": false,
+                          "SameDuration": false
+                        }
+                      ]
+                    },
+                    "IfFalse": {
+                      "Actions": []
+                    }
+                  },
+                  {
+                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                    "m_Buff": "!bp_50d51854cf6a3434d96a87d050e1d09a",
+                    "Permanent": true,
+                    "UseDurationSeconds": false,
+                    "DurationValue": {
+                      "Rate": "Rounds",
+                      "DiceType": "Zero",
+                      "DiceCountValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null
+                      },
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null
+                      },
+                      "m_IsExtendable": false
+                    },
+                    "DurationSeconds": 0.0,
+                    "IsFromSpell": false,
+                    "IsNotDispelable": true,
+                    "ToCaster": false,
+                    "AsChild": false,
+                    "SameDuration": false
+                  }
+                ]
+              },
+              "m_SummonPool": "!bp_d94c93e7240f10e41ae41db4c83d1cbe",
+              "DurationValue": {
+                "Rate": "Rounds",
+                "DiceType": "Zero",
+                "DiceCountValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 20,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "m_IsExtendable": true
+              },
+              "CountValue": {
+                "DiceType": "D4",
+                "DiceCountValue": {
+                  "ValueType": "Simple",
+                  "Value": 1,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 2,
+                  "ValueRank": "ProjectilesCount",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                }
+              },
+              "LevelValue": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null
+              },
+              "DoNotLinkToCaster": false,
+              "IsDirectlyControllable": false
+            }
+          ]
+        }
+      },
+      {
+        "$type": "91216784d99a12e428bf782c8a8c7f5c, SpellDescriptorComponent",
+        "m_Flags": 0,
+        "m_Overrides": [],
+        "Descriptor": {
+          "m_IntValue": 2048
+        }
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "16418411-e361-42af-bfa4-b94458845165"
+    },
+    "m_Description": {
+      "m_Key": "7be70050-6d89-4430-b88e-62cd0b14b6e2"
+    },
+    "m_DescriptionShort": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": {
+      "guid": "a31a3c21d99e33f459a8b91ed61e5df1",
+      "fileid": 21300000
+    },
+    "m_DefaultAiAction": null,
+    "Type": "SpellLike",
+    "Range": "Close",
+    "CustomRange": {
+      "m_Value": 0.0
+    },
+    "ShowNameForVariant": false,
+    "OnlyForAllyCaster": false,
+    "CanTargetPoint": true,
+    "CanTargetEnemies": false,
+    "CanTargetFriends": false,
+    "CanTargetSelf": true,
+    "SpellResistance": false,
+    "ActionBarAutoFillIgnored": false,
+    "Hidden": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "EffectOnAlly": "None",
+    "EffectOnEnemy": "None",
+    "m_Parent": null,
+    "Animation": "Point",
+    "HasFastAnimation": false,
+    "AnimationStyle": 0,
+    "m_TargetMapObjects": false,
+    "ActionType": "Standard",
+    "AvailableMetamagic": "Quicken",
+    "m_IsFullRoundAction": false,
+    "LocalizedDuration": {
+      "m_Key": "6250ccf0-1ed0-460f-8ce7-094c2da7e198"
+    },
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "DisableLog": false
+  },
+  "Meta": {
+    "ShadowDeleted": false
+  }
+}

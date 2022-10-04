@@ -1,0 +1,69 @@
+{
+  "AssetId": "47383a66-ba11-45c2-a1a1-104558949a4c",
+  "PatchList": [ "CopyIconFromAbility:ShieldOfLaw" ],
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "Components": [
+      {
+        "$type": "a15673bd9e3879442825226335fd8fe2, ContextRankConfig",
+        "m_Overrides": [],
+        "m_Type": "Default",
+        "m_BaseValueType": "ClassLevel",
+        "m_Feature": null,
+        "m_FeatureList": [],
+        "m_Stat": null,
+        "m_SpecificModifier": "None",
+        "m_Buff": null,
+        "m_Progression": "Div2",
+        "m_CustomProgression": [],
+        "m_StartLevel": 0,
+        "m_StepLevel": 0,
+        "m_UseMin": true,
+        "m_Min": 1,
+        "m_UseMax": false,
+        "m_Max": 20,
+        "m_ExceptClasses": false,
+        "Archetype": null,
+        "m_AdditionalArchetypes": [],
+        "m_Class": [ "!bp_45a4607686d96a1498891b3286121780" ],
+        "m_CustomProperty": null,
+        "m_CustomPropertyList": []
+      },
+      {
+        "$type": "38adc11b2c4afa94f89cbd55107c1962, ArmorClassBonusAgainstAlignment",
+        "m_Overrides": [],
+        "alignment": "Chaotic",
+        "Descriptor": "Dodge",
+        "Bonus": {
+          "ValueType": "Rank",
+          "ValueRank": "Default",
+          "Value": 0
+        }
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_CircleOfOrder_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_CircleOfOrder_Desc"
+    },
+    "m_DescriptionShort": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "IsClassFeature": false,
+    "m_Flags": 0,
+    "Stacking": "Replace",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "Rounds",
+    "FxOnStart": null,
+    "FxOnRemove": null,
+    "ResourceAssetIds": []
+  }
+}
