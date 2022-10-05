@@ -17,13 +17,13 @@ namespace MysticalMayhem.Mechanics
         {
             if (Owner == evt.Initiator && evt.Spell.UseMagicDeviceDC != null && evt.Spell.IsInSpellList(BPLookup.SpellList("ClericSpellList")))
             {
-                Owner.AddFact(BPLookup.Buff("FalsePietyUMDBonus", true));
+                Owner.AddFact(BPLookup.Feature("FalsePietyUMDBonus", true));
             }
         }
 
         public void OnEventDidTrigger(RuleCastSpell evt)
         {
-            Owner.RemoveFact(BPLookup.Buff("FalsePietyUMDBonus", true));
+            Owner.RemoveFact(BPLookup.Feature("FalsePietyUMDBonus", true));
         }
     }
 }
