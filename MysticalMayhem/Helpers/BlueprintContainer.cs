@@ -53,6 +53,7 @@ namespace MysticalMayhem.Helpers
             if (UnityModManagerNet.UnityModManager.FindMod("TabletopTweaks-Base") != null)
             {
                 var selection = ResourcesLibrary.TryGetBlueprint<BlueprintFeatureSelection>(BPLookup.GetGuid("TTTArcaneDiscoverySelection"));
+                if (selection == null) return;
                 selection.m_AllFeatures = selection.m_AllFeatures.Push(Blueprint.ToReference<BlueprintFeatureReference>());
             }
             else
@@ -79,6 +80,20 @@ namespace MysticalMayhem.Helpers
             selection.m_AllFeatures = selection.m_AllFeatures.Push(Blueprint.ToReference<BlueprintFeatureReference>());
         }
 
+        public void AddAsHexcrafterArcana(string[] _)
+        {
+            var selection = BPLookup.Selection("HexcrafterArcanaSelection");
+            selection.m_AllFeatures = selection.m_AllFeatures.Push(Blueprint.ToReference<BlueprintFeatureReference>());
+
+            // If TTT is present, make the arcana available to the relevant Extra Magus Arcana selection.
+            if (UnityModManagerNet.UnityModManager.FindMod("TabletopTweaks-Base") != null)
+            {
+                selection = ResourcesLibrary.TryGetBlueprint<BlueprintFeatureSelection>("dcd025d2-b492-4f76-9321-55adcf8057f0");
+                if (selection == null) return;
+                selection.m_AllFeatures = selection.m_AllFeatures.Push(Blueprint.ToReference<BlueprintFeatureReference>());
+            }
+        }
+
         public void AddAsMagusArcana(string[] _)
         {
             var selection = BPLookup.Selection("MagusArcanaSelection");
@@ -94,6 +109,7 @@ namespace MysticalMayhem.Helpers
             if (UnityModManagerNet.UnityModManager.FindMod("TabletopTweaks-Base") != null)
             {
                 selection = ResourcesLibrary.TryGetBlueprint<BlueprintFeatureSelection>("9b394c91-008d-4db3-8af7-74bd340672dc");
+                if (selection == null) return;
                 selection.m_AllFeatures = selection.m_AllFeatures.Push(Blueprint.ToReference<BlueprintFeatureReference>());
 
                 selection = ResourcesLibrary.TryGetBlueprint<BlueprintFeatureSelection>("1e7dba2f-2790-49c9-8e91-8aa4775ef72b");

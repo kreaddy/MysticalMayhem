@@ -392,6 +392,14 @@
     {
       "Key": "MM_S_NoHomebrew_Desc",
       "Value": "Disables all content not taken from Paizo. Turning this on prevents you from selecting homebrew content but doesn't remove it from existing characters: you need to respec for this.\nThis option only takes effect after restarting the game."
+    },
+    {
+      "Key": "MM_Malice_Name",
+      "Value": "Malice"
+    },
+    {
+      "Key": "MM_Malice_Desc",
+      "Value": "The hexcrafter magus’s attacks are enhanced by the spiteful link between him and his opponent. His melee attacks deal +2d6 Unholy damage to any opponent that is currently under the effects of one of his hexes."
     }
   ]
 }

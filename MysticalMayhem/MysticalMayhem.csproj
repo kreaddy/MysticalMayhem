@@ -40,6 +40,7 @@
     <None Remove="Blueprints\Feats\AcadamaeGraduate.json" />
     <None Remove="Blueprints\Feats\EarthMagic.json" />
     <None Remove="Blueprints\Feats\PurityOfSin.json" />
+    <None Remove="Blueprints\MagusArcana\Malice.json" />
     <None Remove="Blueprints\Mythic\MythicPurityOfSin.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationNatureResource.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWaves.json" />
@@ -57,6 +58,7 @@
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\RazmiranChannel\RazmiranChannelFeature.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\RazmiranPriestArchetype.json" />
     <EmbeddedResource Include="Blueprints\Deities\Razmir.json" />
+    <EmbeddedResource Include="Blueprints\MagusArcana\Malice.json" />
     <EmbeddedResource Include="Blueprints\ShamanSpiritManifestations\ManifestationWind.json" />
     <EmbeddedResource Include="Blueprints\ShamanSpiritManifestations\ManifestationWaves.json" />
     <EmbeddedResource Include="Blueprints\ShamanSpiritManifestations\NatureSpiritPlantAbility.json" />

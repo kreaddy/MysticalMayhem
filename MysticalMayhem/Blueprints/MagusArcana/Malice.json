@@ -1,0 +1,148 @@
+{
+  "AssetId": "75496274-dc96-495c-80f7-2e2bb8d3a980",
+  "Homebrew": true,
+  "PatchList": [ "AddIcon:ma_malice", "AddAsHexcrafterArcana" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "Components": [
+      {
+        "$type": "682c71964f9bf3d4d97232b9016eafc8, PrerequisiteArchetypeLevel",
+        "m_Overrides": [],
+        "Group": "All",
+        "m_CharacterClass": "!bp_45a4607686d96a1498891b3286121780",
+        "m_Archetype": "!bp_79ccf7a306a5d5547bebd97299f6fc89",
+        "Level": 2
+      },
+      {
+        "$type": "bdbdc2afaa197d4479e112a32f9bdab5, AddInitiatorAttackWithWeaponTrigger",
+        "WaitForAttackResolve": true,
+        "OnlyHit": true,
+        "OnMiss": false,
+        "OnlyOnFullAttack": false,
+        "OnlyOnFirstAttack": false,
+        "OnlyOnFirstHit": false,
+        "CriticalHit": false,
+        "OnAttackOfOpportunity": false,
+        "NotCriticalHit": false,
+        "OnlySneakAttack": false,
+        "NotSneakAttack": false,
+        "m_WeaponType": null,
+        "CheckWeaponCategory": false,
+        "Category": "UnarmedStrike",
+        "CheckWeaponGroup": false,
+        "Group": "None",
+        "CheckWeaponRangeType": true,
+        "RangeType": "Melee",
+        "ActionsOnInitiator": false,
+        "ReduceHPToZero": false,
+        "CheckDistance": false,
+        "DistanceLessEqual": {
+          "m_Value": 0.0
+        },
+        "AllNaturalAndUnarmed": false,
+        "DuelistWeapon": false,
+        "NotExtraAttack": false,
+        "OnCharge": false,
+        "Action": {
+          "Actions": [
+            {
+              "$type": "d1988c4c-6273-4ece-9568-77e8038bdef7, MaliceContextAction",
+              "name": "$MaliceContextAction$ed09f7d6-a515-4ac8-ad28-0525b4fe7b6f",
+              "m_Type": "Damage",
+              "DamageType": {
+                "Type": "Energy",
+                "Common": {
+                  "Reality": 0,
+                  "Alignment": 0,
+                  "Precision": false
+                },
+                "Physical": {
+                  "Material": 0,
+                  "Form": "Slashing",
+                  "Enhancement": 0,
+                  "EnhancementTotal": 0
+                },
+                "Energy": "Unholy"
+              },
+              "Drain": false,
+              "AbilityType": "Unknown",
+              "EnergyDrainType": "Temporary",
+              "Duration": {
+                "Rate": "Rounds",
+                "DiceType": "Zero",
+                "DiceCountValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "m_IsExtendable": true
+              },
+              "ReadPreRolledFromSharedValue": false,
+              "PreRolledSharedValue": "Damage",
+              "Value": {
+                "DiceType": "D6",
+                "DiceCountValue": {
+                  "ValueType": "Simple",
+                  "Value": 2,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                }
+              },
+              "Half": false,
+              "AlreadyHalved": false,
+              "IsAoE": false,
+              "HalfIfSaved": false,
+              "IgnoreCritical": false,
+              "UseMinHPAfterDamage": false,
+              "MinHPAfterDamage": 0,
+              "WriteResultToSharedValue": false,
+              "ResultSharedValue": "Damage",
+              "WriteCriticalToSharedValue": false,
+              "CriticalSharedValue": "Damage"
+            }
+          ]
+        }
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Malice_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_Malice_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [
+      "MagusArcana"
+    ],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

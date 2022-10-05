@@ -1,0 +1,25 @@
+ManifestFileVersion: 0
+CRC: 1027848148
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 840d5c0bd63cd71659c7c74afcff669d
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: c90fc19e2679e5295d10bd00f33cb4c3
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/MM_icons/a_mortified.png
+- Assets/MM_icons/ad_stafflikewand.png
+- Assets/MM_icons/ad_purityofsin.png
+- Assets/MM_icons/f_graduate.png
+- Assets/MM_icons/d_razmir.png
+- Assets/MM_icons/ma_malice.png
+- Assets/MM_icons/f_earth_magic.png
+Dependencies: []
