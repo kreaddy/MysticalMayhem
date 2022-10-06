@@ -400,6 +400,22 @@
     {
       "Key": "MM_Malice_Desc",
       "Value": "The hexcrafter magus’s attacks are enhanced by the spiteful link between him and his opponent. His melee attacks deal +2d6 Unholy damage to any opponent that is currently under the effects of one of his hexes."
+    },
+    {
+      "Key": "MM_SpellSynthesis_Name",
+      "Value": "Spell Synthesis"
+    },
+    {
+      "Key": "MM_SpellSynthesis_Desc",
+      "Value": "At 10th level, a mystic theurge can cast two spells, one from each of his spellcasting classes, using one action. Both of the spells must have the same casting time. The mystic theurge can make any decisions concerning the spells independently. The mystic theurge receives a +2 bonus to DC and on caster level checks made to overcome spell resistance with these two spells. A mystic theurge may use this ability once per day."
+    },
+    {
+      "Key": "MM_MythicSpellSynthesis_Name",
+      "Value": "Abundant Spell Synthesis"
+    },
+    {
+      "Key": "MM_MythicSpellSynthesis_Desc",
+      "Value": "Your ability to wield the powers of both the arcane and the divine is truly legendary.\nBenefit: You can use your Spell Synthesis ability an additional time for every three mythic ranks."
     }
   ]
 }

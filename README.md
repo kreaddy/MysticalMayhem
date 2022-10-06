@@ -26,7 +26,8 @@ Content
 |Purity of Sin|Feat|Thassilonian Specialist only. +2 CL for the school of magic associated with the sin.<br>Becomes an arcane discovery if Tabletop Tweaks Base is installed.|Yes|
 |School Expertise|Feat|Arcane school powers can be used 3 additional times. Can be taken multiple times.<br>Becomes an arcane discovery if Tabletop Tweaks Base is installed.|Yes|
 |Staff-like Wand|Feat|Calculate wands CL and DC with the wizard's caster level and stats.<br>Becomes an arcane discovery if Tabletop Tweaks Base is installed.|No|
-Circle of Order|Magus Arcana|Adds half the magus level to AC against Chaotic enemies for 1 round.|No|
+|Circle of Order|Magus Arcana|Adds half the magus level to AC against Chaotic enemies for 1 round.|No|
+|Malice|Magus Arcana (Hexcrafter only)|Originally designed by Rite Publishing.<br>The hexcrafter's attacks deal an additional 2d6 unholy damage to targets under the effect of their hexes.|Yes|
 |Material Freedom|Mythic Ability|Can ignore a specific material spell component (Diamond, Jade, etc...).|Yes|
 |Purity of Sin (Mythic)|Mythic Feat|Purity of Sin also grants +2 bonus to DC.|Yes|
 |Manifestations|Shaman Features|Add the capstones to Shaman spirits. They have been adapted to the game the same way Owlcat adapted the final revelations for Oracle mysteries (they're virtually identical).|No|

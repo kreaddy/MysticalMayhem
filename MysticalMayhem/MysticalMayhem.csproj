@@ -41,6 +41,11 @@
     <None Remove="Blueprints\Feats\EarthMagic.json" />
     <None Remove="Blueprints\Feats\PurityOfSin.json" />
     <None Remove="Blueprints\MagusArcana\Malice.json" />
+    <None Remove="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisAbility.json" />
+    <None Remove="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisBuff.json" />
+    <None Remove="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisFeature.json" />
+    <None Remove="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisResource.json" />
+    <None Remove="Blueprints\Mythic\AbundantSpellSynthesis.json" />
     <None Remove="Blueprints\Mythic\MythicPurityOfSin.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationNatureResource.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWaves.json" />
@@ -59,6 +64,11 @@
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\RazmiranPriestArchetype.json" />
     <EmbeddedResource Include="Blueprints\Deities\Razmir.json" />
     <EmbeddedResource Include="Blueprints\MagusArcana\Malice.json" />
+    <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisResource.json" />
+    <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisFeature.json" />
+    <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisAbility.json" />
+    <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisBuff.json" />
+    <EmbeddedResource Include="Blueprints\Mythic\AbundantSpellSynthesis.json" />
     <EmbeddedResource Include="Blueprints\ShamanSpiritManifestations\ManifestationWind.json" />
     <EmbeddedResource Include="Blueprints\ShamanSpiritManifestations\ManifestationWaves.json" />
     <EmbeddedResource Include="Blueprints\ShamanSpiritManifestations\NatureSpiritPlantAbility.json" />

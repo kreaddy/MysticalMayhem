@@ -8,7 +8,9 @@ using Kingmaker.RuleSystem;
 using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.UnitLogic.FactLogic;
+using Kingmaker.UnitLogic.Parts;
 using MysticalMayhem.Helpers;
 using MysticalMayhem.Mechanics;
 using System.Collections.Generic;
@@ -66,6 +68,64 @@ namespace MysticalMayhem.HarmonyPatches
                     }
                     __result.DC = __instance.Caster.Stats.Intelligence.Bonus + itemEntity.GetSpellLevel() + 10;
                 }
+            }
+        }
+
+        [HarmonyPatch(typeof(AbilityData), "get_ActionType")]
+        internal class AbilityData_ActionTypeField_MM
+        {
+            [HarmonyPostfix]
+            private static void get_ActionType(ref UnitCommand.CommandType __result, AbilityData __instance)
+            {
+                // Spell Synthesis check:
+                // - User has the buff indicating they've used Spell Synthesis.
+                // - User has the buff indicating they've casted a spell from one of their Mystic Theurge spellbooks.
+                // - The spell being cast is from the MT spellbook they haven't cast yet this round.
+                if (__instance.Caster == null || __instance.Caster.SpellSynthesis() == false) return;
+                if (__instance.Spellbook == __instance.Caster.Ensure<UnitPartMysticTheurge>().DivineSpellbook
+                    && __instance.Caster.MTHasCastArcaneSpell())
+                {
+                    __result = UnitCommand.CommandType.Free;
+                    return;
+                };
+                if (__instance.Spellbook == __instance.Caster.Ensure<UnitPartMysticTheurge>().ArcaneSpellbook
+                    && __instance.Caster.MTHasCastDivineSpell())
+                {
+                    __result = UnitCommand.CommandType.Free;
+                    return;
+                };
+            }
+        }
+
+        [HarmonyPatch(typeof(AbilityData), "get_CanBeCastByCaster")]
+        internal class AbilityData_CanBeCastByCasterField_MM
+        {
+            [HarmonyPostfix]
+            private static void get_CanBeCastByCaster(ref bool __result, AbilityData __instance)
+            {
+                // Spell Synthesis check:
+                // - User has the buff indicating they've used Spell Synthesis.
+                // - User has the buff indicating they've casted a spell from one of their Mystic Theurge spellbooks.
+                // - The spell being cast is from the same MT spellbook.
+                if (__instance.Caster == null || __instance.Caster.SpellSynthesis() == false) return;
+                if (__instance.Spellbook != __instance.Caster.Ensure<UnitPartMysticTheurge>().DivineSpellbook
+                    && __instance.Spellbook != __instance.Caster.Ensure<UnitPartMysticTheurge>().ArcaneSpellbook)
+                {
+                    __result = false;
+                    return;
+                }
+                if (__instance.Spellbook == __instance.Caster.Ensure<UnitPartMysticTheurge>().DivineSpellbook
+                    && __instance.Caster.MTHasCastDivineSpell())
+                {
+                    __result = false;
+                    return;
+                };
+                if (__instance.Spellbook == __instance.Caster.Ensure<UnitPartMysticTheurge>().ArcaneSpellbook
+                    && __instance.Caster.MTHasCastArcaneSpell())
+                {
+                    __result = false;
+                    return;
+                };
             }
         }
 

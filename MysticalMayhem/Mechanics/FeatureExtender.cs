@@ -77,7 +77,7 @@ namespace MysticalMayhem.Mechanics
     }
 
     // Small extension to UnitDescriptor to shorten calls.
-    internal static class UnitEntityDataExtension
+    internal static class FeatureExtenderUnitEntityDataExtension
     {
         /// <summary>
         /// Fetch an extra feature from a UnitDescriptor.

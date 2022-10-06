@@ -1,0 +1,8 @@
+### Version 0.1.1e
+* Added the Malice hexcrafter arcana.
+* Added the Mystic Theurge's capstone ability, Spell Synthesis.
+* Added the Abundant Spell Synthesis mythic ability.
+* Razmir worshippers can't become Inquisitors anymore.
+* Fixed False Piety not giving the UMD bonus.
+* Fixed Circle of Order being half-overwritten by one of the Nature Spirit Manifestation's abilities (yes, really).
+* Fixed my poopoo progression patching code so it actually works.

@@ -1,0 +1,31 @@
+{
+  "AssetId": "2f958b54-63d1-41e9-8e0f-49a533a4dac4",
+  "PatchList": [ "AddIcon:cf_spell_synthesis" ],
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "Components": [
+      {
+        "$type": "e2755d66-d9c0-446b-aff0-e2327d91e177, AddSpellSynthesisUnitPart"
+      },
+      {
+        "$type": "fe14773b-352d-4179-aaee-eb8086d37626, SpellSynthesisMonitor"
+      }
+    ],
+    "m_DisplayName": {
+      "m_Key": "MM_SpellSynthesis_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_SpellSynthesis_Desc"
+    },
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "IsClassFeature": true,
+    "Stacking": "Replace",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "Rounds",
+    "FxOnStart": null,
+    "FxOnRemove": null,
+    "ResourceAssetIds": []
+  }
+}
