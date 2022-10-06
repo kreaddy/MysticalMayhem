@@ -144,18 +144,25 @@ namespace MysticalMayhem.Helpers
 
         public void AddIcon(string[] args)
         {
-            Main.Log(args[0]);
             (Blueprint as BlueprintUnitFact).m_Icon = ResourceHandler.Sprites[args[0]];
         }
 
         public void AddToProgression(string[] args)
         {
             var progression = BPLookup.Progression(args[0]);
-            var levelEntry = progression.GetLevelEntry(int.Parse(args[1]));
-            levelEntry.m_Features.Add(Blueprint.ToReference<BlueprintFeatureBaseReference>());
-            if (!progression.LevelEntries.Contains(levelEntry))
+            var levelEntries = progression.LevelEntries.Where(le => le.Level == int.Parse(args[1]));
+            if (levelEntries.Count() == 0)
             {
+                LevelEntry levelEntry = new()
+                {
+                    Level = int.Parse(args[1]),
+                    m_Features = new() { Blueprint.ToReference<BlueprintFeatureBaseReference>() }
+                };
                 progression.LevelEntries = progression.LevelEntries.Push(levelEntry);
+            }
+            else
+            {
+                levelEntries.First().m_Features.Add(Blueprint.ToReference<BlueprintFeatureBaseReference>());
             }
         }
 
