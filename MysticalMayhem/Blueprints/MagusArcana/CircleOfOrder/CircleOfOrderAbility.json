@@ -48,73 +48,9 @@
         }
       },
       {
-        "$type": "c53b6a74192ad9d43818c98797b7e0de, AbilityCasterHasNoFacts",
-        "name": "nature_manifest_animal_nofacts",
-        "m_Overrides": [],
-        "m_Facts": [
-          "!bp_301bb3a7-0ba1-49de-b86b-1f0d6b727713"
-        ]
-      },
-      {
-        "$type": "e4181e2a638237a4c9f02ceb97e297b7, AbilityExecuteActionOnCast",
-        "name": "nature_manifest_animal_execute_on_cast",
-        "m_Overrides": [],
-        "Conditions": {
-          "Operation": "And",
-          "Conditions": []
-        },
-        "Actions": {
-          "Actions": [
-            {
-              "$type": "5f950c181b3157a4486fcd36b702b702, ContextActionOnContextCaster",
-              "name": "nature_manifest_animal_context_on_caster",
-              "Actions": {
-                "Actions": [
-                  {
-                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-                    "name": "nature_manifest_animal_applybuff",
-                    "m_Buff": "!bp_ec586acdbf57b7d43be2a0f5ab563060",
-                    "Permanent": false,
-                    "UseDurationSeconds": false,
-                    "DurationValue": {
-                      "Rate": "Rounds",
-                      "DiceType": "Zero",
-                      "DiceCountValue": {
-                        "ValueType": "Simple",
-                        "Value": 0,
-                        "ValueRank": "Default",
-                        "ValueShared": "Damage",
-                        "Property": "None",
-                        "m_CustomProperty": null
-                      },
-                      "BonusValue": {
-                        "ValueType": "Simple",
-                        "Value": 1,
-                        "ValueRank": "Default",
-                        "ValueShared": "Damage",
-                        "Property": "None",
-                        "m_CustomProperty": null
-                      },
-                      "m_IsExtendable": true
-                    },
-                    "DurationSeconds": 0.0,
-                    "IsFromSpell": false,
-                    "IsNotDispelable": false,
-                    "ToCaster": false,
-                    "AsChild": true,
-                    "SameDuration": false
-                  }
-                ]
-              }
-            }
-          ]
-        }
-      },
-      {
         "$type": "2945aafe5b353dc49b283c982269ade6, AbilityResourceLogic",
-        "name": "nature_manifest_animal_resource_logic",
         "m_Overrides": [],
-        "m_RequiredResource": "!bp_32a75c63-161b-4eb7-85c5-9ca58c21781c",
+        "m_RequiredResource": "!bp_effc3e386331f864e9e06d19dc218b37",
         "m_IsSpendResource": true,
         "CostIsCustom": false,
         "Amount": 1,
