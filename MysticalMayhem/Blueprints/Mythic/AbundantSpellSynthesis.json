@@ -1,5 +1,6 @@
 {
   "AssetId": "0a784b9c-b7cb-477a-b2f1-752224854fd2",
+  "Homebrew": true,
   "PatchList": [ "AddIcon:cf_spell_synthesis", "AddAsMythicAbility" ],
   "Data": {
     "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
