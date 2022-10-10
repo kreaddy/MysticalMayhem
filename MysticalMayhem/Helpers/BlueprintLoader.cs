@@ -48,9 +48,18 @@ namespace MysticalMayhem.Helpers
             {
                 return;
             }
+            var descriptions = localizationPack.m_Strings.Keys
+                .Where(k => k.Contains("Desc") || k.Contains("Buff"))
+                .ToArray();
+
+            for (var i = 0; i < descriptions.Count(); i++)
+            {
+                var text = DescriptionTools.TagEncyclopediaEntries(localizationPack.m_Strings[descriptions[i]].Text);
+                localizationPack.m_Strings[descriptions[i]] = new() { Text = text };
+            }
             currentPack.AddStrings(localizationPack);
 
-            if (File.Exists(Path.Combine(Main.Mod.Path, "SKP", "star.json")))
+            if (File.Exists(Path.Combine(Main.Mod.Path, "Localization", "star.json")))
             {
                 InjectAdds();
             }
@@ -73,12 +82,21 @@ namespace MysticalMayhem.Helpers
 
         private static void InjectAdds()
         {
-            var localizationPack = LocalizationManager.LoadPack(Path.Combine(Main.Mod.Path, "SKP", "star.json"),
+            var localizationPack = LocalizationManager.LoadPack(Path.Combine(Main.Mod.Path, "Localization", "star.json"),
                 LocalizationManager.CurrentLocale);
             LocalizationPack currentPack = LocalizationManager.CurrentPack;
             if (currentPack == null)
             {
                 return;
+            }
+            var descriptions = localizationPack.m_Strings.Keys
+                .Where(k => k.Contains("Desc") || k.Contains("Buff"))
+                .ToArray();
+
+            for (var i = 0; i < descriptions.Count(); i++)
+            {
+                var text = DescriptionTools.TagEncyclopediaEntries(localizationPack.m_Strings[descriptions[i]].Text);
+                localizationPack.m_Strings[descriptions[i]] = new() { Text = text };
             }
             currentPack.AddStrings(localizationPack);
         }

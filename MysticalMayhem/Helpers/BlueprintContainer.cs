@@ -1,9 +1,12 @@
 ﻿using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Selection;
+using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.Facts;
+using Kingmaker.Blueprints.Root;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Newtonsoft.Json;
+using System;
 using System.Linq;
 using System.Reflection;
 
@@ -13,8 +16,8 @@ namespace MysticalMayhem.Helpers
     {
         private string assetGuid;
         private SimpleBlueprint blueprint;
-        private string[] patchList = new string[0];
         private bool homebrew = false;
+        private string[] patchList = new string[0];
 
         [JsonProperty]
         public string AssetGuid { get => assetGuid; set => assetGuid = value; }
@@ -23,10 +26,10 @@ namespace MysticalMayhem.Helpers
         public SimpleBlueprint Blueprint { get => blueprint; set => blueprint = value; }
 
         [JsonProperty]
-        public string[] PatchList { get => patchList; set => patchList = value; }
+        public bool Homebrew { get => homebrew; set => homebrew = value; }
 
         [JsonProperty]
-        public bool Homebrew { get => homebrew; set => homebrew = value; }
+        public string[] PatchList { get => patchList; set => patchList = value; }
 
         public static void UIGroupPatchGeneric(string[] args)
         {
@@ -181,11 +184,51 @@ namespace MysticalMayhem.Helpers
         {
             FixPrefabLinks();
             FixComponentNames();
-            TagDescriptions();
 
             if (Homebrew && Settings.IsEnabled("mm.no.hb")) return;
 
             ApplyPatches();
+        }
+
+        public void RegisterClass(string[] _)
+        {
+            var root = BPLookup.GetBP<BlueprintRoot>("BlueprintRoot").Progression;
+            var classList = root.m_CharacterClasses.Where(c => !c.Get().PrestigeClass).ToList();
+            var prestigeList = root.m_CharacterClasses.Where(c => c.Get().PrestigeClass).ToList();
+            if ((Blueprint as BlueprintCharacterClass).PrestigeClass)
+            {
+                prestigeList.Add(Blueprint.ToReference<BlueprintCharacterClassReference>());
+                prestigeList = prestigeList.OrderBy(c => c.Get().NameSafe()).ToList();
+            }
+            else
+            {
+                classList.Add(Blueprint.ToReference<BlueprintCharacterClassReference>());
+                classList = classList.OrderBy(c => c.Get().NameSafe()).ToList();
+            }
+            root.m_CharacterClasses = classList.Concat(prestigeList).ToArray();
+        }
+
+        public void RegisterSpellList(string[] _)
+        {
+            (Blueprint as BlueprintSpellList)
+                .SpellsByLevel
+                .ForEach(list => list.m_Spells
+                .ForEach(spell => spell.Get().ComponentsArray = spell.Get().ComponentsArray
+                .Push(new SpellListComponent()
+                {
+                    SpellLevel = list.SpellLevel,
+                    m_SpellList = (Blueprint as BlueprintSpellList).ToReference<BlueprintSpellListReference>()
+                })));
+        }
+
+        public void SKPPatch(string[] args)
+        {
+            string[] patchParts = args[0].Split(':');
+            if (Type.GetType("MysticalMayhem.SKP.Starion").GetMethod(patchParts[0]) != null)
+            {
+                MethodInfo method = Type.GetType("MysticalMayhem.SKP.Starion").GetMethod(patchParts[0]);
+                method.Invoke(this, new object[] { });
+            }
         }
 
         public void SpecialPatch(string[] args)
@@ -197,6 +240,7 @@ namespace MysticalMayhem.Helpers
                 method.Invoke(this, new object[] { });
             }
         }
+
         private void ApplyPatches()
         {
             if (PatchList == null) return;
@@ -231,22 +275,6 @@ namespace MysticalMayhem.Helpers
             var buff = Blueprint as BlueprintBuff;
             if (buff.FxOnStart == null) buff.FxOnStart = new();
             if (buff.FxOnRemove == null) buff.FxOnRemove = new();
-        }
-
-        private void TagDescriptions()
-        {
-            if (Blueprint is BlueprintArchetype)
-            {
-                (Blueprint as BlueprintArchetype).LocalizedDescription?.TagForEncyclopedia();
-            }
-            if (Blueprint is BlueprintCharacterClass)
-            {
-                (Blueprint as BlueprintCharacterClass).LocalizedDescription?.TagForEncyclopedia();
-            }
-            if (Blueprint is BlueprintUnitFact)
-            {
-                (Blueprint as BlueprintUnitFact).m_Description?.TagForEncyclopedia();
-            }
         }
     }
 }
