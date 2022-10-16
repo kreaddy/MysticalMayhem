@@ -8,6 +8,7 @@ using Kingmaker.RuleSystem;
 using Kingmaker.UnitLogic;
 using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Parts;
@@ -129,6 +130,41 @@ namespace MysticalMayhem.HarmonyPatches
             }
         }
 
+        // Spontaneous conversion for shadow spells nonsense.
+        [HarmonyPatch(typeof(AbilityData), "AddAbilityUnique")]
+        internal class AbilityData_AddAbilityUnique_MM
+        {
+            [HarmonyPrefix]
+            private static bool AddAbilityUnique(ref List<AbilityData> result, AbilityData ability)
+            {
+                if (!ability.AbilityShadowSpell) return true;
+
+                result = result ?? new();
+
+                foreach (BlueprintAbility blueprintAbility2 in ability.AbilityShadowSpell.GetAvailableSpells())
+                {
+                    AbilityVariants abilityVariants2 = blueprintAbility2.AbilityVariants.Or(null);
+                    ReferenceArrayProxy<BlueprintAbility, BlueprintAbilityReference>? referenceArrayProxy3 = 
+                        (abilityVariants2 != null) ? 
+                        new ReferenceArrayProxy<BlueprintAbility, BlueprintAbilityReference>?(abilityVariants2.Variants) : null;
+                    if (referenceArrayProxy3 != null)
+                    {
+                        using (ReferenceArrayProxy<BlueprintAbility, BlueprintAbilityReference>.Enumerator enumerator = referenceArrayProxy3.Value.GetEnumerator())
+                        {
+                            while (enumerator.MoveNext())
+                            {
+                                BlueprintAbility replaceBlueprint3 = enumerator.Current;
+                                AbilityData.AddAbilityUnique(ref result, new AbilityData(ability, replaceBlueprint3));
+                            }
+                            continue;
+                        }
+                    }
+                    AbilityData.AddAbilityUnique(ref result, new AbilityData(ability, blueprintAbility2));
+                }
+                return false;
+            }
+        }
+
         [HarmonyPatch(typeof(Spellbook), "GetSpontaneousConversionSpells", typeof(AbilityData))]
         internal class Spellbook_GetSpontaneousConversionSpells_MM
         {
@@ -152,18 +188,41 @@ namespace MysticalMayhem.HarmonyPatches
                     var selection = BPLookup.Selection("PactWizardPatronSelection", true);
                     var patron = (BlueprintProgression)__instance.Owner.Progression.Selections[selection].GetSelections(1).First();
                     var list = new List<BlueprintAbility>();
+                    var shadowSpells = new Dictionary<SpellSchool, BlueprintAbility>();
                     foreach (var entry in patron.LevelEntries)
                     {
                         if (entry.Level > __instance.Owner.Progression.GetClassLevel(wizard))
-                        {
                             continue;
-                        }
+
                         var components = entry.Features.Select(f => f.GetComponent<AddKnownSpell>());
                         foreach (var comp in components)
                         {
                             if (comp.SpellLevel <= spellLevel)
                             {
-                                list.Add(comp.m_Spell.Get());
+                                // More shadow spell nonsense.
+                                var cSpell = comp.m_Spell.Get();
+                                if (cSpell.GetComponent<AbilityShadowSpell>() != null)
+                                {
+                                    var scomp = cSpell.GetComponent<AbilityShadowSpell>();
+                                    if (shadowSpells.ContainsKey(scomp.School))
+                                    {
+                                        if (shadowSpells[scomp.School].GetComponent<AbilityShadowSpell>().MaxSpellLevel <= scomp.MaxSpellLevel)
+                                        {
+                                            list.Remove(shadowSpells[scomp.School]);
+                                            list.Add(cSpell);
+                                            shadowSpells.Remove(scomp.School);
+                                            shadowSpells.Add(scomp.School, cSpell);
+                                        }
+                                        continue;
+                                    }
+                                    shadowSpells.Add(scomp.School, cSpell);
+                                } // End of shadow spell nonseeeeeeeeeeeeense TT_TT
+                                if (cSpell.HasVariants)
+                                {
+                                    foreach (var variant in cSpell.m_AbilityVariants.Value.m_Variants)
+                                        list.Add(variant.Get());
+                                }
+                                else list.Add(comp.m_Spell.Get());
                             }
                         }
                     }

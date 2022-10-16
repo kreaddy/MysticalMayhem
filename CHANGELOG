@@ -1,3 +1,9 @@
+### Version 0.1.1i
+* Shadow spells now work correctly with spontaneous conversion.
+* Abundant Spell Synthesis is now correctly tagged as homebrew.
+* Fixed the auto-tagging system for descriptions.
+* Earth Magic is friendlier to mods that may give the Favored Terrain feature to other classes.
+
 ### Version 0.1.1e
 * Added the Malice hexcrafter arcana.
 * Added the Mystic Theurge's capstone ability, Spell Synthesis.

@@ -14,9 +14,6 @@ namespace MysticalMayhem.HarmonyPatches
             private static void MM_Init()
             {
                 ResourceHandler.AddBundle("MM_icons");
-#if false
-                ResourceHandler.AddBundle("mm_star");
-#endif
                 Settings.Initialize();
                 BlueprintLoader.LoadBlueprints();
             }

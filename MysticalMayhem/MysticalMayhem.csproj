@@ -4,6 +4,7 @@
 	<LangVersion>latest</LangVersion>
     <TargetFramework>net472</TargetFramework>
     <AssemblyName>MysticalMayhem</AssemblyName>
+    <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
@@ -18,8 +19,11 @@
 
   <ItemGroup>
     <Compile Remove="Content\**" />
+    <Compile Remove="SKP\**" />
     <EmbeddedResource Remove="Content\**" />
+    <EmbeddedResource Remove="SKP\**" />
     <None Remove="Content\**" />
+    <None Remove="SKP\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -51,6 +55,7 @@
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWaves.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWind.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\NatureSpiritPlantBuff.json" />
+    <None Remove="Localization\star.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -179,6 +184,10 @@
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Management" />
     <Reference Include="System.ServiceProcess" />
+    <Reference Include="UniRx">
+      <HintPath>$(WrathPath)\Wrath_Data\Managed\UniRx.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
     <Reference Include="UnityEngine.AssetBundleModule">
       <HintPath>$(WrathPath)\Wrath_Data\Managed\UnityEngine.AssetBundleModule.dll</HintPath>
       <Private>false</Private>
@@ -212,9 +221,6 @@
     <None Update="AssetBundles\MM_icons.meta">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="AssetBundles\mm_star">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Update="AssetBundles\mm_star.meta">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -225,9 +231,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Localization\English.json">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Update="Localization\star.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

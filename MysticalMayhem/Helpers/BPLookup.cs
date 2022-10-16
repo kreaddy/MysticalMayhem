@@ -41,7 +41,7 @@ namespace MysticalMayhem.Helpers
 
         public static BlueprintSpellList SpellList(string id, bool mod = false) => GetBP<BlueprintSpellList>(id, mod);
 
-        public static BlueprintStatProgression StatProgression(string id) => GetBP<BlueprintStatProgression>(id);
+        public static BlueprintStatProgression StatProgression(string id, bool mod = false) => GetBP<BlueprintStatProgression>(id, mod);
 
         public static T GetBP<T>(string id, bool mod = false) where T : BlueprintScriptableObject
         {

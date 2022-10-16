@@ -221,14 +221,10 @@ namespace MysticalMayhem.Helpers
                 })));
         }
 
-        public void SKPPatch(string[] args)
+        public void ReorderAlphabetically(string[] _)
         {
-            string[] patchParts = args[0].Split(':');
-            if (Type.GetType("MysticalMayhem.SKP.Starion").GetMethod(patchParts[0]) != null)
-            {
-                MethodInfo method = Type.GetType("MysticalMayhem.SKP.Starion").GetMethod(patchParts[0]);
-                method.Invoke(this, new object[] { });
-            }
+            (Blueprint as BlueprintFeatureSelection).m_AllFeatures =
+                (Blueprint as BlueprintFeatureSelection).m_AllFeatures.OrderByDescending(f => f.NameSafe()).ToArray();
         }
 
         public void SpecialPatch(string[] args)
