@@ -34,10 +34,11 @@ Content
 |Spell Synthesis|Class Feature|Add the Mystic Theurge's capstone.|No|
 |Manifestations|Class Feature|Add the capstones to Shaman spirits. They have been adapted to the game the same way Owlcat adapted the final revelations for Oracle mysteries (they're virtually identical).|No|
 |*Meteor Swarm (Pending)*|Spell|Add the level 9 Wizard spell Meteor Swarm.<br>It's quite simplified from its TT version because having to pick 4 targets every time you cast it would be annoying. It now simply deals 28d6 fire damage in an area (to counterbalance the fact the save penalty after the touch attack doesn't exist anymore). Might need a balance pass.|No|
+|*Baldur's Gate Stoneskin (Pending)*|Spell|**Disabled by default**<br>Changes Stoneskin to be closer to its [Baldur's Gate incarnation](https://baldursgate.fandom.com/wiki/Stoneskin).|Yes|
 
 Settings
 -----------
-Because this mod uses Mod Menu, settings are in the game settings: Settings > Mods > Mystical Mayhem. There is only one so far, allowing you to disable all homebrew content if you desire.
+Because this mod uses Mod Menu, settings are in the game settings: Settings > Mods > Mystical Mayhem.
 
 FAQ & Troubleshooting
 -----------

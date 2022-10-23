@@ -1,13 +1,15 @@
 ﻿using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Prerequisites;
-using Kingmaker.Blueprints.Classes.Spells;
+using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.UnitLogic.Abilities.Components;
+using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.FactLogic;
+using Kingmaker.UnitLogic.Mechanics;
+using Kingmaker.UnitLogic.Mechanics.Actions;
 using MysticalMayhem.Helpers;
 using MysticalMayhem.Mechanics;
 using System.Linq;
-using System.Reflection;
-using System.Collections.Generic;
 
 namespace MysticalMayhem
 {
@@ -21,6 +23,7 @@ namespace MysticalMayhem
         };
 
         #region Patches
+
         // Patch called by the PactWizardArchetype blueprint, mostly to add spells from patrons and curses to its wizard spellbook.
         public static void PactWizard()
         {
@@ -49,7 +52,7 @@ namespace MysticalMayhem
                 );
 
                 // Patch the patron spells so they're added to the wizard's spellbook.
-                var container = new SpellListContainer() 
+                var container = new SpellListContainer()
                 {
                     name = $"PactWizardSLContainer_{patron.AssetGuid}"
                 };
@@ -83,8 +86,8 @@ namespace MysticalMayhem
             {
                 var curse = (BlueprintProgression)reference.Get();
 
-                var container = new SpellListContainer() 
-                { 
+                var container = new SpellListContainer()
+                {
                     name = $"PactWizardSLContainer_{curse.AssetGuid}"
                 };
 
@@ -161,11 +164,35 @@ namespace MysticalMayhem
             BPLookup.Selection("DeitySelection").m_AllFeatures
             .Where(f => f.guid != BPLookup.GetGuid("Razmir"))
             .ForEach(f => BanArchetypeInFeature(f.Get(), "SorcererClass", "RazmiranPriestArchetype"));
-
         }
-        #endregion
+
+        // Patch called by the BlueprintCache hook, perform blueprint edits to the Stoneskin buff and ability blueprints.
+        public static void ApplyStoneskinChanges()
+        {
+            var buffs = new BlueprintBuff[]
+            {
+                BPLookup.Buff("StoneskinBuff"), BPLookup.Buff("StoneskinMassBuff")
+            };
+
+            buffs.ForEach(buff =>
+                buff.ComponentsArray = new BlueprintComponent[] { new StoneskinLogic() { name = $"{buff.AssetGuid}mmstoneskinlogic" } });
+
+            var spell = BPLookup.Ability("Stoneskin");
+            spell.m_Description.m_Key = "MM_Stoneskin_Desc";
+            spell.LocalizedDuration.m_Key = "MM_12hours";
+            spell.MaterialComponent.Count = 10;
+            spell.CanTargetFriends = false;
+            spell.Range = AbilityRange.Personal;
+
+            spell = BPLookup.Ability("StoneskinMass");
+            spell.m_Description.m_Key = "MM_StoneskinMass_Desc";
+            spell.MaterialComponent.Count = 20;
+        }
+
+        #endregion Patches
 
         #region Helpers
+
         private static void RazmiranPriestAddSpellKnownPatch(LevelEntry entry)
         {
             entry.m_Features
@@ -189,6 +216,7 @@ namespace MysticalMayhem
                     name = $"RazmirPrereq{feature.ComponentsArray.Length}"
                 });
         }
-        #endregion
+
+        #endregion Helpers
     }
 }

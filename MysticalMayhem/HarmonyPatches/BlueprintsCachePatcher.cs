@@ -16,6 +16,8 @@ namespace MysticalMayhem.HarmonyPatches
                 ResourceHandler.AddBundle("MM_icons");
                 Settings.Initialize();
                 BlueprintLoader.LoadBlueprints();
+
+                if (Settings.IsEnabled("mm.adnd.stoneskin") && !Settings.IsEnabled("mm.no.homebrew")) PostPatches.ApplyStoneskinChanges();
             }
         }
     }

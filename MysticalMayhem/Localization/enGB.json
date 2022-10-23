@@ -424,6 +424,22 @@
     {
       "Key": "MM_MeteorSwarm_Desc",
       "Value": "Meteor swarm is a very powerful and spectacular spell. When you cast it, four blazing meteors fall down in the area you select. Once they reach the ground they explode, dealing 28d6 fire damage to every creature in the area."
+    },
+    {
+      "Key": "MM_S_Adnd_Stoneskin",
+      "Value": "Baldur's Gate Stoneskin"
+    },
+    {
+      "Key": "MM_S_Adnd_Stoneskin_Desc",
+      "Value": "Changes the Stoneskin spell to be closer to its Baldur's Gate version."
+    },
+    {
+      "Key": "MM_Stoneskin_Desc",
+      "Value": "This spell creates an outer skin of stone that completely covers the caster. This skin is of course magical and will hinder the caster in no way. It protects from physical attacks such as melee weapons and projectiles. For every 2 caster levels, an additional skin is gained upon casting (to a maximum of 10 skins at 20th caster level). For each skin the caster possesses, the spell will stop one attack. If all the skins are removed, the spells ends. It is important to note that this will not protect the caster from any energy or force attacks."
+    },
+    {
+      "Key": "MM_StoneskinMass_Desc",
+      "Value": "This spell creates an outer skin of stones that completely allies within 30 feet of the caster. This skin is of course magical and will hinder the targets in no way. It protects from physical attacks such as melee weapons and projectiles. For every 2 caster levels, an additional skin is gained upon casting (to a maximum of 10 skins at 20th caster level). For each skin the target possesses, the spell will stop one attack. If all the skins are removed, the spells ends. It is important to note that this will not protect the target from any energy or force attacks."
     }
   ]
 }

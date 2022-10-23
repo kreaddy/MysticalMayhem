@@ -20,7 +20,9 @@ namespace MysticalMayhem.Helpers
         {
             var settings = SettingsBuilder.New(RootKey, GetString("MM_S_Title"))
                 .AddToggle(Toggle.New(GetKey("mm.no.hb"), defaultValue: false, GetString("MM_S_NoHomebrew"))
-                .WithLongDescription(GetString("MM_S_NoHomebrew_Desc")));
+                .WithLongDescription(GetString("MM_S_NoHomebrew_Desc")))
+                .AddToggle(Toggle.New(GetKey("mm.adnd.stoneskin"), defaultValue: true, GetString("MM_S_Adnd_Stoneskin"))
+                .WithLongDescription(GetString("MM_S_Andn_Stoneskin_Desc")));
 
             Menu.AddSettings(settings);
         }
