@@ -55,6 +55,8 @@
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWaves.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWind.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\NatureSpiritPlantBuff.json" />
+    <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
+    <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
     <None Remove="Localization\star.json" />
   </ItemGroup>
 
@@ -137,6 +139,8 @@
     <EmbeddedResource Include="Blueprints\Archetypes\PactWizard\PactWizardCurseSelection.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\PactWizard\PactWizardPatronSelection.json" />
     <EmbeddedResource Include="Blueprints\Mythic\MaterialFreedom\MaterialFreedomSelection.json" />
+    <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
+    <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
     <EmbeddedResource Include="BPRepo.json" />
   </ItemGroup>
 

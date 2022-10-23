@@ -4,9 +4,9 @@ using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.Facts;
 using Kingmaker.Blueprints.Root;
+using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Newtonsoft.Json;
-using System;
 using System.Linq;
 using System.Reflection;
 
@@ -169,6 +169,20 @@ namespace MysticalMayhem.Helpers
             }
         }
 
+        public void AddToSpellLists(string[] args)
+        {
+            for (int i = 0; i < args.Length; i += 2)
+            {
+                var spellList = BPLookup.SpellList($"{args[i]}SpellList");
+                spellList.SpellsByLevel[int.Parse(args[i + 1])].m_Spells.Add((Blueprint as BlueprintAbility).ToReference<BlueprintAbilityReference>());
+                (Blueprint as BlueprintAbility).ComponentsArray = (Blueprint as BlueprintAbility).ComponentsArray
+                    .Push(new SpellListComponent()
+                    {
+                        m_SpellList = spellList.ToReference<BlueprintSpellListReference>(),
+                        SpellLevel = int.Parse(args[i + 1])
+                    });
+            }
+        }
         public void CopyIconFromAbility(string[] args)
         {
             (Blueprint as BlueprintUnitFact).m_Icon = BPLookup.Ability(args[0]).m_Icon;

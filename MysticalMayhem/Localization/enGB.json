@@ -416,6 +416,14 @@
     {
       "Key": "MM_MythicSpellSynthesis_Desc",
       "Value": "Your ability to wield the powers of both the arcane and the divine is truly legendary.\nBenefit: You can use your Spell Synthesis ability an additional time for every three mythic ranks."
+    },
+    {
+      "Key": "MM_MeteorSwarm_Name",
+      "Value": "Meteor Swarm"
+    },
+    {
+      "Key": "MM_MeteorSwarm_Desc",
+      "Value": "Meteor swarm is a very powerful and spectacular spell. When you cast it, four blazing meteors fall down in the area you select. Once they reach the ground they explode, dealing 28d6 fire damage to every creature in the area."
     }
   ]
 }

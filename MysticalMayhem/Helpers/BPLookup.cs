@@ -2,6 +2,7 @@
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
+using Kingmaker.Blueprints.Items.Weapons;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
@@ -42,6 +43,8 @@ namespace MysticalMayhem.Helpers
         public static BlueprintSpellList SpellList(string id, bool mod = false) => GetBP<BlueprintSpellList>(id, mod);
 
         public static BlueprintStatProgression StatProgression(string id, bool mod = false) => GetBP<BlueprintStatProgression>(id, mod);
+
+        public static BlueprintItemWeapon Weapon(string id, bool mod = false) => GetBP<BlueprintItemWeapon>(id, mod);
 
         public static T GetBP<T>(string id, bool mod = false) where T : BlueprintScriptableObject
         {
