@@ -4,6 +4,7 @@ using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.Facts;
 using Kingmaker.Blueprints.Root;
+using Kingmaker.Craft;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Newtonsoft.Json;
@@ -148,6 +149,12 @@ namespace MysticalMayhem.Helpers
         public void AddIcon(string[] args)
         {
             (Blueprint as BlueprintUnitFact).m_Icon = ResourceHandler.Sprites[args[0]];
+        }
+
+        public void AddToCraftingList(string[] _)
+        {
+            var root = BPLookup.GetBP<CraftRoot>("CraftRoot");
+            root.m_ScrollsItems.Add(Blueprint.ToReference<BlueprintItemEquipmentUsableReference>());
         }
 
         public void AddToProgression(string[] args)

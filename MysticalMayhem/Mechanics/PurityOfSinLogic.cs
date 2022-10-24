@@ -37,7 +37,8 @@ namespace MysticalMayhem.Mechanics
 
         public void OnEventAboutToTrigger(RuleCalculateAbilityParams evt)
         {
-            if (evt.Initiator != Owner || evt.AbilityData == null || evt.Spell == null || evt.AbilityData.Spellbook == null) return;
+            if (evt.Initiator != Owner || evt.AbilityData == null || evt.Spell == null || evt.Spell.School == SpellSchool.None ||
+                evt.Spell.School == SpellSchool.Universalist || evt.AbilityData.Spellbook == null) return;
             if (_dict[evt.Spell.School] != null && BPLookup.Spellbook(_dict[evt.Spell.School]).AssetGuid == evt.AbilityData.SpellbookBlueprint.AssetGuid)
             {
                 evt.AddBonusCasterLevel(Bonus);

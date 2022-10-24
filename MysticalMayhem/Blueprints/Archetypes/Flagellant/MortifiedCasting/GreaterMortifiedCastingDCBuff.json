@@ -3,13 +3,11 @@
   "PatchList": [ "AddIcon:a_mortified" ],
   "Data": {
     "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
-    "PrototypeLink": null,
-    "m_Overrides": [],
     "Components": [
       {
-        "$type": "65c8dedf73cc0614298f8f2281d2a0e0, AddCasterLevelForSpellbook",
-        "name": "mm_gmortified_casting_dc_buff_bonus_cl",
-        "Bonus": 2,
+        "$type": "b08149a0e7803034cb8b7752e2d434f2, IncreaseSpellSpellbookDC",
+        "name": "mm_gmortified_casting_dc_buff_bonus_dc",
+        "BonusDC": 2,
         "Descriptor": "UntypedStackable",
         "m_Spellbooks": [
           "!bp_4673d19a0cf2fab4f885cc4d1353da33"
@@ -18,11 +16,6 @@
       {
         "$type": "1c2eac83b528cef478121194c8c7f502, AddAbilityUseTrigger",
         "name": "mm_gmortified_casting_dc_buff_trigger",
-        "PrototypeLink": {
-          "guid": "",
-          "name": ""
-        },
-        "m_Overrides": [],
         "Action": {
           "Actions": [
             {
@@ -31,28 +24,28 @@
             }
           ]
         },
-        "ActionsOnAllTargets": "false",
-        "AfterCast": "true",
-        "ActionsOnTarget": "false",
-        "FromSpellbook": "true",
+        "ActionsOnAllTargets": false,
+        "AfterCast": true,
+        "ActionsOnTarget": false,
+        "FromSpellbook": true,
         "m_Spellbooks": [
           "!bp_4673d19a0cf2fab4f885cc4d1353da33"
         ],
-        "ForOneSpell": "false",
-        "m_Ability": "null",
-        "ForMultipleSpells": "false",
+        "ForOneSpell": false,
+        "m_Ability": null,
+        "ForMultipleSpells": false,
         "Abilities": [],
-        "MinSpellLevel": "false",
-        "MinSpellLevelLimit": "0",
-        "ExactSpellLevel": "false",
-        "ExactSpellLevelLimit": "0",
-        "CheckAbilityType": "false",
+        "MinSpellLevel": false,
+        "MinSpellLevelLimit": 0,
+        "ExactSpellLevel": false,
+        "ExactSpellLevelLimit": 0,
+        "CheckAbilityType": false,
         "Type": "Spell",
-        "CheckDescriptor": "false",
+        "CheckDescriptor": false,
         "SpellDescriptor": {
-          "m_IntValue": "0"
+          "m_IntValue": 0
         },
-        "CheckRange": "false",
+        "CheckRange": false,
         "Range": "Touch"
       },
       {

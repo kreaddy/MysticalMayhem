@@ -3,8 +3,6 @@
   "PatchList": [ "AddIcon:a_mortified" ],
   "Data": {
     "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
-    "PrototypeLink": null,
-    "m_Overrides": [],
     "Components": [
       {
         "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
@@ -16,7 +14,7 @@
             {
               "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
               "name": "mm_flagellant_gmortified_dc_ab_apply_buff",
-              "m_Buff": "!bp_cb2c65f4-ee4a-4ab9-89a9-5907d69e650d",
+              "m_Buff": "!bp_63de8c8c-0c9b-4dfb-921f-914b9c8a4659",
               "Permanent": false,
               "UseDurationSeconds": false,
               "DurationValue": {
@@ -24,7 +22,7 @@
                 "DiceType": "Zero",
                 "DiceCountValue": {
                   "ValueType": "Simple",
-                  "Value": 1,
+                  "Value": 0,
                   "ValueRank": "Default",
                   "ValueShared": "Damage",
                   "Property": "None",

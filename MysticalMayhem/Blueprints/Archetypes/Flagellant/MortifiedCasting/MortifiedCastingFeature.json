@@ -13,11 +13,11 @@
         "m_Facts": [
           "!bp_05f7863c-f963-4a3f-abcc-a611f9ba85b5"
         ],
-        "Dummy": "null",
-        "CasterLevel": "0",
-        "DoNotRestoreMissingFacts": "false",
-        "HasDifficultyRequirements": "false",
-        "InvertDifficultyRequirements": "false",
+        "Dummy": null,
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
         "MinDifficulty": "Story"
       }
     ],
@@ -35,7 +35,7 @@
     "DlcType": "None",
     "Groups": [],
     "Ranks": 1,
-    "ReapplyOnLevelUp": true,
+    "ReapplyOnLevelUp": false,
     "IsClassFeature": true,
     "IsPrerequisiteFor": null
   }

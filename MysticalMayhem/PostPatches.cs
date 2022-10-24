@@ -179,7 +179,6 @@ namespace MysticalMayhem
 
             var spell = BPLookup.Ability("Stoneskin");
             spell.m_Description.m_Key = "MM_Stoneskin_Desc";
-            spell.LocalizedDuration.m_Key = "MM_12hours";
             spell.MaterialComponent.Count = 10;
             spell.CanTargetFriends = false;
             spell.Range = AbilityRange.Personal;
