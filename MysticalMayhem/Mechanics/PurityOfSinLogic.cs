@@ -25,13 +25,13 @@ namespace MysticalMayhem.Mechanics
         {
             _dict = new()
             {
-                { SpellSchool.Abjuration, "ThassAbjurationSpellBook" },
-                { SpellSchool.Conjuration, "ThassConjurationSpellBook" },
-                { SpellSchool.Enchantment, "ThassEnchantmentSpellBook" },
-                { SpellSchool.Evocation, "ThassEvocationSpellBook" },
-                { SpellSchool.Illusion, "ThassIllusionSpellBook" },
-                { SpellSchool.Necromancy, "ThassNecromancySpellBook" },
-                { SpellSchool.Transmutation, "ThassTransmutationSpellBook" }
+                { SpellSchool.Abjuration, "ThassAbjurationSpellbook" },
+                { SpellSchool.Conjuration, "ThassConjurationSpellbook" },
+                { SpellSchool.Enchantment, "ThassEnchantmentSpellbook" },
+                { SpellSchool.Evocation, "ThassEvocationSpellbook" },
+                { SpellSchool.Illusion, "ThassIllusionSpellbook" },
+                { SpellSchool.Necromancy, "ThassNecromancySpellbook" },
+                { SpellSchool.Transmutation, "ThassTransmutationSpellbook" }
             };
         }
 
