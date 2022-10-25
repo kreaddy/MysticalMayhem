@@ -1,3 +1,7 @@
+### Version 0.1.2c
+* Stoneskin changes are now correctly disabled by default.
+* Mortified Casting doesn't wreck your HP anymore if you use it with Cure/Inflict spells or the Belt of Demonic Shadows.
+
 ### Version 0.1.2b
 * Added the Meteor Swarm spell.
 * Changed Stoneskin to be closer to its Baldur's Gate counterpart (disabled by default).
