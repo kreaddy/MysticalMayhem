@@ -1,3 +1,6 @@
+### Version 0.1.3
+* Chinese localization courtesy of Kifusou.
+
 ### Version 0.1.2c
 * Stoneskin changes are now correctly disabled by default.
 * Mortified Casting doesn't wreck your HP anymore if you use it with Cure/Inflict spells or the Belt of Demonic Shadows.

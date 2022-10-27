@@ -237,6 +237,9 @@
     <None Update="Localization\English.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Localization\zhCN.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 	<Target Name="Publicize" AfterTargets="Clean">
