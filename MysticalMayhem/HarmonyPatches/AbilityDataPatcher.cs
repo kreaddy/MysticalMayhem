@@ -217,9 +217,9 @@ namespace MysticalMayhem.HarmonyPatches
                                     }
                                     shadowSpells.Add(scomp.School, cSpell);
                                 } // End of shadow spell nonseeeeeeeeeeeeense TT_TT
-                                if (cSpell.HasVariants)
+                                if (cSpell.GetComponent<AbilityVariants>() != null)
                                 {
-                                    foreach (var variant in cSpell.m_AbilityVariants.Value.m_Variants)
+                                    foreach (var variant in cSpell.GetComponent<AbilityVariants>().m_Variants)
                                         list.Add(variant.Get());
                                 }
                                 else list.Add(comp.m_Spell.Get());
