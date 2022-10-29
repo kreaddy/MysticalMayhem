@@ -1,5 +1,4 @@
 ﻿{
-  // Tiret cadratin: ALT+0151
   "strings": [
     {
       "Key": "MM_MaterialFreedom_Name",
@@ -255,7 +254,7 @@
     },
     {
       "Key": "MM_Shaman20_Bones_Desc",
-      "Value": "20级时，萨满化身为死亡之灵。他可以随意施放操纵亡者，并可以每日一次以类法术能力施放律令死亡。"
+      "Value": "20级时，萨满化身为死亡之灵。他可以随意施放操纵亡灵，并可以每日一次以类法术能力施放律令死亡。"
     },
     {
       "Key": "MM_Shaman20_Flame_Desc",
@@ -307,7 +306,7 @@
     },
     {
       "Key": "MM_SchoolExpertise_Desc",
-      "Value": "你花时间进一步研究了你选择的法术学派。\n效果：你的专精学派能力获得额外3次使用次数。你可以多次选取这项发现。"
+      "Value": "你花时间进一步研究了你选择的法术学派。\n效果：你的专精学派法术获得额外的3个每日法术位。你可以多次选取这项发现。"
     },
     {
       "Key": "MM_Corrupted_Dragon_Prereq",
