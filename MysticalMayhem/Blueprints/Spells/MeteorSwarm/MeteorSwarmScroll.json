@@ -1,6 +1,6 @@
 {
   "AssetId": "b29b3e77-abc6-4b33-9204-11c3acee4f11",
-  "PatchList": [ "AddIcon:s_meteor_swarm", "AddToCraftingList" ],
+  "PatchList": [ "AddIcon:scrl_meteor_swarm", "AddToCraftingList" ],
   "Data": {
     "$type": "fcf558235c4e3b747933f93af7617f7c, BlueprintItemEquipmentUsable",
     "Components": [
