@@ -118,7 +118,7 @@
               "$type": "4e5ac5e97bccb29429a528734d2051b2, ContextActionSpawnAreaEffect",
               "m_AreaEffect": "!bp_592d0331-b0ed-48b8-b423-bac0c4f7cba1",
               "DurationValue": {
-                "Rate": "Seconds",
+                "Rate": "Rounds",
                 "DiceType": "Zero",
                 "DiceCountValue": {
                   "ValueType": "Simple",
