@@ -6,7 +6,7 @@
     "m_Overrides": [],
     "Components": [
       {
-        "$type": "e2755d66-d9c0-446b-aff0-e2327d91e177, IgnoreSpellMaterialComponent",
+        "$type": "ae0e613d-4721-4ed6-825e-1b541c27b5a9, IgnoreSpellMaterialComponent",
         "name": "mf_ignore_dinosaur_bone",
         "m_Overrides": [],
         "Item": "!bp_66e2ab66e3e0c514f977cd22b3d7a0cd"

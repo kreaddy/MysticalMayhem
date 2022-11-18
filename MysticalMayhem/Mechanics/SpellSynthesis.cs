@@ -15,9 +15,9 @@ namespace MysticalMayhem.Mechanics
     {
         public class SpellSynthesisUnitPart : OldStyleUnitPart
         {
-            public bool SpellSynthesisActivated;
-            public bool HasCastArcaneSpell;
-            public bool HasCastDivineSpell;
+            public bool SpellSynthesisActivated = false;
+            public bool HasCastArcaneSpell = false;
+            public bool HasCastDivineSpell = false;
             public UnitCommand.CommandType CastingTime;
 
             public void Clear()

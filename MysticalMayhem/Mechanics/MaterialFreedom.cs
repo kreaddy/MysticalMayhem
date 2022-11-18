@@ -48,7 +48,7 @@ namespace MysticalMayhem.Mechanics
 
             public bool HasItem(BlueprintItemReference item)
             {
-                var entry = ItemList.FirstOrDefault(e => e.Item.guid == item.guid);
+                var entry = ItemList.First(e => e.Item.Guid == item.Guid);
                 return entry != null;
             }
         }
@@ -58,7 +58,7 @@ namespace MysticalMayhem.Mechanics
         /// </summary>
         [AllowedOn(typeof(BlueprintFeature), false)]
         [AllowMultipleComponents]
-        [TypeId("e2755d66-d9c0-446b-aff0-e2327d91e177")]
+        [TypeId("ae0e613d-4721-4ed6-825e-1b541c27b5a9")]
         public class IgnoreSpellMaterialComponent : UnitFactComponentDelegate
         {
             public override void OnTurnOn()

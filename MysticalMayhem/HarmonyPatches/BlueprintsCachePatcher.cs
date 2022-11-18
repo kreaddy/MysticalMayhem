@@ -17,6 +17,8 @@ namespace MysticalMayhem.HarmonyPatches
                 Settings.Initialize();
                 BlueprintLoader.LoadBlueprints();
 
+                SpellComponentPatcher.PatchAssemblyForMaterialFreedom();
+
                 if (Settings.IsEnabled("mm.adnd.stoneskin") && !Settings.IsEnabled("mm.no.homebrew")) PostPatches.ApplyStoneskinChanges();
             }
         }

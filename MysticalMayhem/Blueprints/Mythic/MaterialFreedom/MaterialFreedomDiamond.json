@@ -6,7 +6,7 @@
     "m_Overrides": [],
     "Components": [
       {
-        "$type": "e2755d66-d9c0-446b-aff0-e2327d91e177, IgnoreSpellMaterialComponent",
+        "$type": "ae0e613d-4721-4ed6-825e-1b541c27b5a9, IgnoreSpellMaterialComponent",
         "name": "mf_ignore_diamond",
         "m_Overrides": [],
         "Item": "!bp_6a7cdeb14fc6ef44580cf639c5cdc113"

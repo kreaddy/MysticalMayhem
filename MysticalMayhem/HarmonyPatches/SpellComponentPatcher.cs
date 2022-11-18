@@ -25,7 +25,7 @@ namespace MysticalMayhem.HarmonyPatches
         {
             private static bool MF_SpendMaterialComponent(AbilityData __instance)
             {
-                if (!__instance.RequireMaterialComponent) { return true; }
+                if (!__instance.RequireMaterialComponent) return true;
                 var part = __instance.Caster?.Get<MaterialFreedom.MaterialFreedomUnitPart>();
                 if (part != null && part.HasItem(__instance.Blueprint.MaterialComponent.m_Item))
                 {
@@ -36,7 +36,7 @@ namespace MysticalMayhem.HarmonyPatches
 
             private static void MF_get_HasEnoughMaterialComponent(AbilityData __instance, ref bool __result)
             {
-                if (__result || !__instance.RequireMaterialComponent) { return; }
+                if (__result || !__instance.RequireMaterialComponent) return;
                 var part = __instance.Caster?.Get<MaterialFreedom.MaterialFreedomUnitPart>();
                 if (part != null && part.HasItem(__instance.Blueprint.MaterialComponent.m_Item))
                 {

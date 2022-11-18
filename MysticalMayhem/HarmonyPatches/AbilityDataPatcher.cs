@@ -108,7 +108,7 @@ namespace MysticalMayhem.HarmonyPatches
                 // - User has the buff indicating they've used Spell Synthesis.
                 // - User has the buff indicating they've casted a spell from one of their Mystic Theurge spellbooks.
                 // - The spell being cast is from the same MT spellbook.
-                if (__instance.Caster == null || __instance.Caster.SpellSynthesis() == false) return;
+                if (__instance.Caster == null || !__instance.Caster.SpellSynthesis()) return;
                 if (__instance.Spellbook != __instance.Caster.Ensure<UnitPartMysticTheurge>().DivineSpellbook
                     && __instance.Spellbook != __instance.Caster.Ensure<UnitPartMysticTheurge>().ArcaneSpellbook)
                 {
