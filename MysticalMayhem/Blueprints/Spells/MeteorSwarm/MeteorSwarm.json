@@ -299,7 +299,7 @@
     "AnimationStyle": "CastActionPoint",
     "m_TargetMapObjects": false,
     "ActionType": "Standard",
-    "AvailableMetamagic": "Empower, Maximize, Quicken, Heighten, CompletelyNormal, Persistent, Bolstered",
+    "AvailableMetamagic": "Empower, Maximize, Quicken, Heighten, CompletelyNormal, Persistent, Bolstered, Selective",
     "m_IsFullRoundAction": false,
     "MaterialComponent": {
       "m_Item": null,
