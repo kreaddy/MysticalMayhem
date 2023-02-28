@@ -2,7 +2,7 @@
   "Id": "MysticalMayhem",
   "DisplayName": "Mystical Mayhem",
   "Author": "kreaddy",
-  "Version": "0.1.3e",
+  "Version": "0.1.4",
   "ManagerVersion": "0.23.0",
   "GameVersion": "2.0.4",
   "Requirements": [ "ModMenu-1.2.4" ],
