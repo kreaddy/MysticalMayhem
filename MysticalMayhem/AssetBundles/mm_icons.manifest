@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3912224661
+CRC: 2140582901
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 14540df3cc1565848c1aa55cbd186b13
+    Hash: 355b135b3e76794b107765af8d6c8848
   TypeTreeHash:
     serializedVersion: 2
     Hash: c90fc19e2679e5295d10bd00f33cb4c3
@@ -23,6 +23,7 @@ Assets:
 - Assets/MM_icons/d_razmir.png
 - Assets/MM_icons/cf_spell_synthesis.png
 - Assets/MM_icons/s_meteor_swarm.png
+- Assets/MM_icons/s_symbol_strife.png
 - Assets/MM_icons/ma_malice.png
 - Assets/MM_icons/f_earth_magic.png
 Dependencies: []
