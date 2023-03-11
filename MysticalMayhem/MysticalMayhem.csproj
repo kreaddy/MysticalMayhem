@@ -40,10 +40,14 @@
     <None Remove="Blueprints\Archetypes\RazmiranPriest\RazmiranPriestArchetype.json" />
     <None Remove="Blueprints\Archetypes\Warsighted\WarsightedArchetype.json" />
     <None Remove="Blueprints\Archetypes\Warsighted\WarsightedFeatSelection.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockClass.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockSpellbook.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockSpellsDailyTable.json" />
     <None Remove="Blueprints\Deities\Razmir.json" />
     <None Remove="Blueprints\Feats\AcadamaeGraduate.json" />
     <None Remove="Blueprints\Feats\EarthMagic.json" />
     <None Remove="Blueprints\Feats\PurityOfSin.json" />
+    <None Remove="Blueprints\Feats\TestFeat.json" />
     <None Remove="Blueprints\MagusArcana\Malice.json" />
     <None Remove="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisAbility.json" />
     <None Remove="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisBuff.json" />
@@ -57,7 +61,13 @@
     <None Remove="Blueprints\ShamanSpiritManifestations\NatureSpiritPlantBuff.json" />
     <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
     <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
+    <None Remove="Blueprints\Spells\SureCasting\SureCasting.json" />
+    <None Remove="Blueprints\Spells\SureCasting\SureCastingBuff.json" />
     <None Remove="Localization\star.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockClass.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -69,7 +79,10 @@
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\RazmiranChannel\RazmiranChannelAbility.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\RazmiranChannel\RazmiranChannelFeature.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\RazmiranPriestArchetype.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSpellbook.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSpellsDailyTable.json" />
     <EmbeddedResource Include="Blueprints\Deities\Razmir.json" />
+    <EmbeddedResource Include="Blueprints\Feats\TestFeat.json" />
     <EmbeddedResource Include="Blueprints\MagusArcana\Malice.json" />
     <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisResource.json" />
     <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisFeature.json" />
@@ -141,6 +154,8 @@
     <EmbeddedResource Include="Blueprints\Mythic\MaterialFreedom\MaterialFreedomSelection.json" />
     <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
     <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
+    <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCasting.json" />
+    <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCastingBuff.json" />
     <EmbeddedResource Include="BPRepo.json" />
   </ItemGroup>
 

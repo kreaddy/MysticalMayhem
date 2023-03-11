@@ -1,0 +1,102 @@
+﻿{
+  "AssetId": "297c08b0-201f-43c0-bd20-f4aa483cf97e",
+  "Homebrew": true,
+  "PatchList": [ "AddToClassList:Base" ],
+  "Data": {
+    "$type": "5f2bdd25f161a0d4c97bee89cf923d77, BlueprintCharacterClass",
+    "Components": [
+      {
+        "$type": "b1808a1edca51c944b47599c893e7528, PrerequisiteNoClassLevel",
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_CharacterClass": "!bp_4cd1757a0eea7694ba5c933729a53920"
+      },
+      {
+        "$type": "532e804185719b942b52ed141aa10a21, PrerequisiteIsPet",
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": true,
+        "Not": true
+      }
+    ],
+    "LocalizedName": {
+      "m_Key": "MM_Warlock_Name"
+    },
+    "LocalizedDescription": {
+      "m_Key": "MM_Warlock_Desc"
+    },
+    "LocalizedDescriptionShort": {
+      "m_Key": "MM_Warlock_Desc"
+    },
+    "m_Icon": null,
+    "SkillPoints": 3,
+    "HitDie": "D6",
+    "HideIfRestricted": false,
+    "PrestigeClass": false,
+    "IsMythic": false,
+    "DlcType": "None",
+    "m_BaseAttackBonus": "!bp_0538081888b2d8c41893d25d098dee99",
+    "m_FortitudeSave": "!bp_ff4662bde9e75f145853417313842751",
+    "m_ReflexSave": "!bp_dc0c7c1aba755c54f96c089cdf7d14a3",
+    "m_WillSave": "!bp_ff4662bde9e75f145853417313842751",
+    "m_Progression": "!bp_02f3049806dbf62459259ea8cae8f715",
+    "m_Spellbook": "!bp_913023a5-e55b-4772-b0b7-a0335645dc6f",
+    "ClassSkills": [
+      "SkillKnowledgeArcana",
+      "SkillLoreReligion",
+      "SkillPersuasion",
+      "SkillTrickery",
+      "SkillStealth",
+      "SkillUseMagicDevice"
+    ],
+    "IsDivineCaster": false,
+    "IsArcaneCaster": true,
+    "m_Archetypes": [
+    ],
+    "StartingGold": 411,
+    "m_StartingItems": [
+      "!bp_511c97c1ea111444aa186b1a58496664",
+      "!bp_b103b6468f2eff042903377b6ed940b2",
+      "!bp_63caf94a780472b448f50d0bc183c38f",
+      "!bp_e8308a74821762e49bc3211358e81016",
+      "!bp_fbf7f9d21c12146479a5c261743afbde",
+      "!bp_63caf94a780472b448f50d0bc183c38f"
+    ],
+    "PrimaryColor": 32,
+    "SecondaryColor": 34,
+    "m_EquipmentEntities": [
+      "!bp_af291daa6606403aa51f309c74004f38"
+    ],
+    "MaleEquipmentEntities": [
+      {
+        "AssetId": "65e7ae8b40be4d64ba07d50871719259"
+      },
+      {
+        "AssetId": "04244d527b8a1f14db79374bc802aaaa"
+      }
+    ],
+    "FemaleEquipmentEntities": [
+      {
+        "AssetId": "1e4797f3425461946a0ae2986d16c85d"
+      },
+      {
+        "AssetId": "64abd9c4d6565de419f394f71a2d496f"
+      }
+    ],
+    "m_Difficulty": 4,
+    "RecommendedAttributes": [
+      "Charisma"
+    ],
+    "NotRecommendedAttributes": [
+      "Strength"
+    ],
+    "m_SignatureAbilities": [
+      "!bp_656b12e5bec3442db074fe17f7c9fde8",
+      "!bp_b73bc1b252994e6582a644dd6a7f31dc",
+      "!bp_c035eea74c0d4b8fa771e816193271ae"
+    ],
+    "m_DefaultBuild": "!bp_f75b7868dd11fb04f83ca94f9f8cc957",
+    "m_AdditionalVisualSettings": null
+  }
+}

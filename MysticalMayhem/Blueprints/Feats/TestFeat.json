@@ -1,0 +1,27 @@
+{
+  "AssetId": "5884d16b-dcc9-41e4-b340-21959af47155",
+  "PatchList": [ "AddAsFeat:Debug" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "59f9736b-8f2c-4b90-8aa9-05b55ec1d200, TestComponents"
+      },
+      {
+        "$type": "b5af3e51fdb2420f8b749b3ada247333, AddSpellResistance",
+        "AddCR": false,
+        "Value": {
+          "ValueType": "Simple",
+          "Value": 5,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null
+        },
+        "AllSpellResistancePenaltyDoNotUse": false
+      }
+    ]
+  }
+}

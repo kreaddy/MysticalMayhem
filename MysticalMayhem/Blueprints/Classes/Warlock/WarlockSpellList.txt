@@ -1,0 +1,35 @@
+﻿///////////////
+// Cantrips
+//////////////
+
+Acid Splash
+Jolt
+Mage Light
+Resistance
+Virtue
+Dismiss AoE
+
+///////////////
+// Level 1
+//////////////
+
+Bane
+Burning Disarm (CO+)
+Burning Hands
+Cause Fear
+Command
+Corrosive Touch
+Cure Light Wounds
+Doom
+Enlarge Person
+Inflict Light Wounds
+Mage Armor
+Magic Weapon
+Protection from Chaos/Good/Law
+Ray of Enfeeblement
+Ray of Sickening
+Reduce Person
+Shadow Trap (CO+)
+Sure Casting
+Touch of Blindness (CO+)
+True Strike

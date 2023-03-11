@@ -8,6 +8,7 @@ using Kingmaker.Craft;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Newtonsoft.Json;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Reflection;
 
@@ -76,8 +77,11 @@ namespace MysticalMayhem.Helpers
                 .ToArray();
         }
 
-        public void AddAsFeat(string[] _)
+        public void AddAsFeat(string[] args)
         {
+#if (DEBUG == false)
+            if (args[0] == "Debug") return; // Only really used for the test feat.
+#endif
             var selection = BPLookup.Selection("FeatSelection");
             selection.m_AllFeatures = selection.m_AllFeatures.Push(Blueprint.ToReference<BlueprintFeatureReference>());
             selection.m_Features = selection.m_Features.Push(Blueprint.ToReference<BlueprintFeatureReference>());
@@ -159,6 +163,26 @@ namespace MysticalMayhem.Helpers
         public void AddIcon(string[] args)
         {
             (Blueprint as BlueprintUnitFact).m_Icon = ResourceHandler.Sprites[args[0]];
+        }
+
+        public void AddToClassList(string[] args)
+        {
+            var root = BPLookup.GetBP<BlueprintRoot>("Root");
+            var baseClasses = root.Progression.m_CharacterClasses.Where(c => !c.Get().PrestigeClass);
+            var prestigeClasses = root.Progression.m_CharacterClasses.Where(c => c.Get().PrestigeClass);
+            if (args[0] == "Base")
+            {
+                baseClasses = baseClasses
+                    .Append(Blueprint.ToReference<BlueprintCharacterClassReference>())
+                    .OrderBy(c => c.Get().NameSafe());
+            }
+            else
+            {
+                prestigeClasses = prestigeClasses
+                    .Append(Blueprint.ToReference<BlueprintCharacterClassReference>())
+                    .OrderBy(c => c.Get().NameSafe());
+            }
+            root.Progression.m_CharacterClasses = baseClasses.Concat(prestigeClasses).ToArray();
         }
 
         public void AddToCraftingList(string[] _)

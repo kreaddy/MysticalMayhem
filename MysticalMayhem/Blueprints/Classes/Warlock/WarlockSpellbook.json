@@ -1,0 +1,31 @@
+{
+  "AssetId": "913023a5-e55b-4772-b0b7-a0335645dc6f",
+  "Data": {
+    "$type": "a42bdead3c333d744a3f0354bbe6c27c, BlueprintSpellbook",
+    "Components": [],
+    "Comment": "",
+    "Name": {
+      "m_Key": "MM_Warlock_Name"
+    },
+    "IsMythic": false,
+    "m_SpellsPerDay": "!bp_581019cf-b63a-4fec-b01a-009f29c30ca9",
+    "m_SpellsKnown": "!bp_d232bc78d967a964bac4d4d38e7ca5f4",
+    "m_SpellSlots": null,
+    "m_SpellList": "!bp_ba0401fdeb4062f40a7aa95b6f07fe89",
+    "m_MythicSpellList": null,
+    "m_CharacterClass": "!bp_297c08b0-201f-43c0-bd20-f4aa483cf97e",
+    "CastingAttribute": "Charisma",
+    "Spontaneous": true,
+    "SpellsPerLevel": 2,
+    "AllSpellsKnown": false,
+    "CantripsType": "Cantrips",
+    "CasterLevelModifier": 0,
+    "CanCopyScrolls": false,
+    "IsArcane": true,
+    "IsArcanist": false,
+    "HasSpecialSpellList": false,
+    "SpecialSpellListName": {
+      "m_Key": ""
+    }
+  }
+}
