@@ -450,6 +450,14 @@
       "Value": "You gain temporary insight into your enemies’ magical defenses. When you next cast a spell before the end of the next round, treat your caster level as 5 higher than normal for the purpose of overcoming spell resistance. This bonus doesn’t increase any other effects that depend on caster level, such as the spell’s damage or range, and affects only the first spell cast after sure casting."
     },
     {
+      "Key": "MM_BloodyTears_Name",
+      "Value": "Bloody Tears and Jagged Smile"
+    },
+    {
+      "Key": "MM_BloodyTears_Desc",
+      "Value": "Your eyes turn black and weep blood, and your teeth become jagged fangs. You gain a bite attack (1d3 points of damage if you are Small, 1d4 points of damage if you are Medium). You gain a +4 profane bonus on Intimidate checks and on your spell DCs for spells with the fear descriptor."
+    },
+    {
       "Key": "MM_Warlock_Name",
       "Value": "Warlock"
     },

@@ -440,6 +440,22 @@
     {
       "Key": "MM_StoneskinMass_Desc",
       "Value": "此法术可以为距离施法者30尺内的一个目标创造一层完全覆盖目标的石制外壳。石肤当然是魔法的，不会妨碍到施法者。它可以抵御物理攻击，如近战武器和炮弹。施法者等级每提高2级，施法时会获得额外的石肤层数(到第20级时最多可获得10层石肤)。目标每拥有一层石肤，该法术将抵御一次攻击。如果所有石肤都被移除，法术就会消散。需要注意的是，这并不能保护目标免受任何能量或力场攻击。"
+    },
+    {
+      "Key": "MM_SureCasting_Name",
+      "Value": "Sure Casting"
+    },
+    {
+      "Key": "MM_SureCasting_Desc",
+      "Value": "You gain temporary insight into your enemies’ magical defenses. When you next cast a spell before the end of the next round, treat your caster level as 5 higher than normal for the purpose of overcoming spell resistance. This bonus doesn’t increase any other effects that depend on caster level, such as the spell’s damage or range, and affects only the first spell cast after sure casting."
+    },
+    {
+      "Key": "MM_BloodyTears_Name",
+      "Value": "Bloody Tears and Jagged Smile"
+    },
+    {
+      "Key": "MM_BloodyTears_Desc",
+      "Value": "Your eyes turn black and weep blood, and your teeth become jagged fangs. You gain a bite attack (1d3 points of damage if you are Small, 1d4 points of damage if you are Medium). You gain a +4 profane bonus on Intimidate checks and on your spell DCs for spells with the fear descriptor."
     }
   ]
 }

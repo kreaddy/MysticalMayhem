@@ -59,6 +59,8 @@
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWaves.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWind.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\NatureSpiritPlantBuff.json" />
+    <None Remove="Blueprints\Spells\BloodyTears\BloodyTears.json" />
+    <None Remove="Blueprints\Spells\BloodyTears\BloodyTearsBuff.json" />
     <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
     <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
     <None Remove="Blueprints\Spells\SureCasting\SureCasting.json" />
@@ -152,6 +154,8 @@
     <EmbeddedResource Include="Blueprints\Archetypes\PactWizard\PactWizardCurseSelection.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\PactWizard\PactWizardPatronSelection.json" />
     <EmbeddedResource Include="Blueprints\Mythic\MaterialFreedom\MaterialFreedomSelection.json" />
+    <EmbeddedResource Include="Blueprints\Spells\BloodyTears\BloodyTears.json" />
+    <EmbeddedResource Include="Blueprints\Spells\BloodyTears\BloodyTearsBuff.json" />
     <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
     <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
     <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCasting.json" />

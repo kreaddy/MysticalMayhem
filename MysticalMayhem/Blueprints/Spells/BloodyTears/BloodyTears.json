@@ -1,0 +1,124 @@
+{
+  "AssetId": "14c13b61-0ffc-43c7-9481-1d3b61477370",
+  "PatchList": [ "AddIcon:s_bloody_tears", "AddToSpellLists:Wizard:2:Necromancy:2:Envy:2:Lust:2:Wrath:2:Pride:2:Gluttony:2:Greed:2:Sloth:2:Cleric:2:Warpriest:2" ],
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "bbf7e743804d40a47bde0b27174f33a9, SpellComponent",
+        "m_Overrides": [],
+        "School": "Necromancy"
+      },
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "m_Overrides": [],
+        "SavingThrowType": "None",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "name": "sc_buff",
+              "m_Buff": "!bp_b5931412-c174-4aec-aee2-709a12fe248a",
+              "Permanent": false,
+              "UseDurationSeconds": false,
+              "DurationValue": {
+                "Rate": "TenMinutes",
+                "DiceType": "Zero",
+                "DiceCountValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "BonusValue": {
+                  "ValueType": "Rank",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "m_IsExtendable": true
+              },
+              "DurationSeconds": 0.0,
+              "IsFromSpell": true,
+              "IsNotDispelable": false,
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false
+            }
+          ]
+        }
+      },
+      {
+        "$type": "c788cf748ec86bc45b986ac4de28cf45, AbilitySpawnFx",
+        "PrefabLink": {
+          "AssetId": "cbfe312cb8e63e240a859efaad8e467c"
+        },
+        "Time": "OnApplyEffect",
+        "Anchor": "Caster",
+        "WeaponTarget": "None",
+        "DestroyOnCast": false,
+        "Delay": 0.0,
+        "PositionAnchor": "None",
+        "OrientationAnchor": "None",
+        "OrientationMode": "Copy"
+      },
+      {
+        "$type": "faae7c00f379e66488a537d47a2919ad, CraftInfoComponent",
+        "m_Overrides": [],
+        "SpellType": "Buff",
+        "SavingThrow": "None",
+        "AOEType": "None"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_BloodyTears_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_BloodyTears_Desc"
+    },
+    "m_DefaultAiAction": null,
+    "Type": "Spell",
+    "Range": "Personal",
+    "CustomRange": {
+      "m_Value": 0.0
+    },
+    "LocalizedDuration": {
+      "m_Key": "9178f928-579f-43d0-bd80-e67e478c7bfc"
+    },
+    "LocalizedSavingThrow": {
+    },
+    "ShowNameForVariant": false,
+    "OnlyForAllyCaster": false,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": false,
+    "CanTargetFriends": true,
+    "CanTargetSelf": true,
+    "SpellResistance": false,
+    "ActionBarAutoFillIgnored": false,
+    "Hidden": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "EffectOnAlly": "None",
+    "EffectOnEnemy": "None",
+    "m_Parent": null,
+    "HasFastAnimation": false,
+    "AnimationStyle": "CastActionSelf",
+    "m_TargetMapObjects": false,
+    "ActionType": "Standard",
+    "AvailableMetamagic": "Quicken, Extend, Heighten, CompletelyNormal",
+    "m_IsFullRoundAction": false,
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "DisableLog": false,
+    "ResourceAssetIds": []
+  }
+}
