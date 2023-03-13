@@ -12,8 +12,7 @@
           "ValueRank": "Default",
           "ValueShared": "Damage",
           "Property": "None",
-          "m_CustomProperty": null,
-          "m_AbilityParameter": "Level"
+          "m_CustomProperty": null
         },
         "Descriptor": "UntypedStackable",
         "CheckFact": false,
@@ -24,7 +23,7 @@
         "Action": {
           "Actions": [
             {
-              "$type": "1e0ebe55f7204066b7cdb0eb124b863a, ContextActionRemoveSelf"
+              "$type": "8f870b13-dacd-40da-8c65-3ecba11f718f, ContextActionRemoveSelfNextTime"
             }
           ]
         },
@@ -58,7 +57,7 @@
       "m_Key": "MM_SureCasting_Name"
     },
     "m_Description": {
-      "m_Key": "MM_SureCasting_Name"
+      "m_Key": "MM_SureCasting_Desc"
     },
     "IsClassFeature": false,
     "m_Flags": 0,

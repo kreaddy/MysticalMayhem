@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2804222084
+CRC: 1755891302
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 457925a72bf8bc36b93482b4a9dcd53a
+    Hash: bc5dba62ff7e3daccaf074298c02cf36
   TypeTreeHash:
     serializedVersion: 2
     Hash: c90fc19e2679e5295d10bd00f33cb4c3
@@ -21,9 +21,12 @@ Assets:
 - Assets/MM_icons/scrl_meteor_swarm.png
 - Assets/MM_icons/ad_purityofsin.png
 - Assets/MM_icons/f_graduate.png
+- Assets/MM_icons/scrl_bloody_tears.png
+- Assets/MM_icons/s_bloody_tears.png
 - Assets/MM_icons/d_razmir.png
 - Assets/MM_icons/cf_spell_synthesis.png
 - Assets/MM_icons/s_meteor_swarm.png
+- Assets/MM_icons/scrl_sure_casting.png
 - Assets/MM_icons/ma_malice.png
 - Assets/MM_icons/f_earth_magic.png
 Dependencies: []
