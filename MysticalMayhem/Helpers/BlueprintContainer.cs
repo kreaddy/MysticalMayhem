@@ -80,7 +80,7 @@ namespace MysticalMayhem.Helpers
         public void AddAsFeat(string[] args)
         {
 #if (DEBUG == false)
-            if (args[0] == "Debug") return; // Only really used for the test feat.
+            if (args.Length > 0 && args[0] == "Debug") return; // Only really used for the test feat.
 #endif
             var selection = BPLookup.Selection("FeatSelection");
             selection.m_AllFeatures = selection.m_AllFeatures.Push(Blueprint.ToReference<BlueprintFeatureReference>());
