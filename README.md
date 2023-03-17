@@ -35,6 +35,8 @@ Content
 |Manifestations|Class Feature|Add the capstones to Shaman spirits. They have been adapted to the game the same way Owlcat adapted the final revelations for Oracle mysteries (they're virtually identical).|No|
 |Meteor Swarm|Spell|Add the level 9 Wizard spell Meteor Swarm.<br>It's quite simplified from its TT version because having to pick 4 targets every time you cast it would be annoying. It now simply deals 28d6 fire damage in an area (to counterbalance the fact the save penalty after the touch attack doesn't exist anymore). Might need a balance pass.|No|
 |Baldur's Gate Stoneskin|Spell|**Disabled by default!**<br>Change Stoneskin to be closer to its [Baldur's Gate incarnation](https://baldursgate.fandom.com/wiki/Stoneskin).|Yes|
+|Sure Casting|Spell|Add the level 1 Divination spell [Sure Casting](https://www.d20pfsrd.com/magic/all-spells/s/sure-casting/).|No|
+|Bloody Tears and Jagged Smile|Spell|Add the level 2 Necromancy spell [Bloody Tears and Jagged Smile](https://www.d20pfsrd.com/magic/all-spells/b/bloody-tears-and-jagged-smile/).|No|
 
 Settings
 -----------
