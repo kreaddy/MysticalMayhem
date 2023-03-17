@@ -22,7 +22,8 @@ namespace MysticalMayhem.Mechanics
             PactWizardSpellConversion,
             StaffLikeWand,
             EarthMagic,
-            RazmiranChannel
+            RazmiranChannel,
+            DraconicMaliceCurse
         }
 
         public void AddFeature(Feature type)

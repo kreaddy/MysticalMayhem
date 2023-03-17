@@ -21,6 +21,20 @@
           "m_CustomProperty": null
         },
         "AllSpellResistancePenaltyDoNotUse": false
+      },
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "m_Overrides": [],
+        "m_Flags": 0,
+        "m_Facts": [
+          "!bp_8a75eb16bfff86949a4ddcb3dd2f83ae"
+        ],
+        "Dummy": null,
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
       }
     ]
   }

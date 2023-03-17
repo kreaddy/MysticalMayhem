@@ -1,0 +1,123 @@
+{
+  "AssetId": "e45b3ba5-7855-4ae7-ba4a-65f71a7b53ef",
+  "PatchList": [ "AddIcon:s_draconic_malice", "AddToSpellLists:Wizard:3:Enchantment:3:Envy:3:Lust:3:Wrath:3:Pride:3:Sloth:3:Bard:3:Witch:3:Shaman:3:Bloodrager:3:Cleric:3:Inquisitor:3" ],
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "bbf7e743804d40a47bde0b27174f33a9, SpellComponent",
+        "m_Overrides": [],
+        "School": "Enchantment"
+      },
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "m_Overrides": [],
+        "SavingThrowType": "None",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+              "m_Buff": "!bp_9d4c6782-4234-4655-82b8-b2113d68f7b7",
+              "Permanent": false,
+              "UseDurationSeconds": false,
+              "DurationValue": {
+                "Rate": "Minutes",
+                "DiceType": "Zero",
+                "DiceCountValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "BonusValue": {
+                  "ValueType": "Rank",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "m_IsExtendable": true
+              },
+              "DurationSeconds": 0.0,
+              "IsFromSpell": true,
+              "IsNotDispelable": false,
+              "ToCaster": false,
+              "AsChild": false,
+              "SameDuration": false
+            }
+          ]
+        }
+      },
+      {
+        "$type": "c788cf748ec86bc45b986ac4de28cf45, AbilitySpawnFx",
+        "PrefabLink": {
+          "AssetId": "cbfe312cb8e63e240a859efaad8e467c"
+        },
+        "Time": "OnApplyEffect",
+        "Anchor": "Caster",
+        "WeaponTarget": "None",
+        "DestroyOnCast": false,
+        "Delay": 0.0,
+        "PositionAnchor": "None",
+        "OrientationAnchor": "None",
+        "OrientationMode": "Copy"
+      },
+      {
+        "$type": "faae7c00f379e66488a537d47a2919ad, CraftInfoComponent",
+        "m_Overrides": [],
+        "SpellType": "Buff",
+        "SavingThrow": "Will",
+        "AOEType": "None"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_DraconicMalice_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_DraconicMalice_Desc"
+    },
+    "m_DefaultAiAction": null,
+    "Type": "Spell",
+    "Range": "Personal",
+    "CustomRange": {
+      "m_Value": 0.0
+    },
+    "LocalizedDuration": {
+      "m_Key": "00b2e4c2-aafe-487b-b890-d57473373da7"
+    },
+    "LocalizedSavingThrow": {
+    },
+    "ShowNameForVariant": false,
+    "OnlyForAllyCaster": false,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": false,
+    "CanTargetFriends": true,
+    "CanTargetSelf": true,
+    "SpellResistance": false,
+    "ActionBarAutoFillIgnored": false,
+    "Hidden": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "EffectOnAlly": "None",
+    "EffectOnEnemy": "None",
+    "m_Parent": null,
+    "HasFastAnimation": false,
+    "AnimationStyle": "CastActionSelf",
+    "m_TargetMapObjects": false,
+    "ActionType": "Standard",
+    "AvailableMetamagic": "Quicken, Extend, Heighten, CompletelyNormal",
+    "m_IsFullRoundAction": false,
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "DisableLog": false,
+    "ResourceAssetIds": []
+  }
+}

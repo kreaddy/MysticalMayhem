@@ -464,6 +464,18 @@
     {
       "Key": "MM_Warlock_Desc",
       "Value": "Warlocks draw their power from pacts and dealings with powerful inhabitants of the lower planes. The power of such planes courses through their veins. The struggle to control these forces and resist being controlled by them remains a constant struggle for Warlocks.\nThe very nature of a warlock makes them feared and targeted by most societies and denizens of good. As such many warlocks look to hide their abilities and connections to the lower planes. Some look for communities that accept them, others make their own. Their tools favor an offensive and proactive mindset."
+    },
+    {
+      "Key": "MM_DraconicMalice_Name",
+      "Value": "Draconic Malice"
+    },
+    {
+      "Key": "MM_DraconicMalice_Desc",
+      "Value": "You surround yourself with a palpable aura of draconic fear and dread.\nLiving creatures within this aura that are normally immune to fear or mind-affecting abilities lose those immunities against your spells, spell-like abilities, and supernatural abilities that create fear effects, as well as any Intimidate checks you attempt to demoralize foes."
+    },
+    {
+      "Key": "MM_DraconicMaliceBuff_Desc",
+      "Value": "Your immunity to abilities with the Fear or Mind-Affecting descriptor is temporarily suppressed."
     }
   ]
 }

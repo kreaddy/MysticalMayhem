@@ -455,7 +455,7 @@
     },
     {
       "Key": "MM_BloodyTears_Desc",
-      "Value": "你的眼睛变为黑色并流出鲜血，牙齿变成参差不齐的利齿。你获得啮咬攻击(小体型伤害1d3，中体型伤害1d4)。你的威吓检定和带有恐惧描述符的法术的豁免难度（DC）检定获得+4亵渎加值。"    
+      "Value": "你的眼睛变为黑色并流出鲜血，牙齿变成参差不齐的利齿。你获得啮咬攻击(小体型伤害1d3，中体型伤害1d4)。你的威吓检定和带有恐惧描述符的法术的豁免难度（DC）检定获得+4亵渎加值。"
     },
     {
       "Key": "MM_Warlock_Name",
@@ -464,6 +464,18 @@
     {
       "Key": "MM_Warlock_Desc",
       "Value": "邪术士从与下层位面的强大住民的契约和交易中汲取力量。这些下层位面的力量在他们的血脉中流动。对邪术士来说，控制这些力量和抵抗被它们控制的斗争仍然是一场永恒的斗争。邪术士的本质使他们被大多数社会和善良的居民所恐惧和攻击。因此，许多邪术士试图隐藏他们的能力和与下层位面的联系。一些人寻找接受他们的社群，另一些人则建立自己的社群。他们的工具有利于一种进攻性和主动性的心态。"
+    },
+    {
+      "Key": "MM_DraconicMalice_Name",
+      "Value": "Draconic Malice"
+    },
+    {
+      "Key": "MM_DraconicMalice_Desc",
+      "Value": "You surround yourself with a palpable aura of draconic fear and dread.\nLiving creatures within this aura that are normally immune to fear or mind-affecting abilities lose those immunities against your spells, spell-like abilities, and supernatural abilities that create fear effects, as well as any Intimidate checks you attempt to demoralize foes."
+    },
+    {
+      "Key": "MM_DraconicMaliceBuff_Desc",
+      "Value": "Your immunity to abilities with the Fear or Mind-Affecting descriptor is temporarily suppressed."
     }
   ]
 }

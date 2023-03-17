@@ -27,11 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="HarmonyPatches\BuffDescriptorImmunityPatcher.cs" />
-    <Compile Remove="HarmonyPatches\ContextConditionHasBuffImmunityWithDescriptorPatcher.cs" />
-  </ItemGroup>
-
-  <ItemGroup>
     <None Remove="Blueprints\Archetypes\Flagellant.json" />
     <None Remove="Blueprints\Archetypes\Flagellant\MortifiedCasting\MortifiedCastingCLVariant.json" />
     <None Remove="Blueprints\Archetypes\PactWizard.json" />
@@ -63,6 +58,10 @@
     <None Remove="Blueprints\ShamanSpiritManifestations\NatureSpiritPlantBuff.json" />
     <None Remove="Blueprints\Spells\BloodyTears\BloodyTears.json" />
     <None Remove="Blueprints\Spells\BloodyTears\BloodyTearsBuff.json" />
+    <None Remove="Blueprints\Spells\DraconicMalice\DraconicMalice.json" />
+    <None Remove="Blueprints\Spells\DraconicMalice\DraconicMaliceAura.json" />
+    <None Remove="Blueprints\Spells\DraconicMalice\DraconicMaliceAuraBuff.json" />
+    <None Remove="Blueprints\Spells\DraconicMalice\DraconicMaliceBuff.json" />
     <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
     <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
     <None Remove="Blueprints\Spells\SureCasting\SureCasting.json" />
@@ -152,16 +151,15 @@
     <EmbeddedResource Include="Blueprints\Mythic\MaterialFreedom\MaterialFreedomSelection.json" />
     <EmbeddedResource Include="Blueprints\Spells\BloodyTears\BloodyTears.json" />
     <EmbeddedResource Include="Blueprints\Spells\BloodyTears\BloodyTearsBuff.json" />
+    <EmbeddedResource Include="Blueprints\Spells\DraconicMalice\DraconicMaliceAura.json" />
+    <EmbeddedResource Include="Blueprints\Spells\DraconicMalice\DraconicMaliceBuff.json" />
+    <EmbeddedResource Include="Blueprints\Spells\DraconicMalice\DraconicMaliceAuraBuff.json" />
+    <EmbeddedResource Include="Blueprints\Spells\DraconicMalice\DraconicMalice.json" />
     <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
     <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
     <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCasting.json" />
     <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCastingBuff.json" />
     <EmbeddedResource Include="BPRepo.json" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="HarmonyPatches\BuffDescriptorImmunityPatcher.cs" />
-    <None Include="HarmonyPatches\ContextConditionHasBuffImmunityWithDescriptorPatcher.cs" />
   </ItemGroup>
 
   <ItemGroup>
