@@ -18,7 +18,6 @@
           "Actions": [
             {
               "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-              "name": "sc_buff",
               "m_Buff": "!bp_b5931412-c174-4aec-aee2-709a12fe248a",
               "Permanent": false,
               "UseDurationSeconds": false,
