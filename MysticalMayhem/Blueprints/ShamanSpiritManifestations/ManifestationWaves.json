@@ -58,7 +58,7 @@
       "m_Key": "MM_Shaman20_Name"
     },
     "m_Description": {
-      "m_Key": "MM_Shaman20_Waves_Desc"
+      "m_Key": "MM_Shaman_Waves_Desc"
     },
     "HideInUI": false,
     "HideInCharacterSheetAndLevelUp": false,
