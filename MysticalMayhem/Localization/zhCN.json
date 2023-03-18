@@ -467,15 +467,15 @@
     },
     {
       "Key": "MM_DraconicMalice_Name",
-      "Value": "Draconic Malice"
+      "Value": "龙威术"
     },
     {
       "Key": "MM_DraconicMalice_Desc",
-      "Value": "You surround yourself with a palpable aura of draconic fear and dread.\nLiving creatures within this aura that are normally immune to fear or mind-affecting abilities lose those immunities against your spells, spell-like abilities, and supernatural abilities that create fear effects, as well as any Intimidate checks you attempt to demoralize foes."
+      "Value": "你散发出一道蕴含龙威的灵光。灵光中的活物若免疫恐惧或影响心灵能力，则他们无法免疫你的法术、类法术能力、超自然能力所造成的恐惧，你试图挫败敌人士气的威吓检定也是一样无法免疫。"
     },
     {
       "Key": "MM_DraconicMaliceBuff_Desc",
-      "Value": "Your immunity to abilities with the Fear or Mind-Affecting descriptor is temporarily suppressed."
+      "Value": "你对恐惧和心灵影响能力的免疫被暂时移除。"
     }
   ]
 }
