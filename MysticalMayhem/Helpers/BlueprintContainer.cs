@@ -165,26 +165,6 @@ namespace MysticalMayhem.Helpers
             (Blueprint as BlueprintUnitFact).m_Icon = ResourceHandler.Sprites[args[0]];
         }
 
-        public void AddToClassList(string[] args)
-        {
-            var root = BPLookup.GetBP<BlueprintRoot>("Root");
-            var baseClasses = root.Progression.m_CharacterClasses.Where(c => !c.Get().PrestigeClass);
-            var prestigeClasses = root.Progression.m_CharacterClasses.Where(c => c.Get().PrestigeClass);
-            if (args[0] == "Base")
-            {
-                baseClasses = baseClasses
-                    .Append(Blueprint.ToReference<BlueprintCharacterClassReference>())
-                    .OrderBy(c => c.Get().NameSafe());
-            }
-            else
-            {
-                prestigeClasses = prestigeClasses
-                    .Append(Blueprint.ToReference<BlueprintCharacterClassReference>())
-                    .OrderBy(c => c.Get().NameSafe());
-            }
-            root.Progression.m_CharacterClasses = baseClasses.Concat(prestigeClasses).ToArray();
-        }
-
         public void AddToCraftingList(string[] _)
         {
             var root = BPLookup.GetBP<CraftRoot>("CraftRoot");
