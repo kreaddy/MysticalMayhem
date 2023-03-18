@@ -476,6 +476,14 @@
     {
       "Key": "MM_DraconicMaliceBuff_Desc",
       "Value": "Your immunity to abilities with the Fear or Mind-Affecting descriptor is temporarily suppressed."
+    },
+    {
+      "Key": "MM_MightyStrength_Name",
+      "Value": "Mighty Strength"
+    },
+    {
+      "Key": "MM_MightyStrength_Desc",
+      "Value": "The subject becomes stronger. The spell grants a +8 enhancement bonus to Strength, adding the usual benefits to melee attack rolls, melee damage rolls, and other uses of the Strength modifier."
     }
   ]
 }

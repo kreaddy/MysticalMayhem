@@ -1,0 +1,33 @@
+{
+  "AssetId": "6df2b9bd-6d42-4266-a6fd-085f7204c07b",
+  "PatchList": [ "AddIcon:s_mighty_strength" ],
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "Components": [
+      {
+        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
+        "Descriptor": "Enhancement",
+        "Stat": "Strength",
+        "Value": 8,
+        "ScaleByBasicAttackBonus": false
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_MightyStrength_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_MightyStrength_Desc"
+    },
+    "IsClassFeature": false,
+    "m_Flags": 0,
+    "Stacking": "Replace",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "Rounds",
+    "FxOnStart": null,
+    "FxOnRemove": null,
+    "ResourceAssetIds": []
+  }
+}

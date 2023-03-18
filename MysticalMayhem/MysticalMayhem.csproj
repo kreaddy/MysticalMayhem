@@ -64,6 +64,8 @@
     <None Remove="Blueprints\Spells\DraconicMalice\DraconicMaliceBuff.json" />
     <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
     <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
+    <None Remove="Blueprints\Spells\MightyStrength\MightyStrength.json" />
+    <None Remove="Blueprints\Spells\MightyStrength\MightyStrengthBuff.json" />
     <None Remove="Blueprints\Spells\SureCasting\SureCasting.json" />
     <None Remove="Blueprints\Spells\SureCasting\SureCastingBuff.json" />
     <None Remove="Localization\star.json" />
@@ -157,6 +159,8 @@
     <EmbeddedResource Include="Blueprints\Spells\DraconicMalice\DraconicMalice.json" />
     <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarm.json" />
     <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
+    <EmbeddedResource Include="Blueprints\Spells\MightyStrength\MightyStrength.json" />
+    <EmbeddedResource Include="Blueprints\Spells\MightyStrength\MightyStrengthBuff.json" />
     <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCasting.json" />
     <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCastingBuff.json" />
     <EmbeddedResource Include="BPRepo.json" />
