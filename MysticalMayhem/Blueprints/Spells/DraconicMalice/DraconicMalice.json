@@ -11,9 +11,13 @@
         "School": "Enchantment"
       },
       {
+        "$type": "f5dde5f8-8482-400f-b573-41a1a3a1990f, AddExtendedSpellDescriptor",
+        "Descriptor": "Draconic"
+      },
+      {
         "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
         "m_Overrides": [],
-        "SavingThrowType": "None",
+        "SavingThrowType": "Unknown",
         "Actions": {
           "Actions": [
             {

@@ -13,7 +13,7 @@
       {
         "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
         "m_Overrides": [],
-        "SavingThrowType": "None",
+        "SavingThrowType": "Unknown",
         "Actions": {
           "Actions": [
             {
