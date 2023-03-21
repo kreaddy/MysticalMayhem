@@ -22,6 +22,7 @@ namespace MysticalMayhem.HarmonyPatches
                 DescriptorExtender.PatchUIUtilityTexts();
 
                 if (Settings.IsEnabled("mm.adnd.stoneskin") && !Settings.IsEnabled("mm.no.homebrew")) PostPatches.ApplyStoneskinChanges();
+                if (Settings.IsEnabled("mm.en.prebuff")) PostPatches.PrebuffUnits();
             }
         }
     }

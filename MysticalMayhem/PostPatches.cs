@@ -1,14 +1,13 @@
 ﻿using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Prerequisites;
+using Kingmaker.Blueprints.Facts;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
-using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.FactLogic;
-using Kingmaker.UnitLogic.Mechanics;
-using Kingmaker.UnitLogic.Mechanics.Actions;
 using MysticalMayhem.Helpers;
 using MysticalMayhem.Mechanics;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace MysticalMayhem
@@ -186,6 +185,38 @@ namespace MysticalMayhem
             spell = BPLookup.Ability("StoneskinMass");
             spell.m_Description.m_Key = "MM_StoneskinMass_Desc";
             spell.MaterialComponent.Count = 20;
+        }
+
+        // Patch called by the BlueprintCache hook, perform blueprint edits to units so they prebuff with new spells.
+        public static void PrebuffUnits()
+        {
+            bool dlc1 = BPLookup.DLC("DLC1").IsAvailable;
+            BlueprintUnit unit;
+            BlueprintComponent component;
+            Dictionary<string, int> unitData = new()
+            {
+                { "UnitXanthir", 18 },
+                { "UnitMephisto", 20 },
+                { "UnitNocticula", 20 },
+                { "UnitHalaseliax", 19 },
+                { "UnitDeepShadowDemonDLC1", 20 },
+                { "UnitQuasitFinal", 20 },
+                { "UnitAreshUndeadMaster", 20 }
+            };
+            BlueprintUnitFact buff = BPLookup.Buff("SpellTurningBuff", true);
+
+            foreach (KeyValuePair<string, int> pair in unitData)
+            {
+                if (pair.Key.Contains("DLC1") && !dlc1) return;
+                component = new AddFacts()
+                {
+                    CasterLevel = pair.Value,
+                    m_Facts = new BlueprintUnitFactReference[] { buff.ToReference<BlueprintUnitFactReference>() }
+                };
+                component.name = $"{pair.Key}_spell_turning";
+                unit = BPLookup.Unit(pair.Key);
+                unit.ComponentsArray = unit.ComponentsArray.Push(component);
+            }
         }
 
         #endregion Patches

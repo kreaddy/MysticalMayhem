@@ -22,7 +22,9 @@ namespace MysticalMayhem.Helpers
                 .AddToggle(Toggle.New(GetKey("mm.no.hb"), defaultValue: false, GetString("MM_S_NoHomebrew"))
                 .WithLongDescription(GetString("MM_S_NoHomebrew_Desc")))
                 .AddToggle(Toggle.New(GetKey("mm.adnd.stoneskin"), defaultValue: false, GetString("MM_S_Adnd_Stoneskin"))
-                .WithLongDescription(GetString("MM_S_Adnd_Stoneskin_Desc")));
+                .WithLongDescription(GetString("MM_S_Adnd_Stoneskin_Desc")))
+                .AddToggle(Toggle.New(GetKey("mm.en.prebuff"), defaultValue: false, GetString("MM_S_Enemy_Prebuff"))
+                .WithLongDescription(GetString("MM_S_Enemy_Prebuff_Desc")));
 
             Menu.AddSettings(settings);
         }

@@ -3,6 +3,7 @@ using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Selection;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.Items.Weapons;
+using Kingmaker.DLC;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
@@ -29,6 +30,8 @@ namespace MysticalMayhem.Helpers
 
         public static BlueprintCharacterClass Class(string id, bool mod = false) => GetBP<BlueprintCharacterClass>(id, mod);
 
+        public static BlueprintDlc DLC(string id, bool mod = false) => GetBP<BlueprintDlc>(id, mod);
+
         public static BlueprintFeature Feature(string id, bool mod = false) => GetBP<BlueprintFeature>(id, mod);
         public static BlueprintParametrizedFeature ParametrizedFeature(string id, bool mod = false) => GetBP<BlueprintParametrizedFeature>(id, mod);
 
@@ -43,6 +46,8 @@ namespace MysticalMayhem.Helpers
         public static BlueprintSpellList SpellList(string id, bool mod = false) => GetBP<BlueprintSpellList>(id, mod);
 
         public static BlueprintStatProgression StatProgression(string id, bool mod = false) => GetBP<BlueprintStatProgression>(id, mod);
+
+        public static BlueprintUnit Unit(string id, bool mod = false) => GetBP<BlueprintUnit>(id, mod);
 
         public static BlueprintItemWeapon Weapon(string id, bool mod = false) => GetBP<BlueprintItemWeapon>(id, mod);
 
