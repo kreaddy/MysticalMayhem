@@ -1,6 +1,7 @@
 ﻿using HarmonyLib;
 using Kingmaker.Blueprints.JsonSystem;
 using MysticalMayhem.Helpers;
+using MysticalMayhem.Mechanics;
 
 namespace MysticalMayhem.HarmonyPatches
 {
@@ -18,6 +19,7 @@ namespace MysticalMayhem.HarmonyPatches
                 BlueprintLoader.LoadBlueprints();
 
                 SpellComponentPatcher.PatchAssemblyForMaterialFreedom();
+                DescriptorExtender.PatchUIUtilityTexts();
 
                 if (Settings.IsEnabled("mm.adnd.stoneskin") && !Settings.IsEnabled("mm.no.homebrew")) PostPatches.ApplyStoneskinChanges();
             }

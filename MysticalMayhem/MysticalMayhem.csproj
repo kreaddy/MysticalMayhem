@@ -264,6 +264,10 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Blueprints\Spells\SpellTurning\" />
+  </ItemGroup>
+
 	<Target Name="Publicize" AfterTargets="Clean">
 		<ItemGroup>
 			<!-- Use $(KingmakerPath)\Kingmaker_Data\Managed\Assembly-CSharp.dll for Kingmaker -->
