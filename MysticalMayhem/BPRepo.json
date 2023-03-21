@@ -1,5 +1,6 @@
 {
   "AbjurationAbsorbRes": "948df8224518d0f4b9b35921789e8f1f",
+  "AbjurationSpellList": "c7a55e475659a944f9229d89c4dc3a8e",
   "AbjurationResistanceRes": "d16e573dc50e8b548b6e7e1044a21373",
   "AbjurationWardRes": "870a9cc29d8d0e945b7fbd7926378197",
   "AlchemistSpellList": "f60d0cd93edc65c42ad31e34a905fb2f",
@@ -58,7 +59,9 @@
   "InquisitorSpellList": "57c894665b7895c499b3dce058c284b3",
   "LayHealerLv3": "860afffa-34cd-4531-9608-d1a03b2bd835",
   "LayHealerLv5": "ad709356-e51d-4cb3-b5e9-1fb5284f33e2",
+  "LuckSpellList": "9e756552e9b05ce459feac658dd2d8fb",
   "LustSpellList": "ac551db78c1baa34eb8edca088be13cb",
+  "MagicSpellList": "f997258a28a9e5f4192d973433edec5f",
   "MagusArcanaSelection": "e9dc4dfc73eaaf94aae27e0ed6cc9ada",
   "MagusArcanePoolResource": "effc3e386331f864e9e06d19dc218b37",
   "MagusClass": "45a4607686d96a1498891b3286121780",

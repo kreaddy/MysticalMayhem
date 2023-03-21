@@ -1,0 +1,31 @@
+{
+  "AssetId": "b900396f-201e-4b87-a45d-f44968cd9921",
+  "PatchList": [ "AddIcon:s_spell_turning" ],
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "Components": [
+      {
+        "$type": "c0dd366b-76a0-4000-bc86-df1d024e9a34, SpellTurningXLevels",
+        "BonusLevels": 6,
+        "Descriptor": "SpellProtection"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "e50e366b-fc72-4b1b-8e19-3464b182db92"
+    },
+    "m_Description": {
+      "m_Key": "MM_SpellTurning_Desc"
+    },
+    "IsClassFeature": false,
+    "m_Flags": 0,
+    "Stacking": "Replace",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "Rounds",
+    "FxOnStart": null,
+    "FxOnRemove": null,
+    "ResourceAssetIds": []
+  }
+}

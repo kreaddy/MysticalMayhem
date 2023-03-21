@@ -66,6 +66,8 @@
     <None Remove="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
     <None Remove="Blueprints\Spells\MightyStrength\MightyStrength.json" />
     <None Remove="Blueprints\Spells\MightyStrength\MightyStrengthBuff.json" />
+    <None Remove="Blueprints\Spells\SpellTurning\SpellTurning.json" />
+    <None Remove="Blueprints\Spells\SpellTurning\SpellTurningBuff.json" />
     <None Remove="Blueprints\Spells\SureCasting\SureCasting.json" />
     <None Remove="Blueprints\Spells\SureCasting\SureCastingBuff.json" />
     <None Remove="Localization\star.json" />
@@ -161,6 +163,8 @@
     <EmbeddedResource Include="Blueprints\Spells\MeteorSwarm\MeteorSwarmArea.json" />
     <EmbeddedResource Include="Blueprints\Spells\MightyStrength\MightyStrength.json" />
     <EmbeddedResource Include="Blueprints\Spells\MightyStrength\MightyStrengthBuff.json" />
+    <EmbeddedResource Include="Blueprints\Spells\SpellTurning\SpellTurning.json" />
+    <EmbeddedResource Include="Blueprints\Spells\SpellTurning\SpellTurningBuff.json" />
     <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCasting.json" />
     <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCastingBuff.json" />
     <EmbeddedResource Include="BPRepo.json" />
@@ -262,10 +266,6 @@
     <None Update="Localization\zhCN.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Blueprints\Spells\SpellTurning\" />
   </ItemGroup>
 
 	<Target Name="Publicize" AfterTargets="Clean">

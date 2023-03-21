@@ -46,7 +46,7 @@ namespace MysticalMayhem.Mechanics
         {
             var descriptors = SpellDescriptor.None;
             ability.GetComponents<AddExtendedSpellDescriptor>().ForEach(action: c => { descriptors |= c.Descriptor; });
-            Main.DebugLog($"Ability [[{ability.NameSafe()}]] has the descriptors: [[{descriptors}]].");
+            //Main.DebugLog($"Ability [[{ability.NameSafe()}]] has the descriptors: [[{descriptors}]].");
             return descriptors;
         }
 
@@ -59,7 +59,7 @@ namespace MysticalMayhem.Mechanics
             var descriptors = GetExtendedSpellDescriptors(ability);
             EnumUtils.GetValues<SpellDescriptor>()
                 .Where(value => value > SpellDescriptor.None && descriptors.HasFlag(value))
-                .ForEach(action: descriptor => { UIUtilityTexts.AddWord(stringBuilder, LocalizationManager.CurrentPack.GetText($"MM_Descriptor_{descriptor}")); });
+                .ForEach(action: descriptor => { UIUtilityTexts.AddWord(stringBuilder, LocalizationManager.CurrentPack.GetText($"MM_EXD_{descriptor}")); });
 
             return stringBuilder.ToString();
         }
