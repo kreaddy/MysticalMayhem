@@ -484,6 +484,26 @@
     {
       "Key": "MM_MightyStrength_Desc",
       "Value": "The subject becomes stronger. The spell grants a +8 enhancement bonus to Strength, adding the usual benefits to melee attack rolls, melee damage rolls, and other uses of the Strength modifier."
+    },
+    {
+      "Key": "MM_EXD_Draconic",
+      "Value": "Draconic"
+    },
+    {
+      "Key": "MM_EXD_SpellProtection",
+      "Value": "Spell Protection"
+    },
+    {
+      "Key": "MM_SpellTurning_Desc",
+      "Value": "Spells and spell-like effects targeted on you are turned back upon the original caster. The abjuration turns only spells that have you as a target. Effect and area spells are not affected. Spell turning also fails to stop touch range spells. From seven to ten (1d4+6) spell levels are affected by the turning. The exact number is rolled secretly.\nIf you are targeted by a spell of higher level than the amount of spell turning you have left, that spell harmessly dissipates instead of harming its caster."
+    },
+    {
+      "Key": "MM_S_Enemy_Prebuff",
+      "Value": "Enemy Prebuffing"
+    },
+    {
+      "Key": "MM_S_Enemy_Prebuff_Desc",
+      "Value": "Allows enemies to make use of new spells in their prebuffing routine."
     }
   ]
 }

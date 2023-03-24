@@ -1,3 +1,10 @@
+### Version 0.2.0
+* Added Draconic Malice.
+* Added Mighty Strengh.
+* Added Spell Turning.
+* Fixed erroneous saving throw type on a few spells.
+* Optional (and very experimental) setting to let a few bosses pre-buff with Spell Turning.
+
 ### Version 0.1.7
 * Added Sure Casting.
 * Added Bloody Tears and Jagged Smile.
