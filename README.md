@@ -64,7 +64,7 @@ FAQ & Troubleshooting
 
 Credits
 -----------
-* [Kifusou](https://github.com/Kifusou) for translating the mod into Chinese.
+* [Kifusou](https://github.com/Kifusou) and [nixgnot](https://github.com/nixgnot) for translating the mod into Chinese.
 * bubbles for [BubblePrints](https://github.com/factubsio/BubblePrints) and for being generally very helpful.
 * Vek17 for [Tabletop Tweaks](https://github.com/Vek17/TabletopTweaks-Core), which has been very useful to learn when I started modding.
 * WittleWolfie for releasing Mod Menu, finally freeing us from the horror of ImGui.
