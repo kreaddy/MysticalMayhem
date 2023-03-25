@@ -479,31 +479,31 @@
     },
     {
       "Key": "MM_MightyStrength_Name",
-      "Value": "Mighty Strength"
+      "Value": "强壮之力"
     },
     {
       "Key": "MM_MightyStrength_Desc",
-      "Value": "The subject becomes stronger. The spell grants a +8 enhancement bonus to Strength, adding the usual benefits to melee attack rolls, melee damage rolls, and other uses of the Strength modifier."
+      "Value": "受术者变得更强壮。该法术能使目标的{g|Encyclopedia:Strength}力量{/g}获得+8增强{g|Encyclopedia:Bonus}加值{/g}，并如常提高{g|Encyclopedia:MeleeAttack}近战攻击{/g}检定、近战{g|Encyclopedia:Damage}伤害检定{/g}等应用力量调整值的情况。"
     },
     {
       "Key": "MM_EXD_Draconic",
-      "Value": "Draconic"
+      "Value": "龙"
     },
     {
       "Key": "MM_EXD_SpellProtection",
-      "Value": "Spell Protection"
+      "Value": "法术防护"
     },
     {
       "Key": "MM_SpellTurning_Desc",
-      "Value": "Spells and spell-like effects targeted on you are turned back upon the original caster. The abjuration turns only spells that have you as a target. Effect and area spells are not affected. Spell turning also fails to stop touch range spells. From seven to ten (1d4+6) spell levels are affected by the turning. The exact number is rolled secretly.\nIf you are targeted by a spell of higher level than the amount of spell turning you have left, that spell harmessly dissipates instead of harming its caster."
+      "Value": "以你为目标的法术或类法术效果会弹回原施法者的身上。这种防护性质的法术只会反转以你为目标的法术。效果型和区域型的法术不受影响，对远程接触类法术也无效。可反转的法术等级为7到10 (1d4+6)。具体数值由暗投决定。\n如果你成为了法术等级高于法术逆转剩余数值的法术目标，法术将会消散而不是对施法者造成伤害。"
     },
     {
       "Key": "MM_S_Enemy_Prebuff",
-      "Value": "Enemy Prebuffing"
+      "Value": "敌人预释放BUFF"
     },
     {
       "Key": "MM_S_Enemy_Prebuff_Desc",
-      "Value": "Allows enemies to make use of new spells in their prebuffing routine."
+      "Value": "允许敌人预先获得一部分新法术的BUFF。"
     }
   ]
 }
