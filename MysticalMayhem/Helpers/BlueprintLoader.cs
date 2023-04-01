@@ -88,6 +88,10 @@ namespace MysticalMayhem.Helpers
                 Homebrew = blueprintJsonWrapper.Homebrew
             };
             blueprintJsonWrapper.Data.OnEnable();
+            if (ResourcesLibrary.TryGetBlueprint(BlueprintGuid.Parse(blueprintJsonWrapper.AssetId)) != null)
+            {
+                throw new Exception($"Guid {container.AssetGuid} used by {res} already exists! Most likely a mod conflict!");
+            }
             ResourcesLibrary.BlueprintsCache.AddCachedBlueprint(BlueprintGuid.Parse(blueprintJsonWrapper.AssetId), blueprintJsonWrapper.Data);
             container.FinalizeBP();
             _blueprints.Add(blueprintJsonWrapper.AssetId);
