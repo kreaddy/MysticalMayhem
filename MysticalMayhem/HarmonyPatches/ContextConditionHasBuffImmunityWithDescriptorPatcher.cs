@@ -3,7 +3,6 @@ using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.UnitLogic.Mechanics.Conditions;
 using MysticalMayhem.Helpers;
 using MysticalMayhem.Mechanics;
-using System.Runtime.Remoting.Contexts;
 
 namespace MysticalMayhem.HarmonyPatches
 {
@@ -16,16 +15,16 @@ namespace MysticalMayhem.HarmonyPatches
             private static void CheckCondition_MM(ref bool __result, ContextConditionHasBuffImmunityWithDescriptor __instance)
             {
                 if (!__result) { return; }
-                __result = HandleDraconicMalice(__result, __instance);
+                HandleDraconicMalice(ref __result, __instance);
 
             }
         }
 
-        private static bool HandleDraconicMalice(bool result, ContextConditionHasBuffImmunityWithDescriptor contextCondition)
+        private static void HandleDraconicMalice(ref bool __result, ContextConditionHasBuffImmunityWithDescriptor contextCondition)
         {
             Main.DebugLog($"Context Condition descriptors contain Fear or Mind-Affecting at start: " +
                 $"{contextCondition.Context.SpellDescriptor.HasAnyFlag(SpellDescriptor.MindAffecting | SpellDescriptor.Fear)}");
-            if (contextCondition.SpellDescriptor.HasAnyFlag(SpellDescriptor.MindAffecting | SpellDescriptor.Fear) == false) return result;
+            if (contextCondition.SpellDescriptor.HasAnyFlag(SpellDescriptor.MindAffecting | SpellDescriptor.Fear) == false) return;
             Main.DebugLog("Fear or Mind-Affecting descriptor found.");
             if (contextCondition.Target.Unit.Descriptor.GetEXFeature(FeatureExtender.Feature.DraconicMaliceCurse))    
             {
@@ -34,10 +33,10 @@ namespace MysticalMayhem.HarmonyPatches
                 if (curseCaster != null && curseCaster == contextCondition.Context.MaybeCaster)
                 {
                     Main.DebugLog("Draconic Malice's caster found.");
-                    return false;
+                    __result = false;
+                    return;
                 }
             }
-            return result;
         }
     }
 }

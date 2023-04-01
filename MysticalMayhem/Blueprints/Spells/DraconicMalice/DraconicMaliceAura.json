@@ -8,30 +8,8 @@
         "UnitEnter": {
           "Actions": [
             {
-              "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
-              "ConditionsChecker": {
-                "Operation": "And",
-                "Conditions": [
-                  {
-                    "$type": "b0c4370c781db0142b035f14ca13a6a5, ContextConditionIsEnemy",
-                    "Not": false
-                  },
-                  {
-                    "$type": "9706de75454abeb48bd4cfa7f526a1c2, ContextConditionHasFact",
-                    "m_Fact": "!bp_734a29b693e9ec346ba2951b27987e33",
-                    "Not": true
-                  },
-                  {
-                    "$type": "9706de75454abeb48bd4cfa7f526a1c2, ContextConditionHasFact",
-                    "m_Fact": "!bp_fd389783027d63343b4a5634bd81645f",
-                    "Not": true
-                  }
-                ]
-              },
-              "IfFalse": {
-                "Actions": []
-              },
-              "IfTrue": {
+              "$type": "9a81667c-0099-45b2-a8f9-ed9e8a8dab44, DraconicMaliceConditional",
+              "SubList": {
                 "Actions": [
                   {
                     "$type": "5e2f2046f3bd6984c8833bf019c8e8ad, ContextActionSavingThrow",
@@ -59,7 +37,7 @@
                               {
                                 "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
                                 "m_Buff": "!bp_8fb4b970-c758-4970-aa42-d47b69ec52c1",
-                                "Permanent": false,
+                                "Permanent": true,
                                 "UseDurationSeconds": false,
                                 "DurationValue": {
                                   "Rate": "TenMinutes",
