@@ -30,6 +30,195 @@ Ray of Enfeeblement
 Ray of Sickening
 Reduce Person
 Shadow Trap (CO+)
-Sure Casting
+Summon Monster I
+Sure Casting (MM)
 Touch of Blindness (CO+)
 True Strike
+
+///////////////
+// Level 2
+//////////////
+
+Acid Arrow
+Bear's Endurance
+Blindness
+Bloody Tears and Jagged Smile (MM)
+Bone Fist (DLC4)
+Boneshaker
+Bull's Strength
+Cat's Grace
+Cure Moderate Wounds
+Desecreate (CO+)
+Eagle's Splendor
+False Life
+Fester
+Fox's Cunning
+Hold Person
+Inflict Moderate Wounds
+Molten Orb
+Owl's Wisdom
+Pox Pustules
+Scare
+Scorching Ray
+See Invisibility
+Summon Monster II
+
+///////////////
+// Level 3
+//////////////
+
+Bestow Curse
+Blink
+Burning Entanglement (DLC4)
+Contagion
+Cure Serious Wounds
+Dispel Magic
+Draconic Malice (MM)
+Fireball
+Fly (Firebird)
+Gloomblind Bolts (Firebird or EC)
+Haste
+Heroism
+Inflict Pain (EC)
+Inflict Serious Wounds
+Keen Edge (CO+)
+Rage
+Ray of Exhaustion
+Remove Blindness
+Remove Disease
+Stinking Cloud
+Summon Monster III
+Vampiric Touch
+
+///////////////
+// Level 4
+//////////////
+
+Acid Pit
+Animate Dead
+Confusion
+Controlled Fireball
+Crushing Despair
+Cure Critical Wounds
+Death Ward
+Dimension Door
+Dismissal
+Enervation
+False Life, Greater
+Fear
+Fire Shield (Firebird)
+Fleshworm Infestation (CO+)
+Inflict Critical Wounds
+Magic Weapon, Greater
+Mighty Strength (MM)
+Neutralize Poison
+Phantasmal Killer
+Poison
+Summon Monster IV
+Vitriolic Mist (Firebird)
+Volcanic Storm
+Wall of Fire (EC)
+
+///////////////
+// Level 5
+//////////////
+
+Acidic Spray
+Break Enchantment
+Breath of Life
+Cloudkill
+Cure Light Wounds, Mass
+Dominate Person
+Feeblemind
+Fire Snake
+Flame Strike
+Hungry Pit
+Inflict Light Wounds, Mass
+Mind Fog
+Slay Living
+Spell Resistance
+Summon Monster V
+Vampiric Shadow Shield
+Waves of Fatigue
+Wracking Ray
+
+///////////////
+// Level 6
+//////////////
+
+Acid Fog
+Banshee Blast
+Bear's Endurance, Mass
+Bull's Strength, Mass
+Cat's Grace, Mass
+Chains of Fire (Firebird)
+Circle of Death
+Cure Moderate Wounds, Mass
+Dimensional Blade (CO+)
+Disintegrate
+Dispel Magic, Greater
+Eagle's Splendor, Mass
+Eyebite
+Fester, Mass
+Fox's Cunning, Mass
+Harm
+Hellfire Ray
+Inflict Moderate Wounds, Mass
+Owl's Wisdom, Mass
+Plague Storm
+Sirocco
+Summon Monster VI
+Transformation
+True Seeing
+
+///////////////
+// Level 7
+//////////////
+
+Banishment
+Bestow Curse, Greater
+Caustic Eruption
+Cure Serious Wounds, Mass
+Destruction
+Finger of Death
+Hold Person, Mass
+Inflict Pain, Mass (EC)
+Inflict Serious Wounds, Mass
+Insanity
+Legendary Proportions
+Power Word Blind
+Spell Turning (MM)
+Steam Ray Fusillade (EC)
+Summon Monster VII
+Umbral Strike
+Walk Through Space
+
+///////////////
+// Level 8
+//////////////
+
+Cure Critical Wounds, Mass
+Death Clutch
+Firestorm
+Frightful Aspect
+Horrid Wilting
+Inflict Critical Wounds, Mass
+Mind Blank
+Nine Lives (CO+)
+Power Word Stun
+Rift of Ruin
+Soulreaver
+Summon Monster VIII
+Unholy Aura
+
+///////////////
+// Level 9
+//////////////
+
+Mage's Disjunction (TTT)
+Meteor Swarm (MM)
+Mind Blank, Communal
+Power Word Kill
+Scourge of the Horsemen (EC)
+Summon Monster IX
+Wail of the Banshee

@@ -1,0 +1,53 @@
+{
+  "AssetId": "5e3f74d3-e926-4b6e-87ae-9ac4c236567f",
+  "PatchList": ["AddIcon:c_warlock_insanity" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "00dbeecf-56d0-41d5-9410-d8a116d9b4e1, AddWarlockMechanic",
+        "Feature": "ComfortableInsanity"
+      },
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_30507657-ae76-4378-989a-88788ca0fb5f"
+        ],
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      },
+      {
+        "$type": "fd82ca085bd60c04fb03d1091acc66cb, AddAbilityResources",
+        "m_Overrides": [],
+        "UseThisAsResource": false,
+        "m_Resource": "!bp_069e7327-ddcf-4bf0-8b96-6ee3032f60b3",
+        "Amount": 0,
+        "RestoreAmount": true,
+        "RestoreOnLevelUp": false
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockInsanity_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockInsanity_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

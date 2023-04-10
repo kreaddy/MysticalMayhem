@@ -1,0 +1,45 @@
+{
+  "AssetId": "fe2100d5-bb97-47cc-8936-64077a18cd1f",
+  "PatchList": [ "AddIcon:c_warlock_profs" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "Components": [
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "m_Facts": [
+          "!bp_6d3728d4e9c9898458fe5e9532951132",
+          "!bp_e70ecf1ed95ca2f40b754f1adb22bbdd"
+        ],
+        "Dummy": null,
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      },
+      {
+        "$type": "80ae0054466b76d41be6060fc0ef77a8, ArcaneArmorProficiency",
+        "Armor": [
+          "Light"
+        ]
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockProfs_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockProfs_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

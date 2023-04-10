@@ -1,0 +1,34 @@
+{
+  "AssetId": "6ed82cfa-b7f5-495f-8a44-f503b59561fd",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
+        "Stat": "AdditionalAttackBonus",
+        "Descriptor": "Insight",
+        "Value": 1
+      },
+      {
+        "$type": "cc34ef2ca987e81409279f19cf843a26, AddAttackBonusAgainstFriendly",
+        "Value": -5
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockInsanity_Name"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

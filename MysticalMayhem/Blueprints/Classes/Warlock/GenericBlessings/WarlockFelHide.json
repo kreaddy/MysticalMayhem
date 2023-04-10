@@ -1,0 +1,134 @@
+{
+  "AssetId": "f0fda6c2-f61f-4b8d-8834-7c4f11a7668d",
+  "PatchList": [ "AddIcon:c_warlock_felhide" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "Components": [
+      {
+        "$type": "f08844ce14d498a45a9fc64582489a2a, AddContextStatBonus",
+        "Descriptor": "NaturalArmor",
+        "Stat": "AC",
+        "Multiplier": 1,
+        "Value": {
+          "ValueType": "Rank",
+          "Value": 0,
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null
+        }
+      },
+      {
+        "$type": "a15673bd9e3879442825226335fd8fe2, ContextRankConfig",
+        "m_Overrides": [],
+        "m_Type": "Default",
+        "m_BaseValueType": "ClassLevel",
+        "m_Feature": null,
+        "m_FeatureList": [],
+        "m_Stat": null,
+        "m_SpecificModifier": "None",
+        "m_Buff": null,
+        "m_Progression": "Custom",
+        "m_CustomProgression": [
+          {
+            "BaseValue": 2,
+            "ProgressionValue": 1
+          },
+          {
+            "BaseValue": 3,
+            "ProgressionValue": 1
+          },
+          {
+            "BaseValue": 4,
+            "ProgressionValue": 1
+          },
+          {
+            "BaseValue": 5,
+            "ProgressionValue": 1
+          },
+          {
+            "BaseValue": 6,
+            "ProgressionValue": 2
+          },
+          {
+            "BaseValue": 7,
+            "ProgressionValue": 2
+          },
+          {
+            "BaseValue": 8,
+            "ProgressionValue": 2
+          },
+          {
+            "BaseValue": 9,
+            "ProgressionValue": 2
+          },
+          {
+            "BaseValue": 10,
+            "ProgressionValue": 3
+          },
+          {
+            "BaseValue": 11,
+            "ProgressionValue": 3
+          },
+          {
+            "BaseValue": 12,
+            "ProgressionValue": 3
+          },
+          {
+            "BaseValue": 13,
+            "ProgressionValue": 3
+          },
+          {
+            "BaseValue": 14,
+            "ProgressionValue": 4
+          },
+          {
+            "BaseValue": 15,
+            "ProgressionValue": 4
+          },
+          {
+            "BaseValue": 16,
+            "ProgressionValue": 4
+          },
+          {
+            "BaseValue": 17,
+            "ProgressionValue": 4
+          },
+          {
+            "BaseValue": 18,
+            "ProgressionValue": 5
+          }
+        ],
+        "m_StartLevel": 0,
+        "m_StepLevel": 0,
+        "m_UseMin": true,
+        "m_Min": 1,
+        "m_UseMax": true,
+        "m_Max": 5,
+        "m_ExceptClasses": false,
+        "Archetype": null,
+        "m_AdditionalArchetypes": [],
+        "m_Class": [ "!bp_297c08b0-201f-43c0-bd20-f4aa483cf97e" ],
+        "m_CustomProperty": null,
+        "m_CustomPropertyList": []
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockFelHide_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockFelHide_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": true,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

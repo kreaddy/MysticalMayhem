@@ -1,0 +1,33 @@
+{
+  "AssetId": "a0321379-46a5-4ab7-86e8-258a5fb0065f",
+  "PatchList": [ "AddIcon:c_warlock_lifetap" ],
+  "Data": {
+    "$type": "f7bbaafe7a7cbad4693107291c548dcc, BlueprintActivatableAbility",
+    "Components": [
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Warlock_LifeTap_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_Warlock_LifeTap_Desc"
+    },
+    "m_Buff": "!bp_57391603-0572-4743-984c-e391e20421d3",
+    "Group": "None",
+    "WeightInGroup": 1,
+    "IsOnByDefault": false,
+    "DeactivateIfCombatEnded": false,
+    "DeactivateAfterFirstRound": false,
+    "DeactivateImmediately": true,
+    "IsTargeted": false,
+    "DeactivateIfOwnerDisabled": true,
+    "DeactivateIfOwnerUnconscious": true,
+    "OnlyInCombat": false,
+    "DoNotTurnOffOnRest": false,
+    "ActivationType": "Immediately",
+    "m_ActivateWithUnitCommand": "Free",
+    "m_ActivateOnUnitAction": "Attack",
+    "m_SelectTargetAbility": null
+  }
+}

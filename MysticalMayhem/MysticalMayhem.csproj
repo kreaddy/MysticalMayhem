@@ -40,6 +40,44 @@
     <None Remove="Blueprints\Archetypes\RazmiranPriest\RazmiranPriestArchetype.json" />
     <None Remove="Blueprints\Archetypes\Warsighted\WarsightedArchetype.json" />
     <None Remove="Blueprints\Archetypes\Warsighted\WarsightedFeatSelection.json" />
+    <None Remove="Blueprints\Classes\Warlock\GenericBlessings\WarlockBlessingSelection.json" />
+    <None Remove="Blueprints\Classes\Warlock\GenericBlessings\WarlockEmpoweredCharisma.json" />
+    <None Remove="Blueprints\Classes\Warlock\GenericBlessings\WarlockFelHide.json" />
+    <None Remove="Blueprints\Classes\Warlock\GenericBlessings\WarlockFellResistance.json" />
+    <None Remove="Blueprints\Classes\Warlock\GenericBlessings\WarlockFireImmunity.json" />
+    <None Remove="Blueprints\Classes\Warlock\GenericBlessings\WarlockMaleficium.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap10.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap12.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap14.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap16.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap18.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap2.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap20.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap4.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap6.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTap8.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapAbility.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapBuff.json" />
+    <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapFeature.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockBabble.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockBabbleResource.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockInsanity.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockInsanityABModifiers.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOne.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOneDevotion.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOnePact.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\WarlockPatronSelection.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockAbilityDCProperty.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockCantripFeature.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockClass.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockProficiencies.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockProgression.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockSignatureI.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockSignatureII.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockSignatureIII.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockSpellbook.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockSpellList.json" />
+    <None Remove="Blueprints\Classes\Warlock\WarlockSpellsDailyTable.json" />
     <None Remove="Blueprints\Deities\Razmir.json" />
     <None Remove="Blueprints\Feats\AcadamaeGraduate.json" />
     <None Remove="Blueprints\Feats\EarthMagic.json" />
@@ -82,6 +120,44 @@
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\RazmiranChannel\RazmiranChannelAbility.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\RazmiranChannel\RazmiranChannelFeature.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\RazmiranPriestArchetype.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\GenericBlessings\WarlockBlessingSelection.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\GenericBlessings\WarlockFellResistance.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\GenericBlessings\WarlockFelHide.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\GenericBlessings\WarlockEmpoweredCharisma.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\GenericBlessings\WarlockFireImmunity.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\GenericBlessings\WarlockMaleficium.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap10.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap12.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap14.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap16.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap18.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap2.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap20.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap4.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap6.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTap8.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapBuff.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapAbility.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapFeature.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockBabbleResource.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockBabble.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockInsanityABModifiers.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockInsanity.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOneDevotion.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOnePact.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOne.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\WarlockPatronSelection.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockAbilityDCProperty.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockCantripFeature.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockClass.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockProficiencies.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockProgression.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSignatureI.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSignatureII.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSignatureIII.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSpellbook.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSpellList.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSpellsDailyTable.json" />
     <EmbeddedResource Include="Blueprints\Deities\Razmir.json" />
     <EmbeddedResource Include="Blueprints\Feats\TestFeat.json" />
     <EmbeddedResource Include="Blueprints\MagusArcana\Malice.json" />
@@ -266,10 +342,6 @@
     <None Update="Localization\zhCN.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Blueprints\Classes\Warlock\Patrons\" />
   </ItemGroup>
 
 	<Target Name="Publicize" AfterTargets="Clean">

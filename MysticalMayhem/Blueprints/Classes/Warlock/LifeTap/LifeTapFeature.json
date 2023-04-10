@@ -1,0 +1,38 @@
+{
+  "AssetId": "a2c5b100-f0cc-46d5-a0ad-53351486e824",
+  "PatchList": [ "AddIcon:c_warlock_lifetap" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "Components": [
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_a0321379-46a5-4ab7-86e8-258a5fb0065f"
+        ],
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Warlock_LifeTap_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_Warlock_LifeTap_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": true,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": true,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

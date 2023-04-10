@@ -8,7 +8,7 @@ using Kingmaker.Craft;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Newtonsoft.Json;
-using System.ComponentModel.Design;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 
@@ -165,6 +165,12 @@ namespace MysticalMayhem.Helpers
             (Blueprint as BlueprintUnitFact).m_Icon = ResourceHandler.Sprites[args[0]];
         }
 
+        public void AddToClassGroup(string[] args)
+        {
+            var group = BPLookup.GetBP<BlueprintCharacterClassGroup>(args[0]);
+            group.m_CharacterClasses = group.m_CharacterClasses.Push(Blueprint.ToReference<BlueprintCharacterClassReference>());
+        }
+
         public void AddToCraftingList(string[] _)
         {
             var root = BPLookup.GetBP<CraftRoot>("CraftRoot");
@@ -187,6 +193,23 @@ namespace MysticalMayhem.Helpers
             else
             {
                 levelEntries.First().m_Features.Add(Blueprint.ToReference<BlueprintFeatureBaseReference>());
+            }
+        }
+
+        public static void AddToSpellList(BlueprintSpellList spellList, Dictionary<string, int> spellData)
+        {
+            foreach (KeyValuePair<string, int> pair in spellData)
+            {
+                var bp = ResourcesLibrary.TryGetBlueprint<BlueprintAbility>(pair.Key);
+                if (bp == null || bp.ComponentsArray == null || bp.ComponentsArray.Length == 0) { continue; }
+                spellList.SpellsByLevel[pair.Value].m_Spells.Add(bp.ToReference<BlueprintAbilityReference>());
+                bp.ComponentsArray = bp.ComponentsArray
+                    .Push(new SpellListComponent()
+                    {
+                        name = $"gen{spellList.NameSafe()}-{bp.NameSafe()}",
+                        m_SpellList = spellList.ToReference<BlueprintSpellListReference>(),
+                        SpellLevel = pair.Value
+                    });
             }
         }
 

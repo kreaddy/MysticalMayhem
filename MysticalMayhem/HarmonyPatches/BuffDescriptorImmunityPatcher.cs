@@ -15,26 +15,26 @@ namespace MysticalMayhem.HarmonyPatches
             [HarmonyPrefix]
             private static void IsImmune_MM(MechanicsContext context, BuffDescriptorImmunity __instance)
             {
-                Main.DebugLog("Starting immunity check...");
+                //Main.DebugLog("Starting immunity check...");
                 DraconicMaliceOverride(context, __instance);
             }
         }
 
         private static void DraconicMaliceOverride(MechanicsContext context, BuffDescriptorImmunity __instance)
         {
-            Main.DebugLog($"Mind-Affecting: {context.SpellDescriptor.HasAnyFlag(SpellDescriptor.MindAffecting)}");
-            Main.DebugLog($"Fear: {context.SpellDescriptor.HasAnyFlag(SpellDescriptor.Fear)}");
+            //Main.DebugLog($"Mind-Affecting: {context.SpellDescriptor.HasAnyFlag(SpellDescriptor.MindAffecting)}");
+            //Main.DebugLog($"Fear: {context.SpellDescriptor.HasAnyFlag(SpellDescriptor.Fear)}");
             if (context.SpellDescriptor.HasAnyFlag(SpellDescriptor.MindAffecting | SpellDescriptor.Fear) == false) return;
-            Main.DebugLog("Fear or Mind-Affecting descriptor found.");
-            Main.DebugLog(__instance.Owner.CharacterName);
-            Main.DebugLog(__instance.Owner.Descriptor.GetEXFeature(FeatureExtender.Feature.DraconicMaliceCurse).ToString());
+            //Main.DebugLog("Fear or Mind-Affecting descriptor found.");
+            //Main.DebugLog(__instance.Owner.CharacterName);
+            //Main.DebugLog(__instance.Owner.Descriptor.GetEXFeature(FeatureExtender.Feature.DraconicMaliceCurse).ToString());
             if (__instance.Owner.Descriptor.GetEXFeature(FeatureExtender.Feature.DraconicMaliceCurse))    
             {
-                Main.DebugLog("Target affected by Draconic Malice.");
+                //Main.DebugLog("Target affected by Draconic Malice.");
                 var curseCaster = __instance.Owner.Descriptor.Buffs.GetBuff(BPLookup.Buff("DraconicMaliceAuraBuff", true))?.MaybeContext.MaybeCaster;
                 if (curseCaster != null && curseCaster == context.MaybeCaster)
                 {
-                    Main.DebugLog("Draconic Malice's caster found.");
+                    //Main.DebugLog("Draconic Malice's caster found.");
                     context.RemoveSpellDescriptor(SpellDescriptor.MindAffecting);
                     context.RemoveSpellDescriptor(SpellDescriptor.Fear);
                     context.RemoveSpellDescriptor(SpellDescriptor.Shaken);

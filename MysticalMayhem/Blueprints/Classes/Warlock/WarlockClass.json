@@ -1,7 +1,7 @@
 ﻿{
   "AssetId": "297c08b0-201f-43c0-bd20-f4aa483cf97e",
   "Homebrew": true,
-  "PatchList": [ "AddToClassList:Base" ],
+  "PatchList": [ "AddToClassGroup:ClassGroupArcaneCasters" ],
   "Data": {
     "$type": "5f2bdd25f161a0d4c97bee89cf923d77, BlueprintCharacterClass",
     "Components": [
@@ -40,13 +40,13 @@
     "m_FortitudeSave": "!bp_ff4662bde9e75f145853417313842751",
     "m_ReflexSave": "!bp_dc0c7c1aba755c54f96c089cdf7d14a3",
     "m_WillSave": "!bp_ff4662bde9e75f145853417313842751",
-    "m_Progression": "!bp_02f3049806dbf62459259ea8cae8f715",
+    "m_Progression": "!bp_687433a0-482e-4cf8-aa71-15f3dfd127be",
     "m_Spellbook": "!bp_913023a5-e55b-4772-b0b7-a0335645dc6f",
     "ClassSkills": [
       "SkillKnowledgeArcana",
       "SkillLoreReligion",
       "SkillPersuasion",
-      "SkillTrickery",
+      "SkillThievery",
       "SkillStealth",
       "SkillUseMagicDevice"
     ],
@@ -92,9 +92,9 @@
       "Strength"
     ],
     "m_SignatureAbilities": [
-      "!bp_656b12e5bec3442db074fe17f7c9fde8",
-      "!bp_b73bc1b252994e6582a644dd6a7f31dc",
-      "!bp_c035eea74c0d4b8fa771e816193271ae"
+      "!bp_acb888da-48ba-4ce9-ab66-234afd660782",
+      "!bp_9452ce34-950a-454f-ae5e-5b86a31ac011",
+      "!bp_00d56423-a414-4771-9aee-4c0f16a3e522"
     ],
     "m_DefaultBuild": "!bp_f75b7868dd11fb04f83ca94f9f8cc957",
     "m_AdditionalVisualSettings": null

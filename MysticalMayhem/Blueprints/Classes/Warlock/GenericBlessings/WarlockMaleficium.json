@@ -1,0 +1,32 @@
+{
+  "AssetId": "4d2aaade-39e0-4522-b108-7fcd8d4143d6",
+  "PatchList": [ "AddIcon:c_warlock_maleficium" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "Components": [
+      {
+        "$type": "0894a6de-5880-4d05-bd98-91ddfd7720f3, MaleficiumAbilityParams"
+      },
+      {
+        "$type": "c60e4a23-4015-4f2f-a78a-cecb66d907f3, MaleficiumMetamagicCost"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockMaleficium_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockMaleficium_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 4,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

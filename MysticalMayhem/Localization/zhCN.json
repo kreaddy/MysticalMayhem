@@ -504,6 +504,134 @@
     {
       "Key": "MM_S_Enemy_Prebuff_Desc",
       "Value": "允许敌人预先获得一部分新法术的BUFF。"
+    },
+    {
+      "Key": "MM_WarlockPatron_Name",
+      "Value": "Warlock Patron"
+    },
+    {
+      "Key": "MM_WarlockPatron_Short_Desc",
+      "Value": "A warlock must choose a patron between several types of powerful outside entities. This choice will shape the warlock's abilities—the blessings and manifestations he has access to."
+    },
+    {
+      "Key": "MM_WarlockBlessing_Short_Name",
+      "Value": "Blessings"
+    },
+    {
+      "Key": "MM_WarlockBlessing_Short_Desc",
+      "Value": "A warlock can choose blessings from his patron at specific levels or in place of regular feats."
+    },
+    {
+      "Key": "MM_WarlockManif_Short_Name",
+      "Value": "Manifestations"
+    },
+    {
+      "Key": "MM_WarlockManif_Short_Desc",
+      "Value": "As a warlock grows in power he starts taking on traits similar to his patron's."
+    },
+    {
+      "Key": "MM_WarlockCantrips_Desc",
+      "Value": "Warlocks can cast a number of cantrips, or 0-level spells. These spells are cast like any other spell, but they are not expended when cast and may be used again."
+    },
+    {
+      "Key": "MM_WarlockProfs_Name",
+      "Value": "Warlock Proficiencies"
+    },
+    {
+      "Key": "MM_WarlockProfs_Desc",
+      "Value": "Warlocks are proficient with all simple weapons. Warlocks are also proficient with light armor. A warlock can cast warlock spells while wearing light armor without incurring the normal arcane spell failure chance. Like any other arcane spellcaster, a warlock wearing medium or heavy armor, or using a shield, incurs a chance of arcane spell failure if the spell in question has a somatic component. A multiclass warlock still incurs the normal arcane spell failure chance for arcane spells received from other classes."
+    },
+    {
+      "Key": "MM_WarlockPatron_Desc",
+      "Value": "A warlock’s patron is the source of their power. Warlock patrons can be anything from a demonic ancestor to a powerful contract devil but each patron falls into one category: Infernal, Daemonic, Abyssal, Great Old One, or Fey. A warlock’s patron determines the cost of their pact, how their patron’s power manifests, and what blessings their patron imparts onto them. A warlock must pick one type of patron upon taking his first level of warlock. Once made, this choice cannot be changed. A warlock must share the alignment of their patron at the time of gaining their patron. If their alignment changes later, it is up to the patron to determine if they will continue to grant the warlock power."
+    },
+    {
+      "Key": "MM_WarlockPatronGreatOldOne_Name",
+      "Value": "Great Old One Patron"
+    },
+    {
+      "Key": "MM_WarlockPact_Name",
+      "Value": "Pact"
+    },
+    {
+      "Key": "MM_WarlockPactGreatOldOne_Desc",
+      "Value": "The wishes and machinations of a Great Old One are unknowable. All one can do is embrace the madness and chaos. But frequently peering into the void has cost you some of your sanity. A servant of a Great Old One constantly has his mind bombarded with sanity shredding revelations. Whenever the warlock rolls initiative to enter combat, he must also roll a Will Save whose DC is equal to 10 + half the warlock’s level + the warlock’s Wisdom modifier. If the warlock fails this save, he is confused for 1d4 rounds. Because of this constant bombardment, the warlock’s mind is much more adept at handling threats. Whenever the warlock rolls a Will Save, he rolls twice and take the better result."
+    },
+    {
+      "Key": "MM_WarlockDevotion_Name",
+      "Value": "Devotion"
+    },
+    {
+      "Key": "MM_WarlockDevotionGreatOldOne_Desc",
+      "Value": "A warlock with a Great Old One patron subtracts 1 from the results of D100 rolls used to determine his actions while confused."
+    },
+    {
+      "Key": "MM_WarlockInsanity_Name",
+      "Value": "Comfortable Insanity"
+    },
+    {
+      "Key": "MM_WarlockInsanity_Desc",
+      "Value": "Cultists of the Great Old Ones are used to glimpses of the unthinkable and have adapted to the insanity it brings. Whenever the warlock is confused, his random actions are modified as follows:\nAct normally: No changes.\nBabble: The warlock's babbling is chaotic and maddening. One enemy within 30 feet must succeed on a Will save or become confused for 1d4 rounds. The DC of this Will save is equal to 10 + half the warlock’s level + the warlock’s Wisdom modifier. If there is no enemy within 30 feet the warlock targets an ally instead. If none can be found, nothing happens.\nDamage self: The damage is nonlethal.\nAttack nearest creature: The warlock gains a +1 insight bonus on attack rolls and also takes a -5 penalty against allies.\nAdditionally, all warlock spells the warlock casts while confused do not expend a spell slot. As a standard action, a warlock who is not confused can choose to babble. A warlock may babble in this way a number of times per day equal to 3 + his Wisdom modifier."
+    },
+    {
+      "Key": "MM_WarlockBabble_Name",
+      "Value": "Babble"
+    },
+    {
+      "Key": "MM_WarlockBabble_Desc",
+      "Value": "The warlock's babbling is chaotic and maddening. One target within 30 feet must succeed on a Will save or become confused for 1d4 rounds. The DC of this Will save is equal to 10 + half the warlock’s level + the warlock’s Wisdom modifier."
+    },
+    {
+      "Key": "MM_1d4_Rounds",
+      "Value": "1D4 rounds"
+    },
+    {
+      "Key": "MM_WarlockBlessing_Name",
+      "Value": "Fiendish Blessing"
+    },
+    {
+      "Key": "MM_WarlockBlessing_Desc",
+      "Value": "At 2nd level, 6th level, 10th level, 14th level, 18th level and 20th level, a warlock receives a new fiendish blessing. The warlock must select a fiendish blessing offered by his patron or one listed as a general fiendish blessing. Once selected, this blessing cannot be changed. Unless otherwise stated, each blessing can be chosen only once.\nWhenever a warlock would gain a feat, he may instead select a fiendish blessing he qualifies for."
+    },
+    {
+      "Key": "MM_WarlockMaleficium_Name",
+      "Value": "Maleficium"
+    },
+    {
+      "Key": "MM_WarlockMaleficium_Desc",
+      "Value": "A warlock with this blessing is a master of dark magic. Spells with the evil descriptor are cast with inceased potency depending on how many times the blessing is chosen.\nRank 1: DC increased by 1.\nRank 2: Whenever metamagic feats are applied to an evil spell, the level adjustment is reduced by 1 (to a minimum of 0).\nRank 3: DC increased by 1. This stacks with the bonus from rank 1.\nRank 4: +2 bonus to caster level for spells with the evil descriptor.\nThis blessing cannot be chosen more than 4 times."
+    },
+    {
+      "Key": "MM_WarlockCharisma_Name",
+      "Value": "Empowered Charisma"
+    },
+    {
+      "Key": "MM_WarlockCharisma_Desc",
+      "Value": "The warlock’s Charisma score permanently increases by 2 points."
+    },
+    {
+      "Key": "MM_WarlockFelHide_Name",
+      "Value": "Fell Hide"
+    },
+    {
+      "Key": "MM_WarlockFelHide_Desc",
+      "Value": "The warlock’s skin has grown supernaturally tough. He gains a +1 bonus to their natural armor. At 6th level, and every four levels thereafter, this bonus increased by 1 (to a maximum of +5 at 18th level)."
+    },
+    {
+      "Key": "MM_WarlockFelResist_Name",
+      "Value": "Fell Resistance"
+    },
+    {
+      "Key": "MM_WarlockFelResist_Desc",
+      "Value": "The warlock has been tempered in unholy fire and gains resist fire 5. This resistance increases to 10 at 10th level, and 15 at 15th level. At 20th level, he gains immunity to fire."
+    },
+    {
+      "Key": "MM_Warlock_LifeTap_Name",
+      "Value": "Life Tap"
+    },
+    {
+      "Key": "MM_Warlock_LifeTap_Desc",
+      "Value": "At 3rd level, the warlock may offer part of himself to gain more power. Whenever a warlock casts a spell, he may reduce his maximum hit points by a number equal to double the level of spell being cast. If his does, the spell slot is not expended. This loss of hit points cannot be prevented and cannot be healed by any mean other than taking a full nights rest, which restores the warlock’s original maximum hit points.\nIf this ability would reduce the warlock's hit points below zero it does nothing and the spell slot is expended as usual."
     }
   ]
 }
