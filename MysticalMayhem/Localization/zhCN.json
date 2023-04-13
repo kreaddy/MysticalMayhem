@@ -632,6 +632,102 @@
     {
       "Key": "MM_Warlock_LifeTap_Desc",
       "Value": "At 3rd level, the warlock may offer part of himself to gain more power. Whenever a warlock casts a spell, he may reduce his maximum hit points by a number equal to double the level of spell being cast. If his does, the spell slot is not expended. This loss of hit points cannot be prevented and cannot be healed by any mean other than taking a full nights rest, which restores the warlock’s original maximum hit points.\nIf this ability would reduce the warlock's hit points below zero it does nothing and the spell slot is expended as usual."
+    },
+    {
+      "Key": "MM_WarlockCultCaster_Name",
+      "Value": "Cult Caster"
+    },
+    {
+      "Key": "MM_WarlockCultCaster_Desc",
+      "Value": "The warlock gains a metamagic feat as a bonus feat. The warlock must still meet all prerequisites for the bonus feat. A warlock may take this blessing multiple times."
+    },
+    {
+      "Key": "MM_WarlockWisdom_Name",
+      "Value": "Wisdom in Madness"
+    },
+    {
+      "Key": "MM_WarlockWisdom_Desc",
+      "Value": "The warlock’s Wisdom score permanently increases by 2 points."
+    },
+    {
+      "Key": "MM_WarlockWillbreaker_Name",
+      "Value": "Will-Breaker"
+    },
+    {
+      "Key": "MM_WarlockWillbreaker_Desc",
+      "Value": "A warlock with this blessing adds his Wisdom modifier to Intimidate skill checks in addition to his Charisma modifier."
+    },
+    {
+      "Key": "MM_WarlockMadnessDomain_Name",
+      "Value": "Domain of Madness"
+    },
+    {
+      "Key": "MM_WarlockMadnessDomain_Desc",
+      "Value": "The warlock gains use of the Vision of Madness power of the Cleric’s Madness Domain, with an effective cleric level equal to his warlock level."
+    },
+    {
+      "Key": "MM_WarlockMadnessDomainII_Name",
+      "Value": "Domain of Madness, Greater"
+    },
+    {
+      "Key": "MM_WarlockMadnessDomainII_Desc",
+      "Value": "The warlock gains use of the Aura of Madness power of the Cleric’s Madness Domain, with an effective cleric level equal to his warlock level."
+    },
+    {
+      "Key": "MM_WarlockTransformation_Name",
+      "Value": "Transformation"
+    },
+    {
+      "Key": "MM_WarlockTransformation_Desc",
+      "Value": "At 4th level, while confused, a warlock’s form more closely fits his mental state. The warlock gains a +1 bonus to his natural armor. For every 4 levels beyond 4th, this bonus increases by 1 (to a maximum of +5 at 20th level). Additionally, while confused, the warlock's arms become tentacles, increasing his range to 15 feet. He can use these tentacles to wield weapons and cast spells as normal."
+    },
+    {
+      "Key": "MM_WarlockWhispers_Name",
+      "Value": "Whispers of Madness"
+    },
+    {
+      "Key": "MM_WarlockWhispers_Desc",
+      "Value": "At 8th level, the whispers of madness permeate every one of the warlock’s thoughts. Whenever an enemy targets the warlock with a mind-effecting ability, the feedback from tapping into the warlock’s mind deals damage equal to 1d6 + the warlock’s Wisdom modifier. If the ability or spell requires a Will save and the warlock fails that Will save, this damage is increased to 1d6 for every 2 warlock levels + the warlock’s Wisdom modifier."
+    },
+    {
+      "Key": "MM_WarlockEnthrallingMadness_Name",
+      "Value": "Enthralling Madness"
+    },
+    {
+      "Key": "MM_WarlockEnthrallingMadness_Desc",
+      "Value": "At 12th level, the warlock fully embraces insanity. Whenever he targets himself with a confusion effect he always succeeds, bypassing any immunity he might possess."
+    },
+    {
+      "Key": "MM_WarlockNonEuclideanBlessing_Name",
+      "Value": "Non-Euclidean Blessing"
+    },
+    {
+      "Key": "MM_WarlockNonEuclideanBlessing_Desc",
+      "Value": "At 16th level, a warlock’s form can take on impossible shapes. Whenever a warlock becomes confused, he gains the benefit of a displacement spell for the duration of his confusion."
+    },
+    {
+      "Key": "MM_SubtypeGreatOldOne_Name",
+      "Value": "Great Old One Subtype"
+    },
+    {
+      "Key": "MM_SubtypeGreatOldOne_Desc",
+      "Value": "A Great Old One is a powerful, alien entity. All Great Old Ones are chaotic, and most of them are also evil. They can be any creature type, but most are aberrations or magical beasts."
+    },
+    {
+      "Key": "MM_OtherworldlyInsight_Name",
+      "Value": "Otherworldly Insight"
+    },
+    {
+      "Key": "MM_OtherworldlyInsight_Desc",
+      "Value": "All Great Old Ones gain a +10 insight bonus on initiative checks and to AC."
+    },
+    {
+      "Key": "MM_WarlockIncarnation_Name",
+      "Value": "Incarnation"
+    },
+    {
+      "Key": "MM_WarlockIncarnationElder_Desc",
+      "Value": "Once per day as a standard action, the warlock may become an incarnation of a Great Old One for a number of minutes equal to his Wisdom modifier. His type changes to outsider (chaotic, evil, Great Old One). While an incarnation, the warlock is confused but always rolls 0 to determine his actions. The warlock gains 6 tentacle attacks (2 primary, 4 secondary). All tentacle attacks the warlock makes have a reach of 20 ft. and deal 1d8 points of bludgeoning damage (for a large incarnation). Both attack and damage rolls are modified by the warlock’s Wisdom modifier instead of his Strength modifier. While an incarnation, the warlock benefits from the effect of Frightful Aspect."
     }
   ]
 }

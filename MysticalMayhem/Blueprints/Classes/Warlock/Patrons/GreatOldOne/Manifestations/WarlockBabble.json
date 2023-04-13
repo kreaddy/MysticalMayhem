@@ -102,6 +102,13 @@
         "Amount": 1,
         "ResourceCostIncreasingFacts": [],
         "ResourceCostDecreasingFacts": [ "!bp_886c7407dc629dc499b9f1465ff382df" ]
+      },
+      {
+        "$type": "91216784d99a12e428bf782c8a8c7f5c, SpellDescriptorComponent",
+        "m_Overrides": [],
+        "Descriptor": {
+          "m_IntValue": 67108944
+        }
       }
     ],
     "Comment": "",

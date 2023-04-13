@@ -1,7 +1,7 @@
 ﻿{
   "AssetId": "297c08b0-201f-43c0-bd20-f4aa483cf97e",
   "Homebrew": true,
-  "PatchList": [ "AddToClassGroup:ClassGroupArcaneCasters" ],
+  "PatchList": [ "RegisterClass", "AddToClassGroup:ClassGroupArcaneCasters" ],
   "Data": {
     "$type": "5f2bdd25f161a0d4c97bee89cf923d77, BlueprintCharacterClass",
     "Components": [

@@ -21,6 +21,7 @@ namespace MysticalMayhem.Mechanics
     {
         public void OnEventAboutToTrigger(RuleApplyMetamagic evt)
         {
+            //return;
             if (evt.Spellbook == null || evt.Initiator != Owner) return;
 
             Owner.Progression.Features.Enumerable

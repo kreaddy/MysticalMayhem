@@ -1,27 +1,26 @@
 {
-  "AssetId": "6ed82cfa-b7f5-495f-8a44-f503b59561fd",
+  "AssetId": "d683bc45-f634-4e2a-b4a7-2c6fc7bc557e",
+  "PatchList": ["AddIcon:c_warlock_transformation" ],
   "Data": {
     "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
     "PrototypeLink": "",
     "m_Overrides": [],
     "Components": [
       {
-        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
-        "Stat": "AdditionalAttackBonus",
-        "Descriptor": "Insight",
-        "Value": 1
-      },
-      {
-        "$type": "cc34ef2ca987e81409279f19cf843a26, AddAttackBonusAgainstFriendly",
-        "Value": -5
+        "$type": "eb30e3ab60d893e4189e1be10a29a9e2, BuffExtraEffects",
+        "m_CheckedBuff": "!bp_886c7407dc629dc499b9f1465ff382df",
+        "m_ExtraEffectBuff": "!bp_5cfa5795-2b77-4931-8b6f-9f128d5eed54"
       }
     ],
     "Comment": "",
     "m_AllowNonContextActions": false,
     "m_DisplayName": {
-      "m_Key": "MM_WarlockInsanity_Name"
+      "m_Key": "MM_WarlockTransformation_Name"
     },
-    "HideInUI": true,
+    "m_Description": {
+      "m_Key": "MM_WarlockTransformation_Desc"
+    },
+    "HideInUI": false,
     "HideInCharacterSheetAndLevelUp": false,
     "HideNotAvailibleInUI": false,
     "DlcType": "None",

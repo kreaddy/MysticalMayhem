@@ -1,27 +1,24 @@
 {
-  "AssetId": "6ed82cfa-b7f5-495f-8a44-f503b59561fd",
+  "AssetId": "30c53b31-d5b0-4586-ab6d-cbc2eeb99ced",
+  "PatchList": ["AddIcon:c_warlock_whispers" ],
   "Data": {
     "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
     "PrototypeLink": "",
     "m_Overrides": [],
     "Components": [
       {
-        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
-        "Stat": "AdditionalAttackBonus",
-        "Descriptor": "Insight",
-        "Value": 1
-      },
-      {
-        "$type": "cc34ef2ca987e81409279f19cf843a26, AddAttackBonusAgainstFriendly",
-        "Value": -5
+        "$type": "0f7606be-35ac-4835-b610-74d70b5c4e75, WhispersOfMadnessLogic"
       }
     ],
     "Comment": "",
     "m_AllowNonContextActions": false,
     "m_DisplayName": {
-      "m_Key": "MM_WarlockInsanity_Name"
+      "m_Key": "MM_WarlockWhispers_Name"
     },
-    "HideInUI": true,
+    "m_Description": {
+      "m_Key": "MM_WarlockWhispers_Desc"
+    },
+    "HideInUI": false,
     "HideInCharacterSheetAndLevelUp": false,
     "HideNotAvailibleInUI": false,
     "DlcType": "None",

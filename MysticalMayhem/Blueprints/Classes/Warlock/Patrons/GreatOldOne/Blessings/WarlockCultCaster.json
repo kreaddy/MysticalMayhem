@@ -1,17 +1,25 @@
 {
-  "AssetId": "bdd8aa3f-030b-467d-a029-7e28f4f44ba8",
+  "AssetId": "541b9fd6-673e-4ef8-b2f0-7e5f9da6860d",
   "Data": {
     "$type": "ea44b1ffb0675104cb178df6459f3a21, BlueprintFeatureSelection",
     "PrototypeLink": "",
     "m_Overrides": [],
-    "Components": [],
+    "Components": [
+      {
+        "$type": "17030ee91bfc7f24e93d3b6fa583dd09, PrerequisiteFeature",
+        "Group": "Any",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_Feature": "!bp_b64456c9-8f09-4922-94ee-59023ae6e554"
+      }
+    ],
     "Comment": "",
     "m_AllowNonContextActions": false,
     "m_DisplayName": {
-      "m_Key": "MM_WarlockPatron_Name"
+      "m_Key": "MM_WarlockCultCaster_Name"
     },
     "m_Description": {
-      "m_Key": "MM_WarlockPatron_Desc"
+      "m_Key": "MM_WarlockCultCaster_Desc"
     },
     "m_Icon": null,
     "HideInUI": false,
@@ -30,7 +38,6 @@
     "Group2": "None",
     "m_Features": [],
     "m_AllFeatures": [
-      "!bp_b64456c9-8f09-4922-94ee-59023ae6e554"
     ]
   }
 }

@@ -27,6 +27,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="HarmonyPatches\RuleCollectMetamagicPatcher.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Blueprints\Archetypes\Flagellant.json" />
     <None Remove="Blueprints\Archetypes\Flagellant\MortifiedCasting\MortifiedCastingCLVariant.json" />
     <None Remove="Blueprints\Archetypes\PactWizard.json" />
@@ -59,10 +63,24 @@
     <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapAbility.json" />
     <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapBuff.json" />
     <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapFeature.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockCultCaster.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockDomainOfMadness.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockDomainOfMadnessII.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockWillBreaker.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockWisdomInMadness.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockBabble.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockBabbleResource.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockEnthrallingMadness.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockGreatOldOne20.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockGreatOldOne20Ab.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockGreatOldOne20Buff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockGreatOldOne20Res.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockInsanity.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockInsanityABModifiers.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockNonEuclideanBlessing.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockTransformation.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockTransformationBuff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockWhispersOfMadness.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOne.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOneDevotion.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOnePact.json" />
@@ -78,6 +96,8 @@
     <None Remove="Blueprints\Classes\Warlock\WarlockSpellbook.json" />
     <None Remove="Blueprints\Classes\Warlock\WarlockSpellList.json" />
     <None Remove="Blueprints\Classes\Warlock\WarlockSpellsDailyTable.json" />
+    <None Remove="Blueprints\CreatureFacts\OtherworldlyInsight.json" />
+    <None Remove="Blueprints\CreatureFacts\SubtypeGreatOldOne.json" />
     <None Remove="Blueprints\Deities\Razmir.json" />
     <None Remove="Blueprints\Feats\AcadamaeGraduate.json" />
     <None Remove="Blueprints\Feats\EarthMagic.json" />
@@ -108,6 +128,7 @@
     <None Remove="Blueprints\Spells\SpellTurning\SpellTurningBuff.json" />
     <None Remove="Blueprints\Spells\SureCasting\SureCasting.json" />
     <None Remove="Blueprints\Spells\SureCasting\SureCastingBuff.json" />
+    <None Remove="Blueprints\Weapons\TentacleLarge1d10.json" />
     <None Remove="Localization\star.json" />
   </ItemGroup>
 
@@ -139,8 +160,22 @@
     <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapBuff.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapAbility.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapFeature.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockCultCaster.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockDomainOfMadnessII.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockDomainOfMadness.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockWillBreaker.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockWisdomInMadness.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockGreatOldOne20Ab.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockGreatOldOne20Res.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockGreatOldOne20.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockEnthrallingMadness.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockNonEuclideanBlessing.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockGreatOldOne20Buff.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockWhispersOfMadness.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockTransformationBuff.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockBabbleResource.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockBabble.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockTransformation.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockInsanityABModifiers.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Manifestations\WarlockInsanity.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOneDevotion.json" />
@@ -158,6 +193,8 @@
     <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSpellbook.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSpellList.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockSpellsDailyTable.json" />
+    <EmbeddedResource Include="Blueprints\CreatureFacts\OtherworldlyInsight.json" />
+    <EmbeddedResource Include="Blueprints\CreatureFacts\SubtypeGreatOldOne.json" />
     <EmbeddedResource Include="Blueprints\Deities\Razmir.json" />
     <EmbeddedResource Include="Blueprints\Feats\TestFeat.json" />
     <EmbeddedResource Include="Blueprints\MagusArcana\Malice.json" />
@@ -243,7 +280,12 @@
     <EmbeddedResource Include="Blueprints\Spells\SpellTurning\SpellTurningBuff.json" />
     <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCasting.json" />
     <EmbeddedResource Include="Blueprints\Spells\SureCasting\SureCastingBuff.json" />
+    <EmbeddedResource Include="Blueprints\Weapons\TentacleLarge1d10.json" />
     <EmbeddedResource Include="BPRepo.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="HarmonyPatches\RuleCollectMetamagicPatcher.cs" />
   </ItemGroup>
 
   <ItemGroup>

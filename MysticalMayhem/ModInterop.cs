@@ -1,4 +1,6 @@
-﻿using MysticalMayhem.Helpers;
+﻿using Kingmaker.Blueprints;
+using Kingmaker.UnitLogic.FactLogic;
+using MysticalMayhem.Helpers;
 using System.Collections.Generic;
 using System.Linq;
 using UnityModManagerNet;
@@ -7,7 +9,6 @@ namespace MysticalMayhem
 {
     public static class ModInterop
     {
-        private static bool IsDLC4Enabled() => BPLookup.DLC("DLC4").IsAvailable;
         private static bool IsCOPlusEnabled() => IsModEnabled("CharacterOptionsPlus");
         private static bool IsECEnabled() => IsModEnabled("ExpandedContent");
         private static bool IsFirebirdEnabled() => IsModEnabled("TomeOfTheFirebird");
@@ -16,11 +17,11 @@ namespace MysticalMayhem
 
         public static void ApplyWarlockModPatches()
         {
-            // Spells
+            #region Spelllist Patches
             var spellList = BPLookup.SpellList("WarlockSpellList", true);
             Dictionary<string, int> spellData;
 
-            if (IsDLC4Enabled()) 
+            try
             {
                 spellData = new()
                 {
@@ -29,6 +30,11 @@ namespace MysticalMayhem
                 };
                 BlueprintContainer.AddToSpellList(spellList, spellData);
             }
+            catch
+            {
+                Main.Log("Failed to inject DLC4 spells.");
+            }
+
             if (IsCOPlusEnabled()) 
             {
                 spellData = new()
@@ -76,6 +82,16 @@ namespace MysticalMayhem
                 };
                 BlueprintContainer.AddToSpellList(spellList, spellData);
             }
+            #endregion
+
+            #region Cult Caster
+            var cultCaster = BPLookup.Selection("WarlockCultCaster", true);
+            var features = BPLookup.Selection("WizardFeatSelection")
+                .AllFeatures
+                .m_Array
+                .Where(f => f.Get().GetComponent<AddMetamagicFeat>() != null);
+            cultCaster.m_AllFeatures = features.ToArray();
+            #endregion
         }
     }
 }

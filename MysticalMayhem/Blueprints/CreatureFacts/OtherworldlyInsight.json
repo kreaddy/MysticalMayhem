@@ -1,27 +1,32 @@
 {
-  "AssetId": "6ed82cfa-b7f5-495f-8a44-f503b59561fd",
+  "AssetId": "3835280d-8e9a-48ad-91db-813cee08009d",
   "Data": {
     "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
-    "PrototypeLink": "",
-    "m_Overrides": [],
     "Components": [
       {
         "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
-        "Stat": "AdditionalAttackBonus",
         "Descriptor": "Insight",
-        "Value": 1
+        "Stat": "AC",
+        "Value": 10,
+        "ScaleByBasicAttackBonus": false
       },
       {
-        "$type": "cc34ef2ca987e81409279f19cf843a26, AddAttackBonusAgainstFriendly",
-        "Value": -5
+        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
+        "Descriptor": "Insight",
+        "Stat": "Initiative",
+        "Value": 10,
+        "ScaleByBasicAttackBonus": false
       }
     ],
     "Comment": "",
     "m_AllowNonContextActions": false,
     "m_DisplayName": {
-      "m_Key": "MM_WarlockInsanity_Name"
+      "m_Key": "MM_OtherworldlyInsight_Name"
     },
-    "HideInUI": true,
+    "m_Description": {
+      "m_Key": "MM_OtherworldlyInsight_Desc"
+    },
+    "HideInUI": false,
     "HideInCharacterSheetAndLevelUp": false,
     "HideNotAvailibleInUI": false,
     "DlcType": "None",

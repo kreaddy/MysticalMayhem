@@ -1,0 +1,62 @@
+{
+  "AssetId": "40098746-ca15-45a7-86dd-24f45e3dc30c",
+  "PatchList": [ "SpecialPatch:WarlockDomainOfMadness" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_c3e4ff89950f1d748be6f5958b1aa19c",
+          "!bp_c09446b861bac7b4b83877db863150d9",
+          "!bp_d92b2eac4dbf31f439e5bc9d2d467ff1"
+        ],
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      },
+      {
+        "$type": "fd82ca085bd60c04fb03d1091acc66cb, AddAbilityResources",
+        "m_Overrides": [],
+        "UseThisAsResource": false,
+        "m_Resource": "!bp_a0581a2c4da5e8a479a2a4bb3f0577fa",
+        "Amount": 0,
+        "RestoreAmount": true,
+        "RestoreOnLevelUp": false
+      },
+      {
+        "$type": "17030ee91bfc7f24e93d3b6fa583dd09, PrerequisiteFeature",
+        "Group": "Any",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_Feature": "!bp_b64456c9-8f09-4922-94ee-59023ae6e554"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockMadnessDomain_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockMadnessDomain_Desc"
+    },
+    "m_Icon": {
+      "guid": "efdb8e3899fcdd044bc3eeab8e127ee6",
+      "fileid": 21300000
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": true,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": [ "!bp_103df458-1d31-45b0-9cc6-11c9684ab535" ]
+  }
+}

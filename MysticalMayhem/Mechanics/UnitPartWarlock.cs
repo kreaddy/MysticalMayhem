@@ -1,5 +1,6 @@
 ﻿using Kingmaker;
 using Kingmaker.Blueprints.Classes;
+using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Controllers.Units;
 using Kingmaker.Designers;
 using Kingmaker.EntitySystem.Entities;
@@ -11,6 +12,7 @@ using Kingmaker.UnitLogic.Abilities;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.Commands;
 using Kingmaker.UnitLogic.Commands.Base;
+using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Parts;
 using Kingmaker.Utility;
 using MysticalMayhem.Helpers;
@@ -30,7 +32,9 @@ namespace MysticalMayhem.Mechanics
         {
             LifeTap,
             MinusOneToConfusionRolls,
-            ComfortableInsanity
+            ComfortableInsanity,
+            CanAlwaysSelfConfuse,
+            AlwaysRoll0WhenConfused
         }
 
         public void AddFeature(Feature type)
@@ -61,12 +65,6 @@ namespace MysticalMayhem.Mechanics
                 List[type] = feature;
             }
             return feature;
-        }
-
-        public bool HasProcessedLifeTap(AbilityData abilityData)
-        {
-
-            return false;
         }
 
         public bool SaveSpellSlot(AbilityData abilityData)
@@ -144,7 +142,7 @@ namespace MysticalMayhem.Mechanics
             GameHelper.ApplyBuff(Owner, BPLookup.Buff("WarlockInsanityABModifiers", true), new Rounds(1));
         }
 
-        public bool TickConfusion(UnitConfusionController controller)
+        public bool TickConfusion()
         {
             if (!GetFeature(Feature.MinusOneToConfusionRolls)) return false;
 
@@ -156,6 +154,7 @@ namespace MysticalMayhem.Mechanics
             {
                 RuleRollDice ruleRollDice = Rulebook.Trigger(new RuleRollDice(unit, new DiceFormula(1, DiceType.D100)));
                 int num = unit.Descriptor.State.HasCondition(UnitCondition.AttackNearest) ? 100 : ruleRollDice.Result - 1;
+                if (GetFeature(Feature.AlwaysRoll0WhenConfused)) num = 0;
                 Main.DebugLog($"Confusion roll: {num}");
                 if (num < 26)
                 {
@@ -223,6 +222,18 @@ namespace MysticalMayhem.Mechanics
             }
 
             return true;
+        }
+
+        public void EnsureSelfConfuse(ref bool originalResult, MechanicsContext context)
+        {
+            if (!GetFeature(Feature.CanAlwaysSelfConfuse) || context.MaybeCaster != Owner) return;
+            if (context.SpellDescriptor.HasFlag(SpellDescriptor.MindAffecting)) originalResult = false;
+        }
+
+        public void EnsureSelfConfuse(RuleSavingThrow rule, ref bool originalResult)
+        {
+            if (!GetFeature(Feature.CanAlwaysSelfConfuse) || rule.Reason.Context.MaybeCaster != Owner) return;
+            if (rule.Reason.Context.SpellDescriptor.HasFlag(SpellDescriptor.MindAffecting)) originalResult = false;
         }
     }
 }

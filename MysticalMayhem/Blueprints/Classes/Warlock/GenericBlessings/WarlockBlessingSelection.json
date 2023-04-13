@@ -1,7 +1,7 @@
 {
   "AssetId": "074e8491-3846-4053-aea2-d6f27a49a197",
   "Homebrew": true,
-  "PatchList": [ "AddIcon:c_warlock_blessing", "AddAsFeat"],
+  "PatchList": [ "AddIcon:c_warlock_blessing", "AddAsFeat", "ReorderAlphabetically" ],
   "Data": {
     "$type": "ea44b1ffb0675104cb178df6459f3a21, BlueprintFeatureSelection",
     "PrototypeLink": "",
@@ -29,7 +29,7 @@
     "Groups": [],
     "Ranks": 1,
     "ReapplyOnLevelUp": false,
-    "IsClassFeature": false,
+    "IsClassFeature": true,
     "IsPrerequisiteFor": [],
     "IgnorePrerequisites": false,
     "Obligatory": false,
@@ -41,7 +41,12 @@
       "!bp_41a13e79-62ce-48c2-a37e-93b664feacfe",
       "!bp_f0fda6c2-f61f-4b8d-8834-7c4f11a7668d",
       "!bp_0bacd207-aec1-4c9c-8dfd-e3242e11ad09",
-      "!bp_4d2aaade-39e0-4522-b108-7fcd8d4143d6"
+      "!bp_4d2aaade-39e0-4522-b108-7fcd8d4143d6",
+      "!bp_541b9fd6-673e-4ef8-b2f0-7e5f9da6860d",
+      "!bp_3d5ebf79-4ea2-497a-9a66-6b6e627217e7",
+      "!bp_1843bb4f-b539-4b97-9def-fdca993401bd",
+      "!bp_40098746-ca15-45a7-86dd-24f45e3dc30c",
+      "!bp_103df458-1d31-45b0-9cc6-11c9684ab535"
     ]
   }
 }

@@ -11,11 +11,18 @@ namespace MysticalMayhem.HarmonyPatches
     [HarmonyPatch(typeof(UnitPartSpellResistance))]
     internal class UnitPartSpellResistancePatcher
     {
-        [HarmonyPatch("IsImmune", typeof(MechanicsContext), typeof(bool))]
+        [HarmonyPatch(nameof(UnitPartSpellResistance.IsImmune), typeof(MechanicsContext), typeof(bool))]
         [HarmonyPrefix]
-        private static void IsImmune_MM(UnitPartSpellResistance __instance, [CanBeNull] MechanicsContext context, bool spellDescriptorOnly = false)
+        private static void IsImmune_PrefixMM(UnitPartSpellResistance __instance, [CanBeNull] MechanicsContext context)
         {
             DraconicMaliceOverride(__instance, context);
+        }
+
+        [HarmonyPatch(nameof(UnitPartSpellResistance.IsImmune), typeof(MechanicsContext), typeof(bool))]
+        [HarmonyPostfix]
+        private static void IsImmune_PostfixMM(ref bool __result, UnitPartSpellResistance __instance, [CanBeNull] MechanicsContext context)
+        {
+            __instance.Owner.Ensure<UnitPartWarlock>().EnsureSelfConfuse(ref __result, context);
         }
 
         private static void DraconicMaliceOverride(UnitPartSpellResistance __instance, MechanicsContext context)

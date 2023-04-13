@@ -1,27 +1,28 @@
 {
-  "AssetId": "6ed82cfa-b7f5-495f-8a44-f503b59561fd",
+  "AssetId": "017af56c-3261-4d80-b9a5-a33ec483de49",
   "Data": {
     "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
     "PrototypeLink": "",
     "m_Overrides": [],
     "Components": [
       {
-        "$type": "a2844c135c0324e439072bd3cc2f9260, AddStatBonus",
-        "Stat": "AdditionalAttackBonus",
-        "Descriptor": "Insight",
-        "Value": 1
-      },
-      {
-        "$type": "cc34ef2ca987e81409279f19cf843a26, AddAttackBonusAgainstFriendly",
-        "Value": -5
+        "$type": "00dbeecf-56d0-41d5-9410-d8a116d9b4e1, AddWarlockMechanic",
+        "Feature": "CanAlwaysSelfConfuse"
       }
     ],
     "Comment": "",
     "m_AllowNonContextActions": false,
     "m_DisplayName": {
-      "m_Key": "MM_WarlockInsanity_Name"
+      "m_Key": "MM_WarlockEnthrallingMadness_Name"
     },
-    "HideInUI": true,
+    "m_Description": {
+      "m_Key": "MM_WarlockEnthrallingMadness_Desc"
+    },
+    "m_Icon": {
+      "guid": "77595c4101abea84daf26ba213c5632a",
+      "fileid": 21300000
+    },
+    "HideInUI": false,
     "HideInCharacterSheetAndLevelUp": false,
     "HideNotAvailibleInUI": false,
     "DlcType": "None",

@@ -3,8 +3,11 @@ using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Facts;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.FactLogic;
+using Kingmaker.UnitLogic.Mechanics.Actions;
+using Kingmaker.UnitLogic.Mechanics.Components;
 using MysticalMayhem.Helpers;
 using MysticalMayhem.Mechanics;
 using System.Collections.Generic;
@@ -217,6 +220,47 @@ namespace MysticalMayhem
                 unit = BPLookup.Unit(pair.Key);
                 unit.ComponentsArray = unit.ComponentsArray.Push(component);
             }
+        }
+
+        // Patch called by the WarlockDomainOfMadness blueprint, allow warlock levels to count as cleric levels for the Madness domain's abilities.
+        public static void WarlockDomainOfMadness()
+        {
+            var variants = BPLookup.Ability("MadnessDomainBaseAbility")
+                .GetComponent<AbilityVariants>()
+                .m_Variants;
+
+            foreach (var variant in variants)
+            {
+                variant.Get().GetComponent<ContextRankConfig>().m_Class = variant.Get().GetComponent<ContextRankConfig>().m_Class
+                    .Push(new BlueprintCharacterClassReference()
+                    {
+                        guid = "297c08b0-201f-43c0-bd20-f4aa483cf97e",
+                        deserializedGuid = BlueprintGuid.Parse("297c08b0-201f-43c0-bd20-f4aa483cf97e")
+                    });
+                var buff = variant.Get().GetComponent<AbilityEffectRunAction>().Actions.Actions.OfType<ContextActionApplyBuff>().First().m_Buff.Get();
+                buff.GetComponent<ContextRankConfig>().m_Class = buff.GetComponent<ContextRankConfig>().m_Class
+                    .Push(new BlueprintCharacterClassReference()
+                    {
+                        guid = "297c08b0-201f-43c0-bd20-f4aa483cf97e",
+                        deserializedGuid = BlueprintGuid.Parse("297c08b0-201f-43c0-bd20-f4aa483cf97e")
+                    });
+            }
+
+            var resource = BPLookup.Resource("MadnessDomainGreaterRes");
+            resource.m_MaxAmount.m_ClassDiv = resource.m_MaxAmount.m_ClassDiv
+                    .Push(new BlueprintCharacterClassReference()
+                    {
+                        guid = "297c08b0-201f-43c0-bd20-f4aa483cf97e",
+                        deserializedGuid = BlueprintGuid.Parse("297c08b0-201f-43c0-bd20-f4aa483cf97e")
+                    });
+
+            var ability = BPLookup.Ability("MadnessDomainGreaterAb");
+            ability.GetComponent<ContextRankConfig>().m_Class = ability.GetComponent<ContextRankConfig>().m_Class
+                .Push(new BlueprintCharacterClassReference()
+                {
+                    guid = "297c08b0-201f-43c0-bd20-f4aa483cf97e",
+                    deserializedGuid = BlueprintGuid.Parse("297c08b0-201f-43c0-bd20-f4aa483cf97e")
+                });
         }
 
         #endregion Patches
