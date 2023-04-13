@@ -1,6 +1,6 @@
 {
   "AssetId": "fb539190-1ccf-40cd-89b1-9f9733dfd91a",
-  "PatchList": ["AddIcon:c_warlock_pact_elder" ],
+  "PatchList": ["AddIcon:c_warlock_pact" ],
   "Data": {
     "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
     "PrototypeLink": "",
