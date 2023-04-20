@@ -11,6 +11,7 @@ using Kingmaker.UnitLogic.Commands.Base;
 using Kingmaker.UnitLogic.Parts;
 using MysticalMayhem.Helpers;
 using MysticalMayhem.Mechanics;
+using MysticalMayhem.Mechanics.Parts;
 using System.Collections.Generic;
 
 namespace MysticalMayhem.HarmonyPatches
@@ -151,7 +152,8 @@ namespace MysticalMayhem.HarmonyPatches
         [HarmonyPrefix]
         private static bool SpendOneSpellCharge_MM(AbilityData __instance)
         {
-            if (__instance.Caster.Ensure<UnitPartWarlock>().SaveSpellSlot(__instance)) { return false; }
+            // Warlock's Life Tap.
+            if ((bool)__instance.Caster.Get<UnitPartWarlock>()?.SaveSpellSlot(__instance)) return false;
             return true;
         }
     }

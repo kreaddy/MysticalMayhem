@@ -1,0 +1,108 @@
+{
+  "AssetId": "c312b0a1-f5ef-4269-ac29-dee4da8edc70",
+  "PatchList": [ "AddIcon:c_warlock_corruptingray" ],
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "Components": [
+      {
+        "$type": "2945aafe5b353dc49b283c982269ade6, AbilityResourceLogic",
+        "m_Overrides": [],
+        "m_RequiredResource": "!bp_1b75bc31-27a4-4e4f-ae51-0690f57b300c",
+        "m_IsSpendResource": true,
+        "CostIsCustom": false,
+        "Amount": 1,
+        "ResourceCostIncreasingFacts": [],
+        "ResourceCostDecreasingFacts": []
+      },
+      {
+        "$type": "a7ec15576fb827040bfe609a904482cd, AbilityDeliverProjectile",
+        "m_Projectiles": [
+          "!bp_8e38d2cfc358e124e93c792dea56ff9a"
+        ],
+        "Type": "Simple",
+        "IsHandOfTheApprentice": false,
+        "m_Length": {
+          "m_Value": 0.0
+        },
+        "m_LineWidth": {
+          "m_Value": 5.0
+        },
+        "NeedAttackRoll": true,
+        "m_Weapon": "!bp_f6ef95b1f7bb52b408a5b345a330ffe8",
+        "ReplaceAttackRollBonusStat": false,
+        "AttackRollBonusStat": "Dexterity",
+        "UseMaxProjectilesCount": false,
+        "MaxProjectilesCountRank": "ProjectilesCount",
+        "DelayBetweenProjectiles": 0.4,
+        "m_ControlledProjectileHolderBuff": null
+      },
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "6993f941-7081-4b88-8b90-a404d001f29d, ContextActionCorruptingRayDamage"
+            }
+          ]
+        }
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockCorruptingRay_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockCorruptingRay_Desc"
+    },
+    "m_DefaultAiAction": null,
+    "Type": "Supernatural",
+    "Range": "Medium",
+    "CustomRange": {
+      "m_Value": 0.0
+    },
+    "ShowNameForVariant": false,
+    "OnlyForAllyCaster": false,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": true,
+    "CanTargetFriends": true,
+    "CanTargetSelf": true,
+    "ShouldTurnToTarget": true,
+    "SpellResistance": false,
+    "ActionBarAutoFillIgnored": false,
+    "Hidden": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "EffectOnAlly": "Harmful",
+    "EffectOnEnemy": "Harmful",
+    "m_Parent": null,
+    "Animation": "Directional",
+    "HasFastAnimation": false,
+    "AnimationStyle": "CastActionDirectional",
+    "m_TargetMapObjects": false,
+    "ActionType": "Standard",
+    "AvailableMetamagic": "Empower, Maximize, Quicken, Heighten, Reach, CompletelyNormal, Persistent, Bolstered",
+    "m_IsFullRoundAction": false,
+    "LocalizedDuration": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "LocalizedSavingThrow": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "DisableLog": false,
+    "ResourceAssetIds": []
+  }
+}

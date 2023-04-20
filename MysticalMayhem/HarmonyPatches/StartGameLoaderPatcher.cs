@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using Kingmaker;
 using Kingmaker.Blueprints.JsonSystem;
 using MysticalMayhem.Helpers;
 

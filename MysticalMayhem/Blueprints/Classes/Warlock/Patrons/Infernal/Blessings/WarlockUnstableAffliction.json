@@ -1,0 +1,42 @@
+{
+  "AssetId": "4ebd419c-9644-47f1-afbf-f821a35d2f12",
+  "PatchList": [ "AddIcon:c_warlock_unstableaffliction" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "Components": [
+      {
+        "$type": "00dbeecf-56d0-41d5-9410-d8a116d9b4e1, AddWarlockMechanic",
+        "Feature": "Affliction"
+      },
+      {
+        "$type": "17030ee91bfc7f24e93d3b6fa583dd09, PrerequisiteFeature",
+        "Group": "Any",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_Feature": "!bp_45635f48-54a2-4b4f-89ed-46bb8bfbf362"
+      },
+      {
+        "$type": "fb876f3084f01754db3a4acbbb328a89, PrerequisiteClassLevel",
+        "Level": 6,
+        "m_CharacterClass": "!bp_297c08b0-201f-43c0-bd20-f4aa483cf97e"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockUnstableAffliction_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockUnstableAffliction_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

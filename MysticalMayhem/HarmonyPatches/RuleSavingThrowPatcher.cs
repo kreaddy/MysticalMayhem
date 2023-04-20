@@ -1,11 +1,11 @@
 ﻿using HarmonyLib;
 using Kingmaker.RuleSystem.Rules;
-using MysticalMayhem.Mechanics;
+using MysticalMayhem.Mechanics.Parts;
 
 namespace MysticalMayhem.HarmonyPatches
 {
     /// <summary>
-    /// Hooks on RuleDispelMagic.
+    /// Hooks on RuleSavingThrow.
     /// </summary>
     [HarmonyPatch(typeof(RuleSavingThrow))]
     internal class RuleSavingThrowPatcher
@@ -18,7 +18,7 @@ namespace MysticalMayhem.HarmonyPatches
         [HarmonyPostfix]
         private static void IsSuccessRoll_MM(RuleSavingThrow __instance, ref bool __result)
         {
-            __instance.Initiator.Ensure<UnitPartWarlock>().EnsureSelfConfuse(__instance, ref __result);
+            __instance.Initiator.Get<UnitPartWarlock>()?.EnsureSelfConfuse(__instance, ref __result);
         }
     }
 }

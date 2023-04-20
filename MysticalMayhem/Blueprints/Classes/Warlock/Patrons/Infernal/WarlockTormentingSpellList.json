@@ -1,0 +1,122 @@
+{
+  "AssetId": "75d11c4a-6a99-4622-b530-201401dc360e",
+  "Data": {
+    "$type": "1585acbfcc93f0a439fa39dde12070c3, BlueprintSpellList",
+    "IsMythic": false,
+    "SpellsByLevel": [
+      {
+        "SpellLevel": 0,
+        "m_Spells": [
+        ]
+      },
+      {
+        "SpellLevel": 1,
+        "m_Spells": [
+          "!bp_9f10909f0be1f5141bf1c102041f93d9",
+          "!bp_ab395d2335d3f384e99dddee8562978f",
+          "!bp_8e7cfa5f213a90549aadd18f8f6f4664",
+          "!bp_95810d2829895724f950c8c4086056e7",
+          "!bp_4ac47ddb9fa1eaf43a1b6809980cfbd2",
+          "!bp_4783c3709a74a794dbe7c8e7e0b1b038"
+        ]
+      },
+      {
+        "SpellLevel": 2,
+        "m_Spells": [
+          "!bp_eaac3d36e0336cb479209a6f65e25e7c",
+          "!bp_b7731c2b4fa1c9844a092329177be4c3",
+          "!bp_42a65895ba0cb3a42b6019039dd2bff1",
+          "!bp_cdb106d53c65bbc4086183d54c3b97c7",
+          "!bp_b6010dda6333bcf4093ce20f0063cd41"
+        ]
+      },
+      {
+        "SpellLevel": 3,
+        "m_Spells": [
+          "!bp_8a28a811ca5d20d49a863e832c31cce1",
+          "!bp_d2cff9243a7ee804cb6d5be47af30c73",
+          "!bp_0a2f7c6aa81bc6548ac7780d8b70bcbc",
+          "!bp_fc58ddcff6ab1394eb6c18e9126bb990",
+          "!bp_2d81362af43aeac4387a3d4fced489c3"
+        ]
+      },
+      {
+        "SpellLevel": 4,
+        "m_Spells": [
+          "!bp_f2f1efac32ea2884e84ecaf14657298b",
+          "!bp_f72f8f03bf0136c4180cd1d70eb773a5",
+          "!bp_5e826bcdfde7f82468776b55315b2403",
+          "!bp_f09453607e683784c8fca646eec49162",
+          "!bp_f34fb78eaaec141469079af124bcfa0f"
+        ]
+      },
+      {
+        "SpellLevel": 5,
+        "m_Spells": [
+          "!bp_e7c530f8137630f4d9d7ee1aa7b1edc0",
+          "!bp_ebade19998e1f8542a1b55bd4da766b3",
+          "!bp_1cde0691195feae45bab5b83ea3f221e",
+          "!bp_f9910c76efc34af41b6e43d5d8752f0f"
+        ]
+      },
+      {
+        "SpellLevel": 6,
+        "m_Spells": [
+          "!bp_6303b404df12b0f4793fa0763b21dd2c",
+          "!bp_a89dcbbab8f40e44e920cc60636097cf",
+          "!bp_4aa7942c3e62a164387a73184bca3fc1",
+          "!bp_645558d63604747428d55f0dd3a4cb58",
+          "!bp_700cfcbd0cb2975419bcab7dbb8c6210",
+          "!bp_5ef85d426783a5347b420546f91a677b",
+          "!bp_d42c6d3f29e07b6409d670792d72bc82"
+        ]
+      },
+      {
+        "SpellLevel": 7,
+        "m_Spells": [
+          "!bp_474ed0aa656cc38499cc9a073d113716",
+          "!bp_6f1dcf6cfa92d1948a740195707c0dbe",
+          "!bp_5c8cde7f0dcec4e49bfa2632dfe2ecc0",
+          "!bp_8c29e953190cc67429dc9c701b16b7c2",
+          "!bp_cc09224ecc9af79449816c45bc5be218"
+        ]
+      },
+      {
+        "SpellLevel": 8,
+        "m_Spells": [
+          "!bp_fd0d3840c48cafb44bb29e8eb74df204",
+          "!bp_08323922485f7e246acb3d2276515526",
+          "!bp_e96424f70ff884947b06f41a765b7658",
+          "!bp_17696c144a0194c478cbe402b496cb23",
+          "!bp_7cfbefe0931257344b2cb7ddc4cdff6f",
+          "!bp_b4afacd337dac4a40a769a567c038ab7",
+          "!bp_3b646e1db3403b940bf620e01d2ce0c7",
+          "!bp_e3d0dfe1c8527934294f241e0ae96a8d"
+        ]
+      },
+      {
+        "SpellLevel": 9,
+        "m_Spells": [
+          "!bp_d8144161e352ca846a73cf90e85bf9ac",
+          "!bp_b24583190f36a8442b212e45226c54fc",
+          "!bp_01300baad090d634cb1a1b2defe068d6",
+          "!bp_37302f72b06ced1408bf5bb965766d46"
+        ]
+      },
+      {
+        "SpellLevel": 10,
+        "m_Spells": []
+      }
+    ],
+    "m_FilteredList": null,
+    "FilterByMaxLevel": 0,
+    "FilterByDescriptor": false,
+    "Descriptor": {
+      "m_IntValue": 0
+    },
+    "FilterBySchool": false,
+    "ExcludeFilterSchool": false,
+    "FilterSchool": "None",
+    "FilterSchool2": "None"
+  }
+}

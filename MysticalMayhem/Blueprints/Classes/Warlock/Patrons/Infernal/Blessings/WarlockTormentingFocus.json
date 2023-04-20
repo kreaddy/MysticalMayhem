@@ -1,0 +1,37 @@
+{
+  "AssetId": "1d1802f7-e448-454b-b632-d86d8a33775c",
+  "PatchList": [ "AddIcon:c_warlock_tormenting_focus" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "Components": [
+      {
+        "$type": "00dbeecf-56d0-41d5-9410-d8a116d9b4e1, AddWarlockMechanic",
+        "Feature": "TormentingFocus"
+      },
+      {
+        "$type": "17030ee91bfc7f24e93d3b6fa583dd09, PrerequisiteFeature",
+        "Group": "Any",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_Feature": "!bp_ae352cdd-57d1-4cbf-8a13-f86bb40c9c76"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockTormentingFocus_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockTormentingFocus_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

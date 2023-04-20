@@ -1,6 +1,13 @@
 ﻿using Kingmaker.Blueprints;
+using Kingmaker.Blueprints.Classes;
+using Kingmaker.Blueprints.Classes.Spells;
+using Kingmaker.Blueprints.JsonSystem;
+using Kingmaker.UnitLogic.Abilities.Blueprints;
+using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.FactLogic;
+using Kingmaker.UnitLogic.Mechanics.Actions;
 using MysticalMayhem.Helpers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityModManagerNet;
@@ -10,6 +17,7 @@ namespace MysticalMayhem
     public static class ModInterop
     {
         private static bool IsCOPlusEnabled() => IsModEnabled("CharacterOptionsPlus");
+        private static bool IsDarkCodexEnabled() => IsModEnabled("DarkCodex");
         private static bool IsECEnabled() => IsModEnabled("ExpandedContent");
         private static bool IsFirebirdEnabled() => IsModEnabled("TomeOfTheFirebird");
         private static bool IsTTTBaseEnabled() => IsModEnabled("TabletopTweaks-Base");
@@ -19,6 +27,7 @@ namespace MysticalMayhem
         {
             #region Spelllist Patches
             var spellList = BPLookup.SpellList("WarlockSpellList", true);
+            var tormentingSpellList = BPLookup.SpellList("WarlockTormentingSpellList", true);
             Dictionary<string, int> spellData;
 
             try
@@ -49,6 +58,11 @@ namespace MysticalMayhem
                     { "e12e8537-7bfc-415e-9d50-87456dd0a3a1", 8 }
                 };
                 BlueprintContainer.AddToSpellList(spellList, spellData);
+                spellData = new()
+                {
+                    { "103e53fe-89de-48a1-b85e-9efcb1de4860", 3 }
+                };
+                BlueprintContainer.AddToSpellList(tormentingSpellList, spellData);
             }
             if (IsECEnabled()) 
             {
@@ -59,9 +73,15 @@ namespace MysticalMayhem
                     { "80189142-f7c6-40f3-9195-defdc9777b27", 4 },
                     { "ff31ae1a-be3c-418d-b784-2dcc76eca7ee", 7 },
                     { "a8be30dd-f370-42d5-b56f-faa8eae976d6", 7 },
-                    { "a8be30dd-f370-42d5-b56f-faa8eae976d6", 9 }
+                    { "dafdc0ee-f437-4785-aa82-7bf5b2059bf0", 9 }
                 };
                 BlueprintContainer.AddToSpellList(spellList, spellData);
+                spellData = new()
+                {
+                    { "a8be30dd-f370-42d5-b56f-faa8eae976d6", 7 },
+                    { "dafdc0ee-f437-4785-aa82-7bf5b2059bf0", 9 }
+                };
+                BlueprintContainer.AddToSpellList(tormentingSpellList, spellData);
             }
             if (IsFirebirdEnabled()) 
             {
@@ -84,13 +104,75 @@ namespace MysticalMayhem
             }
             #endregion
 
-            #region Cult Caster
+            #region Cult Caster/Metamagian
             var cultCaster = BPLookup.Selection("WarlockCultCaster", true);
             var features = BPLookup.Selection("WizardFeatSelection")
                 .AllFeatures
                 .m_Array
                 .Where(f => f.Get().GetComponent<AddMetamagicFeat>() != null);
             cultCaster.m_AllFeatures = features.ToArray();
+            BPLookup.Selection("WarlockMetamagian", true).m_AllFeatures = features.ToArray();
+            #endregion
+
+            #region Split Hex
+            if (IsDarkCodexEnabled())
+            {
+                BlueprintFeature feat;
+                try { feat = ResourcesLibrary.TryGetBlueprint<BlueprintFeature>("4e2973f3dfa44544a11144f35e459509"); }
+                catch { goto DarkCodexEnd; }
+                var array = BPLookup.Feature("WarlockSplitHex", true).GetComponent<AddFacts>().m_Facts;
+                array = array.Push(feat.ToReference<BlueprintUnitFactReference>());
+                var selection = BPLookup.Selection("WarlockBlessingSelection", true);
+                selection.m_AllFeatures = selection.m_AllFeatures.Push(BPLookup.Feature("WarlockSplitHex", true).ToReference<BlueprintFeatureReference>());
+                BPLookup.Feature("WarlockSplitHex", true).m_Icon = feat.Icon;
+            }
+        DarkCodexEnd:;
+            #endregion
+
+            #region Forbidden Knowledge
+
+            var wizardList = BPLookup.SpellList("WizardSpellList");
+            var forbbidenList = BPLookup.SpellList("WarlockForbiddenKnowledgeSpellList", true);
+            forbbidenList.SpellsByLevel = wizardList.SpellsByLevel;
+
+            #endregion
+
+            #region Tools
+#if false
+            var list = BPLookup.SpellList("WarlockSpellList", true);
+            var dict = new Dictionary<int, List<BlueprintAbilityReference>>();
+            foreach (var entry in list.SpellsByLevel)
+            {
+                dict.Add(entry.SpellLevel, new());
+                foreach (var f in entry.Spells)
+                {
+                    var actions = f.GetComponent<AbilityEffectRunAction>();
+                    if (actions == null) continue;
+                    foreach (var action in actions.Actions.Actions)
+                    {
+                        if (action is ContextActionDealDamage)
+                        {
+                            dict[entry.SpellLevel].Add(f.ToReference<BlueprintAbilityReference>());
+                        }
+                    }
+                }
+            }
+            var filteredList = new List<SpellLevelList>();
+            foreach (var key in dict.Keys)
+            {
+                filteredList.Add(new SpellLevelList(key) { m_Spells = dict[key] });
+            }
+
+            var bp = new BlueprintSpellList()
+            {
+                AssetGuid = BlueprintGuid.NewGuid(),
+                name = "WarlockInfernalSpellList",
+                SpellsByLevel = filteredList.ToArray()
+            };
+
+            var wrapper = new BlueprintJsonWrapper(bp);
+            wrapper.Save("D:\\BPOutput.json");
+#endif
             #endregion
         }
     }

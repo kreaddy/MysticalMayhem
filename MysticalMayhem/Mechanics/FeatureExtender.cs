@@ -11,7 +11,7 @@ namespace MysticalMayhem.Mechanics
     /// </summary>
     internal class FeatureExtender : OldStyleUnitPart
     {
-        private readonly Dictionary<Feature, CountableFlag> List = new ();
+        private readonly Dictionary<Feature, CountableFlag> List = new();
 
         public enum Feature
         {
@@ -28,26 +28,25 @@ namespace MysticalMayhem.Mechanics
 
         public void AddFeature(Feature type)
         {
-            CountableFlag feature = GetFeature(type);
+            var feature = GetFeature(type);
             feature.Retain();
         }
 
         public void RemoveFeature(Feature type)
         {
-            CountableFlag feature = GetFeature(type);
+            var feature = GetFeature(type);
             feature.Release();
         }
 
         public void ClearFeature(Feature type)
         {
-            CountableFlag feature = GetFeature(type);
+            var feature = GetFeature(type);
             feature.ReleaseAll();
         }
 
         public CountableFlag GetFeature(Feature type)
         {
-            CountableFlag feature;
-            List.TryGetValue(type, out feature);
+            List.TryGetValue(type, out var feature);
             if (feature == null)
             {
                 feature = new CountableFlag();

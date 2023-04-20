@@ -46,12 +46,12 @@ namespace MysticalMayhem.Helpers
                 if (!bundle) throw new Exception($"Failed to load AssetBundle! {Main.Mod + name}");
 
                 _assets = bundle.LoadAllAssets();
-
+#if false
                 foreach (var obj in _assets)
                 {
                     Main.DebugLog($"Found asset <{obj.name}> of type [{obj.GetType()}]");
                 }
-
+#endif
                 foreach (var obj in _assets)
                 {
                     if (obj is Sprite sprite)

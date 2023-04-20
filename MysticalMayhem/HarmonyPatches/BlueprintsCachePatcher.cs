@@ -20,6 +20,7 @@ namespace MysticalMayhem.HarmonyPatches
 
                 SpellComponentPatcher.PatchAssemblyForMaterialFreedom();
                 DescriptorExtender.PatchUIUtilityTexts();
+                DescriptorExtender.PatchTooltipTemplateAbility();
 
                 if (Settings.IsEnabled("mm.adnd.stoneskin") && !Settings.IsEnabled("mm.no.hb")) PostPatches.ApplyStoneskinChanges();
                 if (Settings.IsEnabled("mm.en.prebuff")) PostPatches.PrebuffUnits();

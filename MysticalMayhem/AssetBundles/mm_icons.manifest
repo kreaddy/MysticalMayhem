@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1197471789
+CRC: 1883678778
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 81b1cef11f7126e189fe659ab87c5aa6
+    Hash: 546fd241cc85494a60fd4b72627991ee
   TypeTreeHash:
     serializedVersion: 2
     Hash: c90fc19e2679e5295d10bd00f33cb4c3
@@ -22,14 +22,19 @@ Assets:
 - Assets/MM_icons/s_sure_casting.png
 - Assets/MM_icons/c_warlock_profs.png
 - Assets/MM_icons/c_warlock_transformation.png
+- Assets/MM_icons/c_warlock_corruptingray.png
 - Assets/MM_icons/scrl_meteor_swarm.png
 - Assets/MM_icons/c_warlock_felhide.png
 - Assets/MM_icons/c_warlock_whispers.png
 - Assets/MM_icons/ad_purityofsin.png
 - Assets/MM_icons/c_warlock_pact.png
 - Assets/MM_icons/f_graduate.png
+- Assets/MM_icons/c_warlock_tormenting_focus.png
+- Assets/MM_icons/c_warlock_eldritchblast.png
 - Assets/MM_icons/scrl_draconic_malice.png
+- Assets/MM_icons/c_warlock_eternaltorment.png
 - Assets/MM_icons/c_warlock_felresistance.png
+- Assets/MM_icons/c_warlock_affliction.png
 - Assets/MM_icons/scrl_bloody_tears.png
 - Assets/MM_icons/c_warlock_willbreaker.png
 - Assets/MM_icons/s_bloody_tears.png
@@ -38,10 +43,12 @@ Assets:
 - Assets/MM_icons/c_warlock_blessing.png
 - Assets/MM_icons/s_draconic_malice.png
 - Assets/MM_icons/d_razmir.png
+- Assets/MM_icons/c_warlock_intelligence.png
 - Assets/MM_icons/c_warlock_incarnation_elder.png
 - Assets/MM_icons/cf_spell_synthesis.png
 - Assets/MM_icons/s_spell_turning.png
 - Assets/MM_icons/s_mighty_strength.png
+- Assets/MM_icons/c_warlock_unstableaffliction.png
 - Assets/MM_icons/s_meteor_swarm.png
 - Assets/MM_icons/scrl_mighty_strength.png
 - Assets/MM_icons/scrl_spell_turning.png

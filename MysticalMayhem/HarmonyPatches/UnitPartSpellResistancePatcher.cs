@@ -5,6 +5,7 @@ using Kingmaker.UnitLogic.Mechanics;
 using Kingmaker.UnitLogic.Parts;
 using MysticalMayhem.Helpers;
 using MysticalMayhem.Mechanics;
+using MysticalMayhem.Mechanics.Parts;
 
 namespace MysticalMayhem.HarmonyPatches
 {
@@ -22,7 +23,7 @@ namespace MysticalMayhem.HarmonyPatches
         [HarmonyPostfix]
         private static void IsImmune_PostfixMM(ref bool __result, UnitPartSpellResistance __instance, [CanBeNull] MechanicsContext context)
         {
-            __instance.Owner.Ensure<UnitPartWarlock>().EnsureSelfConfuse(ref __result, context);
+            __instance.Owner.Get<UnitPartWarlock>()?.EnsureSelfConfuse(ref __result, context);
         }
 
         private static void DraconicMaliceOverride(UnitPartSpellResistance __instance, MechanicsContext context)

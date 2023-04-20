@@ -9,6 +9,7 @@ using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.FactLogic;
 using MysticalMayhem.Helpers;
 using MysticalMayhem.Mechanics;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -79,7 +80,5 @@ namespace MysticalMayhem.HarmonyPatches
                 __result = list.ToArray();
             }
         }
-
-
     }
 }

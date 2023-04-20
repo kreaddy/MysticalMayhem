@@ -7,7 +7,8 @@
     "m_Overrides": [],
     "Components": [
       {
-        "$type": "0f7606be-35ac-4835-b610-74d70b5c4e75, WhispersOfMadnessLogic"
+        "$type": "00dbeecf-56d0-41d5-9410-d8a116d9b4e1, AddWarlockMechanic",
+        "Feature": "WhispersOfMadness"
       }
     ],
     "Comment": "",

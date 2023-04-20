@@ -1,0 +1,33 @@
+{
+  "AssetId": "e994ad87-eb3d-4428-853b-b7888936bfe3",
+  "PatchList": [ "AddIcon:c_warlock_pact" ],
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "Components": [
+      {
+        "$type": "2ba406be-582d-4952-80cf-285f23947896, AddContextualSpellDescriptor",
+        "Descriptor": "Tormenting",
+        "Ability": null,
+        "SpellList": "!bp_75d11c4a-6a99-4622-b530-201401dc360e",
+        "Spellbook": "!bp_913023a5-e55b-4772-b0b7-a0335645dc6f"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockTormentingCasting_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockTormentingCasting_Desc"
+    },
+    "IsClassFeature": true,
+    "m_Flags": null,
+    "Stacking": "Replace",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "Rounds",
+    "FxOnStart": null,
+    "FxOnRemove": null,
+    "ResourceAssetIds": []
+  }
+}

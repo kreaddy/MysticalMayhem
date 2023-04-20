@@ -5,10 +5,8 @@
     "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
     "Components": [
       {
-        "$type": "0894a6de-5880-4d05-bd98-91ddfd7720f3, MaleficiumAbilityParams"
-      },
-      {
-        "$type": "c60e4a23-4015-4f2f-a78a-cecb66d907f3, MaleficiumMetamagicCost"
+        "$type": "00dbeecf-56d0-41d5-9410-d8a116d9b4e1, AddWarlockMechanic",
+        "Feature": "MaleficiumRank"
       }
     ],
     "Comment": "",

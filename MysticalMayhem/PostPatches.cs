@@ -1,4 +1,5 @@
-﻿using Kingmaker.Blueprints;
+﻿using Kingmaker.Assets.UnitLogic.Mechanics.Properties;
+using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Prerequisites;
 using Kingmaker.Blueprints.Facts;
@@ -8,8 +9,9 @@ using Kingmaker.UnitLogic.Buffs.Blueprints;
 using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics.Actions;
 using Kingmaker.UnitLogic.Mechanics.Components;
+using Kingmaker.UnitLogic.Mechanics.Properties;
 using MysticalMayhem.Helpers;
-using MysticalMayhem.Mechanics;
+using MysticalMayhem.Mechanics.Components;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -222,7 +224,7 @@ namespace MysticalMayhem
             }
         }
 
-        // Patch called by the WarlockDomainOfMadness blueprint, allow warlock levels to count as cleric levels for the Madness domain's abilities.
+        // Patch called by the WarlockDomainOfMadness blueprint, allows warlock levels to count as cleric levels for the Madness domain's abilities.
         public static void WarlockDomainOfMadness()
         {
             var variants = BPLookup.Ability("MadnessDomainBaseAbility")
@@ -261,6 +263,26 @@ namespace MysticalMayhem
                     guid = "297c08b0-201f-43c0-bd20-f4aa483cf97e",
                     deserializedGuid = BlueprintGuid.Parse("297c08b0-201f-43c0-bd20-f4aa483cf97e")
                 });
+        }
+
+        // Patch called by the WarlockHexSelection blueprint, allows warlock levels to increase the DC of hexes.
+        public static void WarlockHexes()
+        {
+            var guid = BlueprintGuid.Parse("297c08b0-201f-43c0-bd20-f4aa483cf97e");
+            var bp = BPLookup.UnitProperty("WitchHexDCProperty");
+
+            bp.GetComponent<SummClassLevelGetter>().m_Class = bp.GetComponent<SummClassLevelGetter>().m_Class
+                .Push(new BlueprintCharacterClassReference() { deserializedGuid = guid });
+            bp.GetComponent<MaxCastingAttributeGetter>().m_Classes = bp.GetComponent<MaxCastingAttributeGetter>().m_Classes
+                .Push(new BlueprintCharacterClassReference() { deserializedGuid = guid });
+
+            bp = BPLookup.UnitProperty("WitchHexCLProperty");
+            bp.GetComponent<SummClassLevelGetter>().m_Class = bp.GetComponent<SummClassLevelGetter>().m_Class
+                .Push(new BlueprintCharacterClassReference() { deserializedGuid = guid });
+
+            bp = BPLookup.UnitProperty("WitchHexSLProperty");
+            bp.GetComponent<SummClassLevelGetter>().m_Class = bp.GetComponent<SummClassLevelGetter>().m_Class
+                .Push(new BlueprintCharacterClassReference() { deserializedGuid = guid });
         }
 
         #endregion Patches

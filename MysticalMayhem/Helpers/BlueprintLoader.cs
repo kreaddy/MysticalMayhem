@@ -4,6 +4,7 @@ using Kingmaker.Localization;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Reflection;
@@ -28,9 +29,15 @@ namespace MysticalMayhem.Helpers
 
             BindNewTypes();
 
+            var time = Stopwatch.StartNew();
+            Main.Log("================================================");
             Assembly.GetExecutingAssembly().GetManifestResourceNames()
                 .Where(res => res.Contains("Blueprints"))
                 .ForEach(res => Load(res));
+            time.Stop();
+            Main.Log("------------------------------------------------");
+            Main.Log($"Blueprints loaded in {time.Elapsed.Milliseconds} ms.");
+            Main.Log("================================================");
         }
 
         public static void ApplyLocalization()

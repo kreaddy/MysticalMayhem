@@ -7,6 +7,7 @@ using Kingmaker.DLC;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.ActivatableAbilities;
 using Kingmaker.UnitLogic.Buffs.Blueprints;
+using Kingmaker.UnitLogic.Mechanics.Properties;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.IO;
@@ -48,6 +49,8 @@ namespace MysticalMayhem.Helpers
         public static BlueprintStatProgression StatProgression(string id, bool mod = false) => GetBP<BlueprintStatProgression>(id, mod);
 
         public static BlueprintUnit Unit(string id, bool mod = false) => GetBP<BlueprintUnit>(id, mod);
+
+        public static BlueprintUnitProperty UnitProperty(string id, bool mod = false) => GetBP<BlueprintUnitProperty>(id, mod);
 
         public static BlueprintItemWeapon Weapon(string id, bool mod = false) => GetBP<BlueprintItemWeapon>(id, mod);
 

@@ -1,0 +1,44 @@
+{
+  "AssetId": "f74bb2a0-8f4e-4a1e-99e9-d6f00f9d3c78",
+  "PatchList": [ "SpecialPatch:WarlockHexes" ],
+  "Homebrew": true,
+  "Data": {
+    "$type": "ea44b1ffb0675104cb178df6459f3a21, BlueprintFeatureSelection",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "c18f8c02-7df6-4f14-acd6-9df810a613a8"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockHex_Desc"
+    },
+    "m_Icon": {
+      "guid": "08de7d6c711522448b11138d6785d59f",
+      "fileid": 21300000
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": [],
+    "IgnorePrerequisites": true,
+    "Obligatory": false,
+    "Mode": "Default",
+    "Group": "WitchHex",
+    "Group2": "None",
+    "m_Features": [],
+    "m_AllFeatures": [
+      "!bp_36f2467103d4635459d412fb418276f4",
+      "!bp_a977bcfb36169d447914f084793cac2c",
+      "!bp_4e3dfdf000cc24d4fb96fd04e4e5cd0f"
+    ]
+  }
+}

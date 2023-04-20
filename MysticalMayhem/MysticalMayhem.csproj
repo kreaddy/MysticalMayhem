@@ -84,6 +84,34 @@
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOne.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOneDevotion.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOnePact.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockCorruptingRay.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockCorruptingRayAbility.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockCorruptingRayResource.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockForbiddenKnowledge.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockForbiddenKnowledgeSpellList.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockInfernalIntellect.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockMetamagian.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockSplitHex.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockTormentingFocus.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockUnstableAffliction.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockAffliction.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockEternalTorment.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockEternalTormentAbility.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockHexSelection.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfectiousGuilt.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfectiousGuiltBuff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfernal20.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfernal20Ab.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfernal20Buff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfernal20Res.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockMajorHexSelection.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockPatronDevotionSpellList.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockPatronInfernal.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockPatronInfernalDevotion.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockPatronInfernalPact.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockTormentingAbility.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockTormentingBuff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockTormentingSpellList.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\WarlockPatronSelection.json" />
     <None Remove="Blueprints\Classes\Warlock\WarlockAbilityDCProperty.json" />
     <None Remove="Blueprints\Classes\Warlock\WarlockCantripFeature.json" />
@@ -101,6 +129,7 @@
     <None Remove="Blueprints\Deities\Razmir.json" />
     <None Remove="Blueprints\Feats\AcadamaeGraduate.json" />
     <None Remove="Blueprints\Feats\EarthMagic.json" />
+    <None Remove="Blueprints\Feats\GreaterTormentingFocus.json" />
     <None Remove="Blueprints\Feats\PurityOfSin.json" />
     <None Remove="Blueprints\Feats\TestFeat.json" />
     <None Remove="Blueprints\MagusArcana\Malice.json" />
@@ -110,6 +139,7 @@
     <None Remove="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisResource.json" />
     <None Remove="Blueprints\Mythic\AbundantSpellSynthesis.json" />
     <None Remove="Blueprints\Mythic\MythicPurityOfSin.json" />
+    <None Remove="Blueprints\Mythic\MythicTormentingFocus.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationNatureResource.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWaves.json" />
     <None Remove="Blueprints\ShamanSpiritManifestations\ManifestationWind.json" />
@@ -181,6 +211,34 @@
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOneDevotion.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOnePact.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\WarlockPatronGreatOldOne.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockCorruptingRay.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockCorruptingRayAbility.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockCorruptingRayResource.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockInfernalIntellect.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockForbiddenKnowledge.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockMetamagian.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockSplitHex.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockForbiddenKnowledgeSpellList.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockUnstableAffliction.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Blessings\WarlockTormentingFocus.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfernal20.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfernal20Ab.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfernal20Res.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfernal20Buff.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockTormentingAbility.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfectiousGuilt.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockEternalTorment.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockEternalTormentAbility.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockMajorHexSelection.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockHexSelection.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockAffliction.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\Manifestations\WarlockInfectiousGuiltBuff.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockTormentingSpellList.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockPatronDevotionSpellList.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockPatronInfernalPact.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockPatronInfernal.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockPatronInfernalDevotion.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockTormentingBuff.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\WarlockPatronSelection.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockAbilityDCProperty.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockCantripFeature.json" />
@@ -197,12 +255,14 @@
     <EmbeddedResource Include="Blueprints\CreatureFacts\SubtypeGreatOldOne.json" />
     <EmbeddedResource Include="Blueprints\Deities\Razmir.json" />
     <EmbeddedResource Include="Blueprints\Feats\TestFeat.json" />
+    <EmbeddedResource Include="Blueprints\Feats\GreaterTormentingFocus.json" />
     <EmbeddedResource Include="Blueprints\MagusArcana\Malice.json" />
     <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisResource.json" />
     <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisFeature.json" />
     <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisAbility.json" />
     <EmbeddedResource Include="Blueprints\MysticTheurge\SpellSynthesis\SpellSynthesisBuff.json" />
     <EmbeddedResource Include="Blueprints\Mythic\AbundantSpellSynthesis.json" />
+    <EmbeddedResource Include="Blueprints\Mythic\MythicTormentingFocus.json" />
     <EmbeddedResource Include="Blueprints\ShamanSpiritManifestations\ManifestationWind.json" />
     <EmbeddedResource Include="Blueprints\ShamanSpiritManifestations\ManifestationWaves.json" />
     <EmbeddedResource Include="Blueprints\ShamanSpiritManifestations\NatureSpiritPlantAbility.json" />
@@ -285,6 +345,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="D:\Mystical Mayhem\MysticalMayhem\.editorconfig" />
     <None Include="HarmonyPatches\RuleCollectMetamagicPatcher.cs" />
   </ItemGroup>
 
@@ -394,5 +455,9 @@
 
 		<PublicizeTask InputAssemblies="@(Assemblies)" OutputDir="$(SolutionDir)lib/" />
 	</Target>
+
+	<ItemGroup>
+	  <EditorConfigFiles Remove="D:\Mystical Mayhem\MysticalMayhem\.editorconfig" />
+	</ItemGroup>
 	
 </Project>
