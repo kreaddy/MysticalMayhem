@@ -10,6 +10,13 @@
         "SpecificSpellLevel": false,
         "SpellLevelPenalty": 1,
         "SpellLevel": 0
+      },
+      {
+        "$type": "17030ee91bfc7f24e93d3b6fa583dd09, PrerequisiteFeature",
+        "Group": "Any",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_Feature": "!bp_ae352cdd-57d1-4cbf-8a13-f86bb40c9c76"
       }
     ],
     "Comment": "",
