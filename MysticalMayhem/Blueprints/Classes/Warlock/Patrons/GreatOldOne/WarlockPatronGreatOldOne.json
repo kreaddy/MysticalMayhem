@@ -5,7 +5,7 @@
     "Components": [
       {
         "$type": "bbe1931feea2c5b49aa158c5c5f9b260, PrerequisiteAlignment",
-        "Alignment": "ChaoticNeutral, ChaoticEvil, NeutralEvil"
+        "Alignment": "ChaoticNeutral, ChaoticEvil, TrueNeutral, NeutralEvil"
       }
     ],
     "Comment": "",
