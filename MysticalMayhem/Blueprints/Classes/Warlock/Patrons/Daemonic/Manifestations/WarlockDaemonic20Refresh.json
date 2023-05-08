@@ -1,0 +1,137 @@
+{
+  "AssetId": "f23a0357-812e-4a5a-add1-b0384fec5252",
+  "Data": {
+    "$type": "da11db195c86e0d4dae17a2c03a4ba9a, BlueprintAbility",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "66e032e5cf38801428940a1a0d14b946, AbilityEffectRunAction",
+        "m_Overrides": [],
+        "SavingThrowType": "Unknown",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "da8bc396046f4554bb8874bc4d387a38, ContextActionReduceBuffDuration",
+              "m_TargetBuff": "!bp_bf38a9a7-fcb4-442c-968c-426f540c55f2",
+              "Increase": true,
+              "ToTarget": true,
+              "DurationValue": {
+                "Rate": "Minutes",
+                "DiceType": "Zero",
+                "DiceCountValue": {
+                  "ValueType": "Simple",
+                  "Value": 0,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "BonusValue": {
+                  "ValueType": "Simple",
+                  "Value": 1,
+                  "ValueRank": "Default",
+                  "ValueShared": "Damage",
+                  "Property": "None",
+                  "m_CustomProperty": null
+                },
+                "m_IsExtendable": true
+              }
+            }
+          ]
+        }
+      },
+      {
+        "$type": "c788cf748ec86bc45b986ac4de28cf45, AbilitySpawnFx",
+        "PrefabLink": {
+          "AssetId": "e93261ee4c3ea474e923f6a645a3384f"
+        },
+        "Time": "OnApplyEffect",
+        "Anchor": "Caster",
+        "WeaponTarget": "None",
+        "DestroyOnCast": false,
+        "Delay": 0.0,
+        "PositionAnchor": "None",
+        "OrientationAnchor": "None",
+        "OrientationMode": "Copy"
+      },
+      {
+        "$type": "2945aafe5b353dc49b283c982269ade6, AbilityResourceLogic",
+        "m_Overrides": [],
+        "m_RequiredResource": "!bp_2d6ab5cf-58b3-4468-ad40-40926d1f3c80",
+        "m_IsSpendResource": true,
+        "CostIsCustom": false,
+        "Amount": 2,
+        "ResourceCostIncreasingFacts": [],
+        "ResourceCostDecreasingFacts": []
+      },
+      {
+        "$type": "3244a7f6b105c654db650034076be4a5, AbilityCasterHasFacts",
+        "m_Facts": [
+          "!bp_bf38a9a7-fcb4-442c-968c-426f540c55f2"
+        ],
+        "NeedsAll": false
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockRefreshDaemonic_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockRefreshDaemonic_Desc"
+    },
+    "m_Icon": {
+      "guid": "4b3ba911443e8a84e9ef6bffc7d54ebb",
+      "fileid": 21300000
+    },
+    "m_DefaultAiAction": null,
+    "Type": "Supernatural",
+    "Range": "Personal",
+    "CustomRange": {
+      "m_Value": 0.0
+    },
+    "ShowNameForVariant": false,
+    "OnlyForAllyCaster": false,
+    "CanTargetPoint": false,
+    "CanTargetEnemies": false,
+    "CanTargetFriends": false,
+    "CanTargetSelf": true,
+    "SpellResistance": false,
+    "ActionBarAutoFillIgnored": false,
+    "Hidden": false,
+    "NeedEquipWeapons": false,
+    "NotOffensive": false,
+    "EffectOnAlly": "None",
+    "EffectOnEnemy": "None",
+    "m_Parent": null,
+    "Animation": "Omni",
+    "HasFastAnimation": false,
+    "AnimationStyle": "CastActionSelfTouch",
+    "m_TargetMapObjects": false,
+    "ActionType": "Free",
+    "AvailableMetamagic": "Quicken",
+    "m_IsFullRoundAction": false,
+    "LocalizedDuration": {
+      "LocalisedValue": "",
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "LocalizedSavingThrow": {
+      "LocalisedValue": "",
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "MaterialComponent": {
+      "m_Item": null,
+      "Count": 1
+    },
+    "DisableLog": false,
+    "ResourceAssetIds": []
+  }
+}

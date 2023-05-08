@@ -2,10 +2,12 @@
 using Kingmaker.Blueprints.Classes;
 using Kingmaker.Blueprints.Classes.Spells;
 using Kingmaker.Blueprints.JsonSystem;
+using Kingmaker.Designers.EventConditionActionSystem.Actions;
 using Kingmaker.UnitLogic.Abilities.Blueprints;
 using Kingmaker.UnitLogic.Abilities.Components;
 using Kingmaker.UnitLogic.FactLogic;
 using Kingmaker.UnitLogic.Mechanics.Actions;
+using Kingmaker.UnitLogic.Mechanics.Conditions;
 using MysticalMayhem.Helpers;
 using System;
 using System.Collections.Generic;
@@ -134,6 +136,15 @@ namespace MysticalMayhem
             var wizardList = BPLookup.SpellList("WizardSpellList");
             var forbbidenList = BPLookup.SpellList("WarlockForbiddenKnowledgeSpellList", true);
             forbbidenList.SpellsByLevel = wizardList.SpellsByLevel;
+
+            #endregion
+
+            #region Wasteland Warrior
+
+            var ffSelection = BPLookup.Selection("FighterFeatSelection");
+            var wwSelection = BPLookup.Selection("WarlockWastelandWarrior", true);
+
+            wwSelection.m_AllFeatures = ffSelection.m_AllFeatures;
 
             #endregion
 

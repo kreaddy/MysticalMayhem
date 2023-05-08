@@ -63,6 +63,40 @@
     <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapAbility.json" />
     <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapBuff.json" />
     <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapFeature.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockDaemonicEndurance.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockHemorrhaging.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockSecondSkin.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockSecondSkinGreater.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockThirstingBlade.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockUnstoppableFury.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockWastelandWarrior.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGash.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashBuff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashBuffII.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashCheck.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCProperty.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCPropertyII.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Ab.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Buff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Refresh.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Res.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFury.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFuryAbility.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFuryBuff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockFuriousFrenzy.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockFuriousFrenzyBuff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockPatronDaemonicDevotion.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockSpellCombat.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorsel.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselDevour.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselResource.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselSoulTapAbility.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselSoulTapBuff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\WarlockPatronDaemonic.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\WarlockPatronDaemonicDevotion.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\WarlockPatronDaemonicPact.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\WarlockPatronDaemonicPactAbility.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockCultCaster.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockDomainOfMadness.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockDomainOfMadnessII.json" />
@@ -190,6 +224,39 @@
     <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapBuff.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapAbility.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapFeature.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockDaemonicEndurance.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockHemorrhaging.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockUnstoppableFury.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockWastelandWarrior.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockThirstingBlade.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockSecondSkinGreater.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockSecondSkin.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGash.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashBuffII.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashBuff.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashCheck.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCPropertyII.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCProperty.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFury.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Buff.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Ab.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Res.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselDevour.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Refresh.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselSoulTapBuff.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockFuriousFrenzyBuff.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFuryBuff.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFuryAbility.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockInsatiableHunger.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockFuriousFrenzy.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselSoulTapAbility.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorsel.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselResource.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockSpellCombat.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\WarlockPatronDaemonic.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\WarlockPatronDaemonicDevotion.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\WarlockPatronDaemonicPact.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockCultCaster.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockDomainOfMadnessII.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\GreatOldOne\Blessings\WarlockDomainOfMadness.json" />
@@ -458,6 +525,10 @@
 
 	<ItemGroup>
 	  <EditorConfigFiles Remove="D:\Mystical Mayhem\MysticalMayhem\.editorconfig" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\WarlockPatronDaemonicPactAbility.json" />
 	</ItemGroup>
 	
 </Project>

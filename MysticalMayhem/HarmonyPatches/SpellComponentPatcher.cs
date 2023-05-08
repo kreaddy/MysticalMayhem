@@ -1,6 +1,6 @@
 ﻿using HarmonyLib;
 using Kingmaker.UnitLogic.Abilities;
-using MysticalMayhem.Mechanics.Parts;
+using MysticalMayhem.Mechanics;
 
 namespace MysticalMayhem.HarmonyPatches
 {

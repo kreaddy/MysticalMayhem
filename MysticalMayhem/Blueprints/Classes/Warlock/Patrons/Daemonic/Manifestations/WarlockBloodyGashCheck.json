@@ -1,0 +1,51 @@
+{
+  "AssetId": "d34702ca-82fe-4c35-98ba-fb34114c848f",
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "Components": [
+      {
+        "$type": "bb0dd50b4c94ac644ad16da827bcffdd, NewRoundTrigger",
+        "NewRoundActions": {
+          "Actions": [
+            {
+              "$type": "1e0ebe55f7204066b7cdb0eb124b863a, ContextActionRemoveSelf"
+            }
+          ]
+        }
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Description": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_DescriptionShort": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "IsClassFeature": true,
+    "m_Flags": "HiddenInUi",
+    "Stacking": "Summ",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "Rounds",
+    "FxOnStart": null,
+    "FxOnRemove": null,
+    "ResourceAssetIds": []
+  }
+}

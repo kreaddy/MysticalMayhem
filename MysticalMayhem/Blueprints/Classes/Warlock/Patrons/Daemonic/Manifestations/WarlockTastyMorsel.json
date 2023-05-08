@@ -1,0 +1,86 @@
+{
+  "AssetId": "6cf3387e-b266-4ea5-963d-d4065388410f",
+  "PatchList": ["AddIcon:c_warlock_tastymorsel" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_64a380ce-60cb-45bd-9fe1-06893cd499e3",
+          "!bp_72ba8697-c508-4d2b-9a2a-0d352fda29c2"
+        ],
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      },
+      {
+        "$type": "fd82ca085bd60c04fb03d1091acc66cb, AddAbilityResources",
+        "m_Overrides": [],
+        "UseThisAsResource": false,
+        "m_Resource": "!bp_2d6ab5cf-58b3-4468-ad40-40926d1f3c80",
+        "Amount": 0,
+        "RestoreAmount": false,
+        "RestoreOnLevelUp": false
+      },
+      {
+        "$type": "c2129f96be33c7e45917aabea8b92623, AddOutgoingDamageTrigger",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "5f950c181b3157a4486fcd36b702b702, ContextActionOnContextCaster",
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "649df37d87fcf314cb863c9a18113fa5, ContextRestoreResource",
+                    "m_Resource": "!bp_2d6ab5cf-58b3-4468-ad40-40926d1f3c80",
+                    "m_IsFullRestoreAllResources": false,
+                    "ContextValueRestoration": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "TriggerOnStatDamageOrEnergyDrain": false,
+        "CheckWeaponType": false,
+        "CheckAbilityType": false,
+        "m_AbilityType": "Physical",
+        "CheckSpellDescriptor": false,
+        "CheckSpellParent": false,
+        "NotZeroDamage": true,
+        "CheckEnergyDamageType": false,
+        "EnergyType": "Fire",
+        "ApplyToAreaEffectDamage": false,
+        "TargetKilledByThisDamage": true,
+        "m_WeaponType": null,
+        "m_AbilityList": [],
+        "SpellDescriptorsList": {
+          "m_IntValue": 0
+        }
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockTastyMorsel_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockTastyMorsel_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": true,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

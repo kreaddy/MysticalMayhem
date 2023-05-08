@@ -16,7 +16,7 @@
     "m_CharacterClass": "!bp_297c08b0-201f-43c0-bd20-f4aa483cf97e",
     "CastingAttribute": "Charisma",
     "Spontaneous": true,
-    "SpellsPerLevel": 2,
+    "SpellsPerLevel": 0,
     "AllSpellsKnown": false,
     "CantripsType": "Cantrips",
     "CasterLevelModifier": 0,

@@ -1,0 +1,137 @@
+{
+  "AssetId": "0f912774-00e8-4789-af13-cf7dd957817b",
+  "PatchList": [ "AddIcon:c_warlock_devotion" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "665cc60ff8589f14f8be49851472d736, CriticalConfirmationBonus",
+        "Value": {
+          "ValueType": "Rank",
+          "Value": "1",
+          "ValueRank": "Default",
+          "ValueShared": "Damage",
+          "Property": "None",
+          "m_CustomProperty": null
+        },
+        "Bonus": 0,
+        "OnlyPositiveValue": false,
+        "CheckWeaponRangeType": false,
+        "Type": "Melee"
+      },
+      {
+        "$type": "a15673bd9e3879442825226335fd8fe2, ContextRankConfig",
+        "m_Overrides": [],
+        "m_Type": "Default",
+        "m_BaseValueType": "ClassLevel",
+        "m_Feature": null,
+        "m_FeatureList": [],
+        "m_Stat": null,
+        "m_SpecificModifier": "None",
+        "m_Buff": null,
+        "m_Progression": "Custom",
+        "m_CustomProgression": [
+          {
+            "BaseValue": 1,
+            "ProgressionValue": 1
+          },
+          {
+            "BaseValue": 2,
+            "ProgressionValue": 1
+          },
+          {
+            "BaseValue": 3,
+            "ProgressionValue": 1
+          },
+          {
+            "BaseValue": 4,
+            "ProgressionValue": 1
+          },
+          {
+            "BaseValue": 5,
+            "ProgressionValue": 2
+          },
+          {
+            "BaseValue": 6,
+            "ProgressionValue": 2
+          },
+          {
+            "BaseValue": 7,
+            "ProgressionValue": 2
+          },
+          {
+            "BaseValue": 8,
+            "ProgressionValue": 2
+          },
+          {
+            "BaseValue": 9,
+            "ProgressionValue": 3
+          },
+          {
+            "BaseValue": 10,
+            "ProgressionValue": 3
+          },
+          {
+            "BaseValue": 11,
+            "ProgressionValue": 3
+          },
+          {
+            "BaseValue": 12,
+            "ProgressionValue": 3
+          },
+          {
+            "BaseValue": 13,
+            "ProgressionValue": 4
+          },
+          {
+            "BaseValue": 14,
+            "ProgressionValue": 4
+          },
+          {
+            "BaseValue": 15,
+            "ProgressionValue": 4
+          },
+          {
+            "BaseValue": 16,
+            "ProgressionValue": 4
+          },
+          {
+            "BaseValue": 17,
+            "ProgressionValue": 5
+          }
+        ],
+        "m_StartLevel": 0,
+        "m_StepLevel": 0,
+        "m_UseMin": true,
+        "m_Min": 1,
+        "m_UseMax": true,
+        "m_Max": 5,
+        "m_ExceptClasses": false,
+        "Archetype": null,
+        "m_AdditionalArchetypes": [],
+        "m_Class": [ "!bp_297c08b0-201f-43c0-bd20-f4aa483cf97e" ],
+        "m_CustomProperty": null,
+        "m_CustomPropertyList": []
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockDevotion_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockDevotionDaemonic_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

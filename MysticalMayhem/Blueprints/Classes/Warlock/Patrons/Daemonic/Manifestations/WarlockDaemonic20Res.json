@@ -1,0 +1,31 @@
+{
+  "AssetId": "edaada50-0090-4dcd-9fb1-68495ce28266",
+  "Data": {
+    "$type": "973c613b8443cf14495c283e293d35f9, BlueprintAbilityResource",
+    "m_Overrides": [],
+    "Components": [],
+    "Comment": "",
+    "m_Icon": null,
+    "m_MaxAmount": {
+      "BaseValue": 1,
+      "IncreasedByLevel": false,
+      "m_Class": [],
+      "m_Archetypes": [],
+      "LevelIncrease": 0,
+      "IncreasedByLevelStartPlusDivStep": false,
+      "StartingLevel": 0,
+      "StartingIncrease": 0,
+      "LevelStep": 0,
+      "PerStepIncrease": 0,
+      "MinClassLevelIncrease": 0,
+      "m_ClassDiv": [],
+      "m_ArchetypesDiv": [],
+      "OtherClassesModifier": 0.0,
+      "IncreasedByStat": false,
+      "ResourceBonusStat": "Wisdom"
+    },
+    "m_UseMax": false,
+    "m_Max": 10,
+    "m_Min": 0
+  }
+}

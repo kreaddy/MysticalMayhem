@@ -1,0 +1,49 @@
+{
+  "AssetId": "02a3d788-667a-419a-a966-8e42112adfea",
+  "Data": {
+    "$type": "ea44b1ffb0675104cb178df6459f3a21, BlueprintFeatureSelection",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "17030ee91bfc7f24e93d3b6fa583dd09, PrerequisiteFeature",
+        "Group": "Any",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_Feature": "!bp_ec560936-b1df-47f8-b103-6493bbf5a39a"
+      },
+      {
+        "$type": "fb876f3084f01754db3a4acbbb328a89, PrerequisiteClassLevel",
+        "Level": 10,
+        "m_CharacterClass": "!bp_297c08b0-201f-43c0-bd20-f4aa483cf97e"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockThirstingBlade_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockThirstingBlade_Desc"
+    },
+    "m_Icon": null,
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": [],
+    "IgnorePrerequisites": true,
+    "Obligatory": false,
+    "Mode": "Default",
+    "Group": "None",
+    "Group2": "None",
+    "m_Features": [],
+    "m_AllFeatures": [
+      "!bp_f4201c85a991369408740c6888362e20"
+    ]
+  }
+}

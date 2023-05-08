@@ -32,7 +32,8 @@ namespace MysticalMayhem.Mechanics.Parts
 {
     public class UnitPartWarlock : OldStyleUnitPart, IInitiatorRulebookHandler<RuleCalculateAbilityParams>, IRulebookHandler<RuleCalculateAbilityParams>,
         IInitiatorRulebookHandler<RuleApplyMetamagic>, IRulebookHandler<RuleApplyMetamagic>, ITargetRulebookHandler<RuleApplySpell>, IRulebookHandler<RuleApplySpell>,
-        ITargetRulebookHandler<RuleSavingThrow>, IRulebookHandler<RuleSavingThrow>, ITargetRulebookHandler<RulePrepareDamage>, IRulebookHandler<RulePrepareDamage>
+        ITargetRulebookHandler<RuleSavingThrow>, IRulebookHandler<RuleSavingThrow>, IInitiatorRulebookHandler<RulePrepareDamage>, IRulebookHandler<RulePrepareDamage>,
+        IInitiatorRulebookHandler<RuleCastSpell>, IRulebookHandler<RuleCastSpell>
     {
 
         public static BlueprintCharacterClass Class => BPLookup.Class("WarlockClass", true);
@@ -41,6 +42,7 @@ namespace MysticalMayhem.Mechanics.Parts
         public static BlueprintSpellList TormentingList => BPLookup.SpellList("WarlockTormentingSpellList", true);
         public static BlueprintBuff TormentingSpellcasting => BPLookup.Buff("WarlockTormentingBuff", true);
         public static BlueprintBuff InfectiousGuiltBuff => BPLookup.Buff("WarlockInfectiousGuiltBuff", true);
+        public static BlueprintBuff DaemonicIncarnationBuff => BPLookup.Buff("WarlockDaemonic20Buff", true);
 
         private readonly Dictionary<Feature, CountableFlag> List = new();
 
@@ -60,7 +62,10 @@ namespace MysticalMayhem.Mechanics.Parts
             DoubleDurationOfHarmfulBuffs,
             Affliction,
             InfectiousGuilt,
-            InfernalIncarnation
+            InfernalIncarnation,
+            DaemonicHunger,
+            CopyMagusMechanics,
+            IgnoreLifeTapCost
         }
 
         public void AddFeature(Feature type)
@@ -277,7 +282,7 @@ namespace MysticalMayhem.Mechanics.Parts
                 {
                     Owner.Buffs.GetBuff(BPLookup.Buff("WarlockInfernal20Buff", true)).ReduceDuration(TimeSpan.FromMinutes(1));
                 }
-                else if (Owner.HPLeft > abilityData.SpellLevel * 2)
+                else if (Owner.HPLeft > abilityData.SpellLevel * 2 && !GetFeature(Feature.IgnoreLifeTapCost))
                 {
                     GameHelper.ApplyBuff(Owner, BPLookup.Buff($"LifeTap{abilityData.SpellLevel * 2}", true));
                 }
@@ -492,6 +497,26 @@ namespace MysticalMayhem.Mechanics.Parts
         public bool IsTormentingSpell(AbilityData spell)
         {
             return Owner.Buffs.GetBuff(TormentingSpellcasting) != null && spell.IsInSpellList(TormentingList) && spell.SpellbookBlueprint == Spellbook;
+        }
+
+        public void OnEventAboutToTrigger(RuleCastSpell evt)
+        {
+        }
+
+        public void OnEventDidTrigger(RuleCastSpell evt)
+        {
+            if (evt.Initiator != Owner) return;
+            ProcessDaemonicHunger(evt);
+        }
+
+        /// <summary>
+        /// If the unit cast a warlock spell while in possession of the Daemonic Hunger feature, it takes damage equal to the spell's level.
+        /// Unlike Life Tap or the Flagellant's Mortified Casting feature, it is entirely possible to die from this.
+        /// </summary>
+        protected void ProcessDaemonicHunger(RuleCastSpell evt)
+        {
+            if (!GetFeature(Feature.DaemonicHunger) || evt.Spell.Spellbook?.Blueprint != Spellbook) return;
+            GameHelper.DealDirectDamage(Owner, Owner, evt.Spell.SpellLevel);
         }
     }
 }

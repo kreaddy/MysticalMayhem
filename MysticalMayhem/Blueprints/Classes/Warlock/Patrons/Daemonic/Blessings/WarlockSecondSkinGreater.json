@@ -1,0 +1,61 @@
+{
+  "AssetId": "e40b3cb0-ae75-4ab3-9492-9d45e1fae152",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "17030ee91bfc7f24e93d3b6fa583dd09, PrerequisiteFeature",
+        "Group": "Any",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_Feature": "!bp_cb369c13-f7f9-4648-a27f-e36b62b37b69"
+      },
+      {
+        "$type": "fb876f3084f01754db3a4acbbb328a89, PrerequisiteClassLevel",
+        "Level": 14,
+        "m_CharacterClass": "!bp_297c08b0-201f-43c0-bd20-f4aa483cf97e"
+      },
+      {
+        "$type": "80ae0054466b76d41be6060fc0ef77a8, ArcaneArmorProficiency",
+        "Armor": [
+          "Heavy"
+        ]
+      },
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_1b0f68188dcc435429fb87a022239681"
+        ],
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockSecondSkinII_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockSecondSkinII_Desc"
+    },
+    "m_Icon": {
+      "guid": "f68f95de7b3199d49ad78bc0098efe92",
+      "fileid": 21300000
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

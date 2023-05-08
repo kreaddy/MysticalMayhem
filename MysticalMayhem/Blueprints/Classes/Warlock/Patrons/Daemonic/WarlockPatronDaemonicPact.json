@@ -1,0 +1,140 @@
+{
+  "AssetId": "ef2e99bf-0cc8-4526-a267-8c6e8198530c",
+  "PatchList": ["AddIcon:c_warlock_pact" ],
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "PrototypeLink": "",
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "c2129f96be33c7e45917aabea8b92623, AddOutgoingDamageTrigger",
+        "Actions": {
+          "Actions": [
+            {
+              "$type": "5f950c181b3157a4486fcd36b702b702, ContextActionOnContextCaster",
+              "Actions": {
+                "Actions": [
+                  {
+                    "$type": "2f9cfff2340b8c344ab4fd92c2eb61f2, ContextActionCastSpell",
+                    "m_Spell": "!bp_91686bc5-18f6-4e2c-a455-771cb9a8b968",
+                    "OverrideDC": false,
+                    "DC": {
+                      "ValueType": "Simple",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null
+                    },
+                    "OverrideSpellLevel": true,
+                    "SpellLevel": {
+                      "ValueType": "Simple",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": null
+                    },
+                    "CastByTarget": false
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        "TriggerOnStatDamageOrEnergyDrain": false,
+        "CheckWeaponType": false,
+        "CheckAbilityType": false,
+        "m_AbilityType": "Physical",
+        "CheckSpellDescriptor": false,
+        "CheckSpellParent": false,
+        "NotZeroDamage": true,
+        "CheckEnergyDamageType": false,
+        "EnergyType": "Fire",
+        "ApplyToAreaEffectDamage": false,
+        "TargetKilledByThisDamage": true,
+        "m_WeaponType": null,
+        "m_AbilityList": [],
+        "SpellDescriptorsList": {
+          "m_IntValue": 0
+        }
+      },
+      {
+        "$type": "bdbdc2afaa197d4479e112a32f9bdab5, AddInitiatorAttackWithWeaponTrigger",
+        "WaitForAttackResolve": false,
+        "OnlyHit": true,
+        "OnMiss": false,
+        "OnlyOnFullAttack": false,
+        "OnlyOnFirstAttack": false,
+        "OnlyOnFirstHit": false,
+        "CriticalHit": true,
+        "OnAttackOfOpportunity": false,
+        "NotCriticalHit": false,
+        "OnlySneakAttack": false,
+        "NotSneakAttack": false,
+        "m_WeaponType": null,
+        "CheckWeaponCategory": false,
+        "Category": "UnarmedStrike",
+        "CheckWeaponGroup": false,
+        "Group": "None",
+        "CheckWeaponRangeType": false,
+        "RangeType": "Melee",
+        "ActionsOnInitiator": true,
+        "ReduceHPToZero": false,
+        "CheckDistance": false,
+        "DistanceLessEqual": {
+          "m_Value": 0.0
+        },
+        "AllNaturalAndUnarmed": false,
+        "DuelistWeapon": false,
+        "NotExtraAttack": false,
+        "OnCharge": false,
+        "Action": {
+          "Actions": [
+            {
+              "$type": "2f9cfff2340b8c344ab4fd92c2eb61f2, ContextActionCastSpell",
+              "m_Spell": "!bp_91686bc5-18f6-4e2c-a455-771cb9a8b968",
+              "OverrideDC": false,
+              "DC": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null
+              },
+              "OverrideSpellLevel": true,
+              "SpellLevel": {
+                "ValueType": "Simple",
+                "Value": 0,
+                "ValueRank": "Default",
+                "ValueShared": "Damage",
+                "Property": "None",
+                "m_CustomProperty": null
+              },
+              "CastByTarget": false
+            }
+          ]
+        }
+      }
+
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockPact_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockPactDaemonic_Desc"
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

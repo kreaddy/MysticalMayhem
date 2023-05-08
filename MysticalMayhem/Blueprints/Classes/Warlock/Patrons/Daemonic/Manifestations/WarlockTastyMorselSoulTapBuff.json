@@ -1,0 +1,61 @@
+{
+  "AssetId": "a9ef86cb-caa3-4577-84e5-853b77b36c63",
+  "PatchList": [ "AddIcon:c_warlock_soultap" ],
+  "Data": {
+    "$type": "618a7e0d54149064ab3ffa5d9057362c, BlueprintBuff",
+    "Components": [
+      {
+        "$type": "00dbeecf-56d0-41d5-9410-d8a116d9b4e1, AddWarlockMechanic",
+        "Feature": "IgnoreLifeTapCost"
+      },
+      {
+        "$type": "1c2eac83b528cef478121194c8c7f502, AddAbilityUseTrigger",
+        "Action": {
+          "Actions": [
+            {
+              "$type": "1e0ebe55f7204066b7cdb0eb124b863a, ContextActionRemoveSelf"
+            }
+          ]
+        },
+        "ActionsOnAllTargets": false,
+        "AfterCast": true,
+        "ActionsOnTarget": false,
+        "FromSpellbook": false,
+        "m_Spellbooks": [],
+        "ForOneSpell": false,
+        "m_Ability": null,
+        "ForMultipleSpells": false,
+        "Abilities": [],
+        "MinSpellLevel": false,
+        "MinSpellLevelLimit": 0,
+        "ExactSpellLevel": false,
+        "ExactSpellLevelLimit": 0,
+        "CheckAbilityType": true,
+        "Type": "Spell",
+        "CheckDescriptor": false,
+        "SpellDescriptor": {
+          "m_IntValue": 0
+        },
+        "CheckRange": false,
+        "Range": "Touch"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_WarlockSoulTap_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_WarlockSoulTap_Name"
+    },
+    "IsClassFeature": true,
+    "m_Flags": null,
+    "Stacking": "Replace",
+    "Ranks": 0,
+    "TickEachSecond": false,
+    "Frequency": "Rounds",
+    "FxOnStart": null,
+    "FxOnRemove": null,
+    "ResourceAssetIds": []
+  }
+}
