@@ -13,9 +13,8 @@
           "name": ""
         },
         "m_Overrides": [],
-        "m_RaceRestriction": "null",
+        "m_RaceRestriction": null,
         "ArmorProficiencies": [
-          "Light",
           "Buckler",
           "LightShield"
         ],
@@ -27,6 +26,18 @@
           "Quarterstaff",
           "LightCrossbow"
         ]
+      },
+      {
+        "$type": "d79ad4ed064aa4f43ace0e9c238fb9b9, AddFacts",
+        "m_Overrides": [],
+        "m_Facts": [
+          "!bp_6d3728d4e9c9898458fe5e9532951132"
+        ],
+        "CasterLevel": 0,
+        "DoNotRestoreMissingFacts": false,
+        "HasDifficultyRequirements": false,
+        "InvertDifficultyRequirements": false,
+        "MinDifficulty": "Story"
       }
     ],
     "Comment": "",
