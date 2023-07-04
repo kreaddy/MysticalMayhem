@@ -1,5 +1,6 @@
 {
   "AssetId": "913023a5-e55b-4772-b0b7-a0335645dc6f",
+  "Patches": ["SpecialPatch:WarlockMergeSpellbook"],
   "Data": {
     "$type": "a42bdead3c333d744a3f0354bbe6c27c, BlueprintSpellbook",
     "Components": [],

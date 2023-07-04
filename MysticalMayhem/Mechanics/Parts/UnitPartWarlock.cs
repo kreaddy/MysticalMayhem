@@ -33,7 +33,8 @@ namespace MysticalMayhem.Mechanics.Parts
     public class UnitPartWarlock : OldStyleUnitPart, IInitiatorRulebookHandler<RuleCalculateAbilityParams>, IRulebookHandler<RuleCalculateAbilityParams>,
         IInitiatorRulebookHandler<RuleApplyMetamagic>, IRulebookHandler<RuleApplyMetamagic>, ITargetRulebookHandler<RuleApplySpell>, IRulebookHandler<RuleApplySpell>,
         ITargetRulebookHandler<RuleSavingThrow>, IRulebookHandler<RuleSavingThrow>, IInitiatorRulebookHandler<RulePrepareDamage>, IRulebookHandler<RulePrepareDamage>,
-        IInitiatorRulebookHandler<RuleCastSpell>, IRulebookHandler<RuleCastSpell>
+        IInitiatorRulebookHandler<RuleCastSpell>, IRulebookHandler<RuleCastSpell>, IInitiatorRulebookHandler<RuleAttackRoll>, IRulebookHandler<RuleAttackRoll>,
+        ITargetRulebookHandler<RuleAttackRoll>
     {
 
         public static BlueprintCharacterClass Class => BPLookup.Class("WarlockClass", true);
@@ -65,7 +66,8 @@ namespace MysticalMayhem.Mechanics.Parts
             InfernalIncarnation,
             DaemonicHunger,
             CopyMagusMechanics,
-            IgnoreLifeTapCost
+            IgnoreLifeTapCost,
+            AbyssalFlanking
         }
 
         public void AddFeature(Feature type)
@@ -505,7 +507,7 @@ namespace MysticalMayhem.Mechanics.Parts
 
         public void OnEventDidTrigger(RuleCastSpell evt)
         {
-            if (evt.Initiator != Owner) return;
+            if (evt.Initiator != Owner.Unit) return;
             ProcessDaemonicHunger(evt);
         }
 
@@ -517,6 +519,24 @@ namespace MysticalMayhem.Mechanics.Parts
         {
             if (!GetFeature(Feature.DaemonicHunger) || evt.Spell.Spellbook?.Blueprint != Spellbook) return;
             GameHelper.DealDirectDamage(Owner, Owner, evt.Spell.SpellLevel);
+        }
+
+        /// <summary>
+        /// If the initiator or target of an attack roll has the Abyssal patron's pact feature, they gain +2 to AB and +4 to
+        /// critical confirmation.
+        /// </summary>
+        public void OnEventAboutToTrigger(RuleAttackRoll evt)
+        {
+            if ((evt.Initiator == Owner.Unit && GetFeature(Feature.AbyssalFlanking)) || (evt.Target == Owner.Unit && GetFeature(Feature.AbyssalFlanking)))
+            {
+                if (!evt.Target.CombatState.IsFlanked) return;
+                evt.AddModifier(2, BonusType.Flanking, Kingmaker.Enums.ModifierDescriptor.UntypedStackable);
+                evt.CriticalConfirmationBonus += 4;
+            }
+        }
+
+        public void OnEventDidTrigger(RuleAttackRoll evt)
+        {
         }
     }
 }

@@ -165,6 +165,12 @@ namespace MysticalMayhem.Helpers
             (Blueprint as BlueprintUnitFact).m_Icon = ResourceHandler.Sprites[args[0]];
         }
 
+        public void AddPrestigeClassSpellbook(string[] args)
+        {
+            var selection = BPLookup.Selection(args[0]);
+            selection.m_AllFeatures = selection.m_AllFeatures.Push(Blueprint.ToReference<BlueprintFeatureReference>());
+        }
+
         public void AddToClassGroup(string[] args)
         {
             var group = BPLookup.GetBP<BlueprintCharacterClassGroup>(args[0]);

@@ -34,7 +34,7 @@ namespace MysticalMayhem.HarmonyPatches
             if (PostPatches.PactWizardLegalSpellbooks.Contains(__instance.Blueprint.AssetGuid.ToString()) &&
                 __instance.Owner.GetEXFeature(FeatureExtender.Feature.PactWizardSpellConversion))
             {
-                if (spell.SpellSlot.Type != SpellSlotType.Common) return;
+                if (spell?.SpellSlot?.Type != SpellSlotType.Common) return;
                 var wizard = BPLookup.Class("WizardClass");
                 var selection = BPLookup.Selection("PactWizardPatronSelection", true);
                 var patron = (BlueprintProgression)__instance.Owner.Progression.Selections[selection].GetSelections(1).First();
@@ -73,7 +73,7 @@ namespace MysticalMayhem.HarmonyPatches
                                 foreach (var variant in cSpell.GetComponent<AbilityVariants>().m_Variants)
                                     list.Add(variant.Get());
                             }
-                            else list.Add(comp.m_Spell.Get());
+                            else { list.Add(comp.m_Spell.Get()); }
                         }
                     }
                 }

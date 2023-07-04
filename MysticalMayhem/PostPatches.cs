@@ -285,6 +285,18 @@ namespace MysticalMayhem
                 .Push(new BlueprintCharacterClassReference() { deserializedGuid = guid });
         }
 
+        // Patch called by the WarlockSpellbook blueprint, merges spellbook with Lich.
+        public static void WarlockMergeSpellbook()
+        {
+            var wBook = BPLookup.Spellbook("WarlockSpellbook", true).ToReference<BlueprintSpellbookReference>();
+
+            BPLookup.GetBP<BlueprintFeatureSelectMythicSpellbook>("LichReplaceSpellbook")
+                .m_AllowedSpellbooks =
+                BPLookup.GetBP<BlueprintFeatureSelectMythicSpellbook>("LichReplaceSpellbook")
+                .m_AllowedSpellbooks
+                .Push(wBook);
+        }
+
         #endregion Patches
 
         #region Helpers

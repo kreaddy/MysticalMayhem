@@ -992,6 +992,26 @@
     {
       "Key": "MM_WarlockRefreshDaemonic_Desc",
       "Value": "A warlock can, as a free action, consume 2 stored souls to increase the duration of Daemonic Incarnation by 1 minute."
+    },
+    {
+      "Key": "MM_WarlockPatronAbyssal_Name",
+      "Value": "Abyssal Patron"
+    },
+    {
+      "Key": "MM_WarlockDevotionAbyssal_Desc",
+      "Value": "A warlock with the Abyssal patron adds half his warlock level to the duration (in rounds) of his summoned creatures."
+    },
+    {
+      "Key": "MM_WarlockPactAbyssal_Desc",
+      "Value": "The demons and qlippoth of the abyss revel in violence and destruction regardless of the victim. The frenzy of a crowded battlefield needs to become home but it is also dangerous. Enemies flanking the warlock receive an additional +2 bonus on attack rolls and a +4 bonus on attack rolls made to confirm critical hits while flanking. Conversely, the warlock gains the same benefits while flanking an enemy."
+    },
+    {
+      "Key": "MM_WarlockSummon_Name",
+      "Value": "Fiendish Summonings"
+    },
+    {
+      "Key": "MM_WarlockSummon_Desc",
+      "Value": "At 1st level the warlock may, as a standard action, cast Summon Monster I as a spell-like ability a number of times per day equal to 3 + his Strength modifier. His alignment is treated as evil to determine which creatures he can summon (even if his actual alignment is not). At 3rd level, and every 2 levels thereafter, the power of this ability increases by one spell level, allowing him to summon more powerful creatures (to a maximum of Summon Monster IX at 17th level)."
     }
   ]
 }

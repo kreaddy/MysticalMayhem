@@ -63,6 +63,10 @@
     <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapAbility.json" />
     <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapBuff.json" />
     <None Remove="Blueprints\Classes\Warlock\LifeTap\LifeTapFeature.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Abyssal\Manifestations\WarlockSummonRes.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Abyssal\WarlockPatronAbyssal.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Abyssal\WarlockPatronAbyssalDevotion.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Abyssal\WarlockPatronAbyssalPact.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockDaemonicEndurance.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockHemorrhaging.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockSecondSkin.json" />
@@ -224,6 +228,10 @@
     <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapBuff.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapAbility.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\LifeTap\LifeTapFeature.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Abyssal\Manifestations\WarlockSummonRes.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Abyssal\WarlockPatronAbyssal.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Abyssal\WarlockPatronAbyssalDevotion.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Abyssal\WarlockPatronAbyssalPact.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockDaemonicEndurance.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockHemorrhaging.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Blessings\WarlockUnstoppableFury.json" />

@@ -1,0 +1,48 @@
+{
+  "AssetId": "efcb0a7b-f977-4628-b69c-52c711829485",
+  "Patches": ["AddPrestigeClassSpellbook:LoremasterSpellbook"],
+  "Data": {
+    "$type": "43f1ee69992dc1848b97e623487f6442, BlueprintFeatureReplaceSpellbook",
+    "PrototypeLink": null,
+    "m_Overrides": [],
+    "Components": [
+      {
+        "$type": "34c98fa5c2369684aba66f3b11581388, PrerequisiteClassSpellLevel",
+        "m_Overrides": [],
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_CharacterClass": "!bp_297c08b0-201f-43c0-bd20-f4aa483cf97e",
+        "RequiredSpellLevel": 3
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_Warlock_Name"
+    },
+    "m_Description": {
+      "m_Key": "c213f6d4-9760-4939-a9fe-9d34f9747240"
+    },
+    "m_DescriptionShort": {
+      "m_Key": "",
+      "m_OwnerString": "",
+      "m_OwnerPropertyPath": "",
+      "m_JsonPath": "",
+      "Shared": null
+    },
+    "m_Icon": null,
+    "HideInUI": true,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": true,
+    "DlcType": "None",
+    "Groups": [
+      "ArcaneTricksterSpellbook"
+    ],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null,
+    "m_Spellbook": "!bp_913023a5-e55b-4772-b0b7-a0335645dc6f"
+  }
+}

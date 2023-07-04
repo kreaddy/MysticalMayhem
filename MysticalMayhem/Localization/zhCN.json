@@ -728,6 +728,290 @@
     {
       "Key": "MM_WarlockIncarnationElder_Desc",
       "Value": "Once per day as a standard action, the warlock may become an incarnation of a Great Old One for a number of minutes equal to his Wisdom modifier. His type changes to outsider (chaotic, evil, Great Old One). While an incarnation, the warlock is confused but always rolls 0 to determine his actions. The warlock gains 6 tentacle attacks (2 primary, 4 secondary). All tentacle attacks the warlock makes have a reach of 20 ft. and deal 1d8 points of bludgeoning damage (for a large incarnation). Both attack and damage rolls are modified by the warlock’s Wisdom modifier instead of his Strength modifier. While an incarnation, the warlock benefits from the effect of Frightful Aspect."
+    },
+    {
+      "Key": "MM_WarlockPatronInfernal_Name",
+      "Value": "Infernal Patron"
+    },
+    {
+      "Key": "MM_WarlockDevotionInfernal_Desc",
+      "Value": "An Infernal patron grants the warlock a list of known spells:"
+    },
+    {
+      "Key": "MM_WarlockPactInfernal_Desc",
+      "Value": "The devils of hell subjugate the weak and torture those beneath them and by seeking infernal power a warlock is admitting that he is worthy of torment himself. To prove his obedience and commitment to order, his ability to defend himself from enemies that have fairly gained the upperhand on him has been hampered. If he begins his turn grappled by an enemy he cannot take any action that turn. Additionally whenever the warlock fails a save against an enemy’s spell with a duration longer than instantaneous, the duration is doubled.\n\nTo aid in his torment of his enemies, a warlock with an infernal patron gains the Tormenting Spellcasting ability."
+    },
+    {
+      "Key": "MM_WarlockHex_Desc",
+      "Value": "At 1st level, the warlock gains access to a witch hex. He may only choose Cackle, Evil Eye, or Misfortune. The save DC to resist a hex is equal to 10 + 1/2 the warlock’s level + the warlock’s Charisma modifier."
+    },
+    {
+      "Key": "MM_WarlockTormentingFocus_Name",
+      "Value": "Tormenting Focus"
+    },
+    {
+      "Key": "MM_WarlockTormentingFocus_Desc",
+      "Value": "The warlock gains Spell Focus as a bonus feat. Instead of choosing an arcane school, the warlock’s spell focus applies to all his tormenting spells. Feats and abilities with spell focus as a prerequisite apply to tormenting spells just as if they were part of the school chosen for spell focus."
+    },
+    {
+      "Key": "MM_WarlockTormentingFocusGreater_Name",
+      "Value": "Greater Tormenting Focus"
+    },
+    {
+      "Key": "MM_WarlockTormentingFocusGreater_Desc",
+      "Value": "Your tormenting spells are more difficult to resist.\nBenefit: Add +1 to the DC for all saving throws against spells originating from tormenting slots. This bonus stacks with the bonus from Spell Focus."
+    },
+    {
+      "Key": "MM_WarlockTormentingFocusMythic_Name",
+      "Value": "Mythic Tormenting Focus"
+    },
+    {
+      "Key": "MM_WarlockTormentingFocusMythic_Desc",
+      "Value": "Your magical specialties are particularly effective.\nBenefit: The bonus to save DCs provided by Spell Focus and Greater Spell Focus for your tormenting spells increases by 1."
+    },
+    {
+      "Key": "MM_WarlockMetamagian_Name",
+      "Value": "Metamagian"
+    },
+    {
+      "Key": "MM_WarlockAffliction_Name",
+      "Value": "Affliction"
+    },
+    {
+      "Key": "MM_WarlockAffliction_Desc",
+      "Value": "At 4th level, at the beginning of the warlock’s turn, each enemy subject to a warlock’s tormenting spell or hex takes 1d6 damage for each such effect afflicting them."
+    },
+    {
+      "Key": "MM_WarlockCorruptingRay_Name",
+      "Value": "Corrupting Ray"
+    },
+    {
+      "Key": "MM_WarlockCorruptingRay_Desc",
+      "Value": "The warlock can unleash a corrupting ray as a standard action, targeting any foe within 30 feet as a ranged touch attack. This ray deals 1d6 points of damage + 1d6 for each hex and tormenting spell afflicting the target. This ability a number of times per day equal to 3 + the warlock's Intelligence modifier."
+    },
+    {
+      "Key": "MM_WarlockSplitHex_Desc",
+      "Value": "The warlock gains Split Hex as a bonus feat"
+    },
+    {
+      "Key": "MM_WarlockUnstableAffliction_Name",
+      "Value": "Unstable Affliction"
+    },
+    {
+      "Key": "MM_WarlockUnstableAffliction_Desc",
+      "Value": "The damage die of the warlock’s affliction manifestation is increased to D8."
+    },
+    {
+      "Key": "MM_WarlockEternalTorment_Name",
+      "Value": "Eternal Torment"
+    },
+    {
+      "Key": "MM_WarlockEternalTorment_Desc",
+      "Value": "At 8th level, as a standard action, the warlock may extend the duration of tormenting spells and hexes effecting all enemies within 30 ft. by 1 round."
+    },
+    {
+      "Key": "MM_WarlockForbiddenKnowledge_Name",
+      "Value": "Forbidden Knowledge"
+    },
+    {
+      "Key": "MM_WarlockForbiddenKnowledge_Desc",
+      "Value": "The warlock has delved into the secrets of magic beyond what his patron teaches.\nSelect a single spell from the sorcerer/wizard spell list that is at a level you can cast (but no higher than 7). This spell is added to the warlock spellbook at 1 level higher. This blessing can be chosen multiple times."
+    },
+    {
+      "Key": "MM_WarlockHexMajor_Desc",
+      "Value": "At 12th level, the warlock gains access to an additional hex. In addition to those available at 1st level, the warlock may choose Agony."
+    },
+    {
+      "Key": "MM_WarlockInfectiousGuilt_Name",
+      "Value": "Infectious Guilt"
+    },
+    {
+      "Key": "MM_WarlockInfectiousGuilt_Desc",
+      "Value": "At 16th level, whenever an enemy under the effects of a hex or tormenting spell dies, the warlock may attempt to transfer the remaining duration of those effects onto another enemy within 30 feet of the dying enemy. The new target must succeed on a Will save whose DC is equal to 10 + 1/2 the warlock’s level + the warlock’s Intelligence modifier or be subject to all hexes and tormenting spells remaining on the dying creature."
+    },
+    {
+      "Key": "MM_WarlockTormentingCasting_Name",
+      "Value": "Tormenting Spellcasting"
+    },
+    {
+      "Key": "MM_WarlockTormentingCasting_Desc",
+      "Value": "When this ability is active, warlock spells with a duration of instantaneous and that deal hit point or ability damage become tormenting spells. They inflict half damage when cast (or a quarter if they require a saving throw and the target succeeds it) but this damage is repeated for two additional rounds."
+    },
+    {
+      "Key": "MM_EXD_Tormenting",
+      "Value": "Tormenting"
+    },
+    {
+      "Key": "MM_WarlockIncarnationHell_Desc",
+      "Value": "Once per day as a standard action, the warlock may become an infernal incarnation for a number of minutes equal to his Intelligence modifier. His type changes to outsider (devil, evil, extraplanar, lawful). While an infernal incarnation, the duration of each tormenting spell he casts and hex he uses is increased by 1 round.\nAdditionally, the warlock may use Life Tap by sacrificing one minute of his infernal incarnation instead of lowering his maximum hit points. Using Life Tap this way always costs one minute of the incarnation duration regardless of the spell’s level. Finally, the DC to save against an infernal incarnation’s spells and hexes is increased by 2."
+    },
+    {
+      "Key": "MM_WarlockIntelligence_Name",
+      "Value": "Infernal Intellect"
+    },
+    {
+      "Key": "MM_WarlockIntelligence_Desc",
+      "Value": "The warlock’s Intelligence score permanently increases by 2 points."
+    },
+    {
+      "Key": "MM_WarlockPatronDaemonic_Name",
+      "Value": "Daemonic Patron"
+    },
+    {
+      "Key": "MM_WarlockDevotionDaemonic_Desc",
+      "Value": "A warlock with a Daemonic patron gains a +1 circumstance bonus on all critical hit confirmation rolls. This bonus increases by 1 every four levels, to a maximum of +5 at 17th level."
+    },
+    {
+      "Key": "MM_WarlockPactDaemonic_Desc",
+      "Value": "Daemons are born of rage, hatred, and hunger. To satiate the Daemonic patron, they require not only that the warlock inflict pain but that he experience pain. Whenever a warlock casts a warlock spell, he takes damage equal to the level of spell being cast. This damage cannot be prevented or reduced.\n\nThe Daemons also share their hunger with the warlock. Whenever a warlock confirms a critical hit or slays an enemy with a weapon or natural attack he regains 1d6 hit points for every two warlock levels (minimum 1d6). This only works during combat."
+    },
+    {
+      "Key": "MM_WarlockDaemonicFury_Name",
+      "Value": "Daemonic Fury"
+    },
+    {
+      "Key": "MM_WarlockDaemonicFury_Desc",
+      "Value": "At 1st level, the warlock may embrace the daemonic fury to bolster his attacks. To do so he must sacrifice one hit point per warlock level at the beginning of his turn. If he does, his warlock levels yield full base attack bonus progression for 1 round. Furthermore, attack rolls that would be modified by Strength or Dexterity are modified by Constitution instead."
+    },
+    {
+      "Key": "MM_WarlockInsatiableHunger_Name",
+      "Value": "Insatiable Hunger"
+    },
+    {
+      "Key": "MM_WarlockInsatiableHunger_Desc",
+      "Value": "The healing die of the warlock’s Pact and Tasty Morsel ability is increased to D8."
+    },
+    {
+      "Key": "MM_WarlockFuriousFrenzy_Name",
+      "Value": "Furious Frenzy"
+    },
+    {
+      "Key": "MM_WarlockFuriousFrenzy_Desc",
+      "Value": "At 4th level, while in a daemonic fury, the warlock gains DR 1/-. This damage reduction increases by one at 8th level and every 4 levels thereafter (to a maximum of DR 5/- at 20th level). Also, while in a daemonic fury, the warlock adds his Constitution modifier to damage rolls in place of their Strength modifier. In addition, he uses his Constitution score in place of Strength as a prerequisite for combat feats."
+    },
+    {
+      "Key": "MM_WarlockSecondSkin_Name",
+      "Value": "Second Skin"
+    },
+    {
+      "Key": "MM_WarlockSecondSkin_Desc",
+      "Value": "The warlock gains medium armor proficiency as a bonus feat. He may cast spells while wearing medium armor without incurring the normal spell failure chance."
+    },
+    {
+      "Key": "MM_WarlockSecondSkinII_Name",
+      "Value": "Second Skin, Greater"
+    },
+    {
+      "Key": "MM_WarlockSecondSkinII_Desc",
+      "Value": "The warlock gains heavy armor proficiency as a bonus feat. He may cast spells while wearing heavy armor without incurring the normal spell failure chance."
+    },
+    {
+      "Key": "MM_WarlockThirstingBlade_Name",
+      "Value": "Thirsting Blade"
+    },
+    {
+      "Key": "MM_WarlockThirstingBlade_Desc",
+      "Value": "The warlock gains Improved Critical as a bonus feat even if he does not meet the normal prerequisites. This blessing may be selected multiple times."
+    },
+    {
+      "Key": "MM_WarlockWWarrior_Name",
+      "Value": "Wasteland Warrior"
+    },
+    {
+      "Key": "MM_WarlockWWarrior_Desc",
+      "Value": "The warlock gains a bonus combat feat. For the purposes of this feat, the warlock can select feats that have a minimum number of Fighter levels as a prerequisite, treating his warlock level – 3 as his fighter level. This blessing may be selected multiple times."
+    },
+    {
+      "Key": "MM_WarlockSpellCombat_Desc",
+      "Value": "At 8th level, the warlock gains the magus‘ spell combat class feature. He uses the warlock spell list instead of the magus spell list when determining which spells can be cast using spell combat."
+    },
+    {
+      "Key": "MM_WarlockUnstoppable_Name",
+      "Value": "Unstoppable Fury"
+    },
+    {
+      "Key": "MM_WarlockUnstoppable_Desc",
+      "Value": "The warlock gains toughness as a bonus feat. In addition, hit points gained from having the warlock class as favored class are doubled."
+    },
+    {
+      "Key": "MM_WarlockBloodyGash_Name",
+      "Value": "Bloody Gash"
+    },
+    {
+      "Key": "MM_WarlockBloodyGash_Desc",
+      "Value": "At 12th level, while using daemonic fury, the first enemy the warlock damages with a weapon or natural attack each round is subject to a grevious wound. The victim suffers 4d6 damage every rounds for 3 rounds, or until it makes a Fortitude save to cancel the effect. The DC of this save is equal to 10 + half the warlock's class level + his Constitution modifier."
+    },
+    {
+      "Key": "MM_Hemorrhaging_Name",
+      "Value": "Hemorrhaging"
+    },
+    {
+      "Key": "MM_Hemorrhaging_Desc",
+      "Value": "The DC to resist the warlock’s Bloody Gash increases by 2. Additionally, its duration increases to 5 rounds and it takes 2 consecutive saves to cure the effect."
+    },
+    {
+      "Key": "MM_WarlockConstitution_Name",
+      "Value": "Daemonic Endurance"
+    },
+    {
+      "Key": "MM_WarlockConstitution_Desc",
+      "Value": "The warlock’s Constitution score permanently increases by 2 points."
+    },
+    {
+      "Key": "MM_WarlockTastyMorsel_Name",
+      "Value": "Tasty Morsel"
+    },
+    {
+      "Key": "MM_WarlockTastyMorsel_Desc",
+      "Value": "At 16th level, whenever the warlock reduces an enemy to 0 or fewer hit points with a weapon or natural attack while in combat, he captures their soul for future consumption. A warlock may store a number of souls equal to his Constitution modifier. Once captured, the warlock may devour a soul as a swift action to cure 1d6 points of damage for every 2 warlock levels he possesses. Alternatively, as a swift action, the warlock may consume a soul instead of sacrificing hit points to use the Life Tap ability."
+    },
+    {
+      "Key": "MM_WarlockSoulTap_Name",
+      "Value": "Tasty Morsel — Soul Tap"
+    },
+    {
+      "Key": "MM_WarlockSoulTap_Desc",
+      "Value": "As a swift action, the warlock can consume one of his stored souls to fuel the Life Tap ability instead of using his hit points. This lasts for one round, or until a spell is cast."
+    },
+    {
+      "Key": "MM_WarlockDevour_Name",
+      "Value": "Tasty Morsel — Devour Soul"
+    },
+    {
+      "Key": "MM_WarlockDevour_Desc",
+      "Value": "As a swift action, the warlock can consume one of his stored souls to heal 1d6 points of damage per 2 warlock levels."
+    },
+    {
+      "Key": "MM_WarlockIncarnationDaemon_Desc",
+      "Value": "Once per day as a standard action, the warlock may become a daemonic incarnation for a number of minutes equal to his Constitution modifier. His type changes to outsider (daemon, evil, extraplanar). Upon transforming, the warlock cures all damage and ability damage he has taken and automatically dispels all harmful effects affecting him. The warlock grows one size category larger, gains a +6 profane bonus to all physical ability scores, and gains fast healing 5. Each round not spent in combat reduces the duration of the daemonic incarnation by an additional round. The warlock may consume two souls gained through the Tasty Morsel ability to extend the duration of the incarnation by 1 minute."
+    },
+    {
+      "Key": "MM_WarlockRefreshDaemonic_Name",
+      "Value": "Incarnation — Increase Duration"
+    },
+    {
+      "Key": "MM_WarlockRefreshDaemonic_Desc",
+      "Value": "A warlock can, as a free action, consume 2 stored souls to increase the duration of Daemonic Incarnation by 1 minute."
+    },
+    {
+      "Key": "MM_WarlockPatronAbyssal_Name",
+      "Value": "Abyssal Patron"
+    },
+    {
+      "Key": "MM_WarlockDevotionAbyssal_Desc",
+      "Value": "A warlock with the Abyssal patron adds half his warlock level to the duration (in rounds) of his summoned creatures."
+    },
+    {
+      "Key": "MM_WarlockPactAbyssal_Desc",
+      "Value": "The demons and qlippoth of the abyss revel in violence and destruction regardless of the victim. The frenzy of a crowded battlefield needs to become home but it is also dangerous. Enemies flanking the warlock receive an additional +2 bonus on attack rolls and a +4 bonus on attack rolls made to confirm critical hits while flanking. Conversely, the warlock gains the same benefits while flanking an enemy."
+    },
+    {
+      "Key": "MM_WarlockSummon_Name",
+      "Value": "Fiendish Summonings"
+    },
+    {
+      "Key": "MM_WarlockSummon_Desc",
+      "Value": "At 1st level the warlock may, as a standard action, cast Summon Monster I as a spell-like ability a number of times per day equal to 3 + his Strength modifier. His alignment is treated as evil to determine which creatures he can summon (even if his actual alignment is not). At 3rd level, and every 2 levels thereafter, the power of this ability increases by one spell level, allowing him to summon more powerful creatures (to a maximum of Summon Monster IX at 17th level)."
     }
   ]
 }

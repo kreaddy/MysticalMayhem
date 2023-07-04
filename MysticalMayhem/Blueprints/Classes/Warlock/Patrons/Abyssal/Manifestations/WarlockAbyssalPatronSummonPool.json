@@ -1,0 +1,12 @@
+{
+  "AssetId": "43a0b39b-4819-4b84-b49b-615e9ed5dba6",
+  "Data": {
+    "$type": "fc91c2d06c5f09a419eeca7a14709271, BlueprintSummonPool",
+    "PrototypeLink": null,
+    "m_Overrides": [],
+    "Components": [],
+    "Comment": "",
+    "Limit": 0,
+    "DoNotRemoveDeadUnits": false
+  }
+}
