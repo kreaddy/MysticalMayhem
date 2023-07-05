@@ -151,6 +151,11 @@
     <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockTormentingBuff.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockTormentingSpellList.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\WarlockPatronSelection.json" />
+    <None Remove="Blueprints\Classes\Warlock\PrestigeSpellbooks\ArcaneTricksterWarlock.json" />
+    <None Remove="Blueprints\Classes\Warlock\PrestigeSpellbooks\EldritchKnightWarlock.json" />
+    <None Remove="Blueprints\Classes\Warlock\PrestigeSpellbooks\HellknightSigniferWarlock.json" />
+    <None Remove="Blueprints\Classes\Warlock\PrestigeSpellbooks\LoremasterWarlock.json" />
+    <None Remove="Blueprints\Classes\Warlock\PrestigeSpellbooks\MysticTheurgeWarlock.json" />
     <None Remove="Blueprints\Classes\Warlock\WarlockAbilityDCProperty.json" />
     <None Remove="Blueprints\Classes\Warlock\WarlockCantripFeature.json" />
     <None Remove="Blueprints\Classes\Warlock\WarlockClass.json" />
@@ -315,6 +320,11 @@
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockPatronInfernalDevotion.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Infernal\WarlockTormentingBuff.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\WarlockPatronSelection.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\PrestigeSpellbooks\ArcaneTricksterWarlock.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\PrestigeSpellbooks\EldritchKnightWarlock.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\PrestigeSpellbooks\HellknightSigniferWarlock.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\PrestigeSpellbooks\LoremasterWarlock.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\PrestigeSpellbooks\MysticTheurgeWarlock.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockAbilityDCProperty.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockCantripFeature.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\WarlockClass.json" />
