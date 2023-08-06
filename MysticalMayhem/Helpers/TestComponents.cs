@@ -31,7 +31,7 @@ namespace MysticalMayhem.Helpers
             var offset = 5f * Random.insideUnitSphere;
             var realPos = new Vector3(pos.x + offset.x, pos.y, pos.z + offset.z);
             //Game.Instance.Player.Inventory.Add(ResourcesLibrary.TryGetBlueprint<BlueprintItem>("e536dc0b5dd89e14db611b0f03272a67"));
-            //Game.Instance.EntityCreator.SpawnUnit(unit, realPos, Quaternion.identity, Game.Instance.State.LoadedAreaState.MainState);
+            Game.Instance.EntityCreator.SpawnUnit(unit, realPos, Quaternion.identity, Game.Instance.State.LoadedAreaState.MainState);
             //Game.Instance.EntityCreator.SpawnUnit(unit, realPos, Quaternion.identity, Game.Instance.State.LoadedAreaState.MainState);
         }
     }

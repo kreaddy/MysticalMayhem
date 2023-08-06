@@ -1012,6 +1012,58 @@
     {
       "Key": "MM_WarlockSummon_Desc",
       "Value": "At 1st level the warlock may, as a standard action, cast Summon Monster I as a spell-like ability a number of times per day equal to 3 + his Strength modifier. His alignment is treated as evil to determine which creatures he can summon (even if his actual alignment is not). At 3rd level, and every 2 levels thereafter, the power of this ability increases by one spell level, allowing him to summon more powerful creatures (to a maximum of Summon Monster IX at 17th level)."
+    },
+    {
+      "Key": "MM_Invoker_Name",
+      "Value": "Invoker"
+    },
+    {
+      "Key": "MM_Invoker_Desc",
+      "Value": "Invokers eschew the complex boons of their patron to instead channel their power into blasts of destructive energy."
+    },
+    {
+      "Key": "MM_InvokerBlast_Name",
+      "Value": "Eldritch Blast"
+    },
+    {
+      "Key": "MM_InvokerBlast_Desc",
+      "Value": "An invoker can channel the power of his patron to create a ray of destruction, dealing 1d6 unholy damage plus his Charisma modifier and an additional 1d6 for every warlock level as a ranged touch attack."
+    },
+    {
+      "Key": "MM_InvokerLuck_Name",
+      "Value": "Dark Providence"
+    },
+    {
+      "Key": "MM_InvokerLuck_Desc",
+      "Value": "An invoker with this blessing is always watched over by dark forces, granting him an extra bit on luck to succeed in his goals. He gains a +2 luck bonus to his AC and saving throws."
+    },
+    {
+      "Key": "MM_InvokerChain_Name",
+      "Value": "Eldritch Chain"
+    },
+    {
+      "Key": "MM_InvokerChain_Desc",
+      "Value": "At 10th level, the invoker's blast can jump from target to target. When using this ability, he must target an enemy. No attack roll is necessary but the target can make a Reflex saving throw to halve the damage (which is otherwise the standard Eldritch Blast damage). The blast then jumps to a random enemy within 20 feet and continues the chain until all available targets have been hit once."
+    },
+    {
+      "Key": "MM_PrerequisiteSpell",
+      "Value": "Must know the spell"
+    },
+    {
+      "Key": "MM_InvokerTrueStrike_Name",
+      "Value": "Swift True Strike"
+    },
+    {
+      "Key": "MM_InvokerTrueStrike_Desc",
+      "Value": "An invoker with this blessing automatically applies the Quicken metamagic to the True Strike spell, regardless of whether it is cast with the warlock spellbook or not."
+    },
+    {
+      "Key": "MM_InvokerImpulse_Name",
+      "Value": "Destructive Impulse"
+    },
+    {
+      "Key": "MM_InvokerImpulse_Desc",
+      "Value": "At 20th level, the invoker is a master at using his patron's power for the sake of destruction. He can use Eldritch Blast and Eldritch Chain as move actions."
     }
   ]
 }

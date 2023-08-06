@@ -1,0 +1,61 @@
+{
+  "AssetId": "287cd360-34e1-4d60-af64-0e06522661cc",
+  "Data": {
+    "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
+    "Components": [
+      {
+        "$type": "b51a712035f3d98459e516a34fda37bf, AutoMetamagic",
+        "m_Overrides": [],
+        "m_AllowedAbilities": "SpellOnly",
+        "Metamagic": "Quicken",
+        "Abilities": [ "!bp_2c38da66e5a599347ac95b3294acbe00" ],
+        "Once": false,
+        "MaxSpellLevel": 0,
+        "School": "None",
+        "CheckSpellbook": false,
+        "m_Spellbook": null
+      },
+      {
+        "$type": "682c71964f9bf3d4d97232b9016eafc8, PrerequisiteArchetypeLevel",
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_CharacterClass": "!bp_297c08b0-201f-43c0-bd20-f4aa483cf97e",
+        "m_Archetype": "!bp_3ae41a9e-f3e1-4c0a-b0ee-0ac8ee1debd1",
+        "Level": 1
+      },
+      {
+        "$type": "863e9bbf-b671-4dd0-b9d7-18bfc499ba42, PrerequisiteKnownSpell",
+        "_spell": "!bp_2c38da66e5a599347ac95b3294acbe00"
+      },
+      {
+        "$type": "17030ee91bfc7f24e93d3b6fa583dd09, PrerequisiteFeature",
+        "Group": "All",
+        "CheckInProgression": false,
+        "HideInUI": false,
+        "m_Feature": "!bp_ef7ece7bb5bb66a41b256976b27f424e"
+      }
+    ],
+    "Comment": "",
+    "m_AllowNonContextActions": false,
+    "m_DisplayName": {
+      "m_Key": "MM_InvokerTrueStrike_Name"
+    },
+    "m_Description": {
+      "m_Key": "MM_InvokerTrueStrike_Desc"
+    },
+    "m_Icon": {
+      "guid": "5a438a12c8e515e46a4e29cac29dbac3",
+      "fileid": 21300000
+    },
+    "HideInUI": false,
+    "HideInCharacterSheetAndLevelUp": false,
+    "HideNotAvailibleInUI": false,
+    "DlcType": "None",
+    "Groups": [],
+    "Ranks": 1,
+    "ReapplyOnLevelUp": false,
+    "IsClassFeature": true,
+    "IsPrerequisiteFor": null
+  }
+}

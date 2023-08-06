@@ -156,5 +156,18 @@ namespace MysticalMayhem.HarmonyPatches
             if ((bool)__instance.Caster.Get<UnitPartWarlock>()?.SaveSpellSlot(__instance)) return false;
             return true;
         }
+
+        [HarmonyPatch("get_ActionType")]
+        [HarmonyPostfix]
+        private static void get_ActionType_MM(AbilityData __instance, ref UnitCommand.CommandType __result)
+        {
+            // Invoker's Desctructive Impulse.
+            if (__instance.Caster.Get<UnitPartWarlock>()?.GetFeature(UnitPartWarlock.Feature.InvokerImpulse)
+                && (__instance.Blueprint == BPLookup.Ability("InvokerEldritchBlastAbility", true)
+                    || __instance.Blueprint == BPLookup.Ability("InvokerEldritchChainAbility", true)))
+            {
+                __result = UnitCommand.CommandType.Move;
+            }
+        }
     }
 }

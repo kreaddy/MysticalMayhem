@@ -33,6 +33,12 @@
   <ItemGroup>
     <None Remove="Blueprints\Archetypes\Flagellant.json" />
     <None Remove="Blueprints\Archetypes\Flagellant\MortifiedCasting\MortifiedCastingCLVariant.json" />
+    <None Remove="Blueprints\Archetypes\Invoker\Invoker.json" />
+    <None Remove="Blueprints\Archetypes\Invoker\InvokerBlessingDarkProvidence.json" />
+    <None Remove="Blueprints\Archetypes\Invoker\InvokerBlessingTrueStrike.json" />
+    <None Remove="Blueprints\Archetypes\Invoker\InvokerDestructiveImpulse.json" />
+    <None Remove="Blueprints\Archetypes\Invoker\InvokerEldritchChain.json" />
+    <None Remove="Blueprints\Archetypes\Invoker\InvokerEldritchChainAbility.json" />
     <None Remove="Blueprints\Archetypes\PactWizard.json" />
     <None Remove="Blueprints\Archetypes\RazmiranPriest\FalsePiety.json" />
     <None Remove="Blueprints\Archetypes\RazmiranPriest\FalsePiety\FalsePietyUMDBonus.json" />
@@ -206,6 +212,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Blueprints\Archetypes\Invoker\InvokerDestructiveImpulse.json" />
+    <EmbeddedResource Include="Blueprints\Archetypes\Invoker\InvokerBlessingDarkProvidence.json" />
+    <EmbeddedResource Include="Blueprints\Archetypes\Invoker\InvokerEldritchChain.json" />
+    <EmbeddedResource Include="Blueprints\Archetypes\Invoker\InvokerEldritchBlast.json" />
+    <EmbeddedResource Include="Blueprints\Archetypes\Invoker\InvokerEldritchBlastAbility.json" />
+    <EmbeddedResource Include="Blueprints\Archetypes\Invoker\Invoker.json" />
+    <EmbeddedResource Include="Blueprints\Archetypes\Invoker\InvokerEldritchChainAbility.json" />
+    <EmbeddedResource Include="Blueprints\Archetypes\Invoker\InvokerBlessingTrueStrike.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\FalsePiety\FalsePietyFeature.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\FalsePiety\FalsePietyUMDBonus.json" />
     <EmbeddedResource Include="Blueprints\Archetypes\RazmiranPriest\LayHealer\LayHealerLv5.json" />
@@ -477,6 +491,7 @@
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="UniRx">
       <HintPath>$(WrathPath)\Wrath_Data\Managed\UniRx.dll</HintPath>

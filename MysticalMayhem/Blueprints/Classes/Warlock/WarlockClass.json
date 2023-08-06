@@ -53,6 +53,7 @@
     "IsDivineCaster": false,
     "IsArcaneCaster": true,
     "m_Archetypes": [
+      "!bp_3ae41a9e-f3e1-4c0a-b0ee-0ac8ee1debd1"
     ],
     "StartingGold": 411,
     "m_StartingItems": [

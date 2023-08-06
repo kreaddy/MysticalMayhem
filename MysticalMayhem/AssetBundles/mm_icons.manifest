@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1665777781
+CRC: 664811845
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 7bb8a9b5944defa5534162e9d9ff20d9
+    Hash: fdf7ec3f6f16f1e057a810d4e628bef8
   TypeTreeHash:
     serializedVersion: 2
     Hash: c90fc19e2679e5295d10bd00f33cb4c3
@@ -44,6 +44,7 @@ Assets:
 - Assets/MM_icons/c_warlock_wisdom.png
 - Assets/MM_icons/c_warlock_charisma.png
 - Assets/MM_icons/c_warlock_blessing.png
+- Assets/MM_icons/a_invoker_luck.png
 - Assets/MM_icons/s_draconic_malice.png
 - Assets/MM_icons/d_razmir.png
 - Assets/MM_icons/c_warlock_intelligence.png
@@ -52,12 +53,14 @@ Assets:
 - Assets/MM_icons/s_spell_turning.png
 - Assets/MM_icons/c_warlock_bloodygash.png
 - Assets/MM_icons/s_mighty_strength.png
+- Assets/MM_icons/a_invoker_impulse.png
 - Assets/MM_icons/c_warlock_unstoppable.png
 - Assets/MM_icons/c_warlock_tastymorsel.png
 - Assets/MM_icons/c_warlock_unstableaffliction.png
 - Assets/MM_icons/s_meteor_swarm.png
 - Assets/MM_icons/scrl_mighty_strength.png
 - Assets/MM_icons/scrl_spell_turning.png
+- Assets/MM_icons/a_invoker_chain.png
 - Assets/MM_icons/c_warlock_lifetap.png
 - Assets/MM_icons/c_warlock_soultap.png
 - Assets/MM_icons/c_warlock_devotion.png

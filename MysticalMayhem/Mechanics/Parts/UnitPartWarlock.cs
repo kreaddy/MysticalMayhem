@@ -67,7 +67,8 @@ namespace MysticalMayhem.Mechanics.Parts
             DaemonicHunger,
             CopyMagusMechanics,
             IgnoreLifeTapCost,
-            AbyssalFlanking
+            AbyssalFlanking,
+            InvokerImpulse
         }
 
         public void AddFeature(Feature type)
