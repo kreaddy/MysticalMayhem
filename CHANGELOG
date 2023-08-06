@@ -1,3 +1,9 @@
+### Version 0.3.2
+* Added the Warlock class with three patrons.
+* Added the Invoker Warlock archetype.
+* Fixed spellbook bug with Pact Wizard and bonus spell slots.
+* Flagellant proficiencies now fulfill the prerequisite for Medium Armor Proficiency.
+
 ### Version 0.2.0c
 * Fixed Draconic Malice breakage.
 * Fixed a small error in settings.

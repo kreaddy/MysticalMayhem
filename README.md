@@ -18,9 +18,11 @@ Content
 | Option | Type | Description | Homebrew |
 |:-----:|:----:|-------------------------------------|:---:|
 |Flagellant|Archetype|A cleric archetype designed by Kobold Press.<br>Can get bonuses to DC and CL by sacrificing health. Very powerful with the right domains for a casting-focused cleric.|Yes|
+|Invoker|Archetype|A warlock archetype. Sacrifices patron abilities to obtain an at-will ray attack reminiscent of D&D warlocks.|Yes|
 |Pact Wizard|Archetype|Haunted Heroes Handbook version. A wizard who trades bonus feats for a witch patron, an oracle curse and other goodies.|No|
 |Razmiran Priest|Archetype|Not the prestige class but the sorcerer archetype. Loses a few bloodline spells and one bloodline power in exchange for infinite scrolls and wands as long as you have enough spells per day to cover them.<br>Slightly nerfed from their tabletop equivalent as their abilities only work with spells on the cleric list instead of all divine spells. Still very overpowered but you have to live with the shame of worshipping a level 19 wizard who has to beg Tar-Baphon to leave him alone.|No|
 |Warsighted|Archetype|A more fighter-y oracle archetype who loses revelations in favor of fighter bonus feats.|No|
+|Warlock|Class|3pp class designed by [Optical Sheanigans Games](https://www.d20pfsrd.com/classes/3rd-party-classes/optimal-shenanigans-games/warlock/). It's a full caster with a gimped spell list like the Witch but very powerful patron abilities that can completely change its role. It has no archetypes so I made one from scratch (the Invoker). I might make more later.|Yes|
 |Acadamae Graduate|Feat|Cast full-round summoning spells as standard actions but with a Fortitude save to avoid being fatigued.|No|
 |Earth Magic|Feat|+1 CL when on your favorite terrain.|No|
 |Purity of Sin|Feat|Thassilonian Specialist only. +2 CL for the school of magic associated with the sin.<br>Becomes an arcane discovery if Tabletop Tweaks Base is installed.|Yes|
