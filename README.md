@@ -50,7 +50,7 @@ Because this mod uses Mod Menu, settings are in the game settings: Settings > Mo
 FAQ & Troubleshooting
 -----------
 **Q:** Something doesn't work!
-<br>**A:** Create an [issue](https://github.com/kreaddy/MysticalMayhem/issues) and describe **what** doesn't work and how I could reproduce it, if possible. You can also ping me in the #mod-user-general channel of the [Owlcat discord](https://discord.com/invite/owlcat) (kreaddy#3461).
+<br>**A:** Create an [issue](https://github.com/kreaddy/MysticalMayhem/issues) and describe **what** doesn't work and how I could reproduce it, if possible. You can also ping me in the #mod-user-general channel of the [Owlcat discord](https://discord.com/invite/owlcat).
 
 **Q:** What about Magic Time?
 <br>**A:** Magic Time was the first mod I ever made for a Unity game so I felt the need to rebuild it from the ground up.

@@ -1,16 +1,15 @@
 ﻿using HarmonyLib;
 using Kingmaker;
-using Kingmaker.Blueprints.JsonSystem;
 using MysticalMayhem.Helpers;
 
 namespace MysticalMayhem.HarmonyPatches
 {
-    [HarmonyPatch(typeof(StartGameLoader))]
-    internal class StartGameLoaderPatcher
+    [HarmonyPatch(typeof(GameStarter))]
+    internal class GameStarterPatcher
     {
-        [HarmonyPatch(nameof(StartGameLoader.LoadPackTOC))]
+        [HarmonyPatch(nameof(GameStarter.FixTMPAssets))]
         [HarmonyPostfix]
-        private static void MM_LoadPackTOC()
+        private static void MM_FixTMPAssets()
         {
             if (!Settings.IsEnabled("mm.no.hb")) { ModInterop.ApplyWarlockModPatches(); }
         }

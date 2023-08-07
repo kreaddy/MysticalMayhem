@@ -12,6 +12,7 @@ using MysticalMayhem.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using UnityModManagerNet;
 
 namespace MysticalMayhem
@@ -119,16 +120,16 @@ namespace MysticalMayhem
             #region Split Hex
             if (IsDarkCodexEnabled())
             {
-                BlueprintFeature feat;
-                try { feat = ResourcesLibrary.TryGetBlueprint<BlueprintFeature>("4e2973f3dfa44544a11144f35e459509"); }
-                catch { goto DarkCodexEnd; }
-                var array = BPLookup.Feature("WarlockSplitHex", true).GetComponent<AddFacts>().m_Facts;
-                array = array.Push(feat.ToReference<BlueprintUnitFactReference>());
-                var selection = BPLookup.Selection("WarlockBlessingSelection", true);
-                selection.m_AllFeatures = selection.m_AllFeatures.Push(BPLookup.Feature("WarlockSplitHex", true).ToReference<BlueprintFeatureReference>());
-                BPLookup.Feature("WarlockSplitHex", true).m_Icon = feat.Icon;
+                var feat = ResourcesLibrary.TryGetBlueprint<BlueprintFeature>("4e2973f3dfa44544a11144f35e459509");
+                if (feat is not null)
+                {
+                    var array = BPLookup.Feature("WarlockSplitHex", true).GetComponent<AddFacts>().m_Facts;
+                    array = array.Push(feat.ToReference<BlueprintUnitFactReference>());
+                    var selection = BPLookup.Selection("WarlockBlessingSelection", true);
+                    selection.m_AllFeatures = selection.m_AllFeatures.Push(BPLookup.Feature("WarlockSplitHex", true).ToReference<BlueprintFeatureReference>());
+                    BPLookup.Feature("WarlockSplitHex", true).m_Icon = feat.Icon;
+                }
             }
-        DarkCodexEnd:;
             #endregion
 
             #region Forbidden Knowledge

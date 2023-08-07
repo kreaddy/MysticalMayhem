@@ -1,4 +1,5 @@
 ﻿using HarmonyLib;
+using Kingmaker.Blueprints;
 using Kingmaker.Blueprints.JsonSystem;
 using MysticalMayhem.Helpers;
 using MysticalMayhem.Mechanics;
@@ -7,7 +8,7 @@ namespace MysticalMayhem.HarmonyPatches
 {
     internal static class BlueprintsCachePatcher
     {
-        [HarmonyPatch(typeof(BlueprintsCache), "Init")]
+        [HarmonyPatch(typeof(BlueprintsCache), nameof(BlueprintsCache.Init))]
         [HarmonyPriority(Priority.LowerThanNormal)]
         internal class BlueprintsCache_Init_MM
         {
