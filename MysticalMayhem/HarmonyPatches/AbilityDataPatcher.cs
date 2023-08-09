@@ -152,8 +152,10 @@ namespace MysticalMayhem.HarmonyPatches
         [HarmonyPrefix]
         private static bool SpendOneSpellCharge_MM(AbilityData __instance)
         {
-            // Warlock's Life Tap.
-            if ((bool)__instance.Caster.Get<UnitPartWarlock>()?.SaveSpellSlot(__instance)) return false;
+            // Warlock's Life Tap and Comfortable Insanity features.
+            var part = __instance.Caster.Get<UnitPartWarlock>();
+            if (part is null) return true;
+            if (part.SaveSpellSlot(__instance)) return false;
             return true;
         }
 

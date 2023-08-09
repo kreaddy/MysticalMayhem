@@ -1,3 +1,8 @@
+### Version 0.3.2d
+* Fixed the infinite spell slot bug.
+* Warlock's spellbook can now properly merge with Lich.
+* Fixed the Split Hex fiendish blessing not giving you the actual Split Hex feat.
+
 ### Version 0.3.2a
 * Fixed the mod crashing when Dark Codex is present.
 

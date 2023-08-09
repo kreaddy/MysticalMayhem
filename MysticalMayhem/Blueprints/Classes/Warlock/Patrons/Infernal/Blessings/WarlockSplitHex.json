@@ -36,7 +36,7 @@
       "m_Key": "MM_WarlockSplitHex_Desc"
     },
     "HideInUI": false,
-    "HideInCharacterSheetAndLevelUp": false,
+    "HideInCharacterSheetAndLevelUp": true,
     "HideNotAvailibleInUI": false,
     "DlcType": "None",
     "Groups": [],
