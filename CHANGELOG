@@ -1,3 +1,8 @@
+### Version 0.3.2g
+* Daemonic warlock patron should play nicer with true liches.
+* Toned down Invoker's blast to roughly the same level of power as Kineticist's energy blasts.
+* A list of mod blueprints is now provided with the release archive.
+
 ### Version 0.3.2d
 * Fixed the infinite spell slot bug.
 * Warlock's spellbook can now properly merge with Lich.
