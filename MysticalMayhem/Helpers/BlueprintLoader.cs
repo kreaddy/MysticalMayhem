@@ -9,12 +9,14 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Runtime.Serialization;
+using static MysticalMayhem.Helpers.BlueprintLoader;
 
 namespace MysticalMayhem.Helpers
 {
     public static class BlueprintLoader
     {
         private static HashSet<string> _blueprints = new();
+        private static SortedDictionary<string, string> _bpList = new();
 
         public static void LoadBlueprints()
         {
@@ -38,6 +40,15 @@ namespace MysticalMayhem.Helpers
             Main.Log("------------------------------------------------");
             Main.Log($"Blueprints loaded in {time.Elapsed.Milliseconds} ms.");
             Main.Log("================================================");
+
+#if DEBUG
+            using (FileStream stream = File.Create(Path.Combine(Main.Mod.Path, "BlueprintGuids.json")))
+            {
+                using StreamWriter streamWriter = new(stream);
+                using JsonTextWriter jsonTextWriter = new(streamWriter);
+                Json.Serializer.Serialize(jsonTextWriter, _bpList);
+            }
+#endif
         }
 
         public static void ApplyLocalization()
@@ -102,6 +113,10 @@ namespace MysticalMayhem.Helpers
             ResourcesLibrary.BlueprintsCache.AddCachedBlueprint(BlueprintGuid.Parse(blueprintJsonWrapper.AssetId), blueprintJsonWrapper.Data);
             container.FinalizeBP();
             _blueprints.Add(blueprintJsonWrapper.AssetId);
+#if DEBUG
+            var name = res.Split('.');
+            _bpList.Add(name[name.Length - 2], blueprintJsonWrapper.AssetId);
+#endif
         }
 
         private static MMBlueprintJsonWrapper Parse(string res)

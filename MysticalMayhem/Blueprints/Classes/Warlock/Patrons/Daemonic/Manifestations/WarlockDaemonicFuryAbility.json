@@ -117,37 +117,94 @@
               "CriticalSharedValue": "Damage"
             },
             {
-              "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-              "m_Buff": "!bp_aad6fed0-6d71-4960-875c-e244f370233b",
-              "Permanent": false,
-              "UseDurationSeconds": false,
-              "DurationValue": {
-                "Rate": "Rounds",
-                "DiceType": "Zero",
-                "DiceCountValue": {
-                  "ValueType": "Simple",
-                  "Value": 0,
-                  "ValueRank": "Default",
-                  "ValueShared": "Damage",
-                  "Property": "None",
-                  "m_CustomProperty": null
-                },
-                "BonusValue": {
-                  "ValueType": "Simple",
-                  "Value": 1,
-                  "ValueRank": "Default",
-                  "ValueShared": "Damage",
-                  "Property": "None",
-                  "m_CustomProperty": null
-                },
-                "m_IsExtendable": true
+              "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+              "name": "lich_conditionalc32e559a-fb5f-453c-8e0b-3d21dac375c1",
+              "Comment": "",
+              "ConditionsChecker": {
+                "Operation": "And",
+                "Conditions": [
+                  {
+                    "$type": "43f75bd73450e1f4aa1f6163f51956e3, ContextConditionCasterHasFact",
+                    "name": "cond1c32e559a-fb5f-453c-8e0b-3d21dac375c1",
+                    "Not": false,
+                    "m_Fact": "!bp_bd9a5db280284025ab01474b0a4cd434"
+                  }
+                ]
               },
-              "DurationSeconds": 0.0,
-              "IsFromSpell": true,
-              "IsNotDispelable": true,
-              "ToCaster": false,
-              "AsChild": true,
-              "SameDuration": false
+              "IfTrue": {
+                "Actions": [
+                  {
+                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                    "m_Buff": "!bp_aad6fed0-6d71-4960-875c-e244f370233b",
+                    "Permanent": false,
+                    "UseDurationSeconds": false,
+                    "DurationValue": {
+                      "Rate": "Rounds",
+                      "DiceType": "Zero",
+                      "DiceCountValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null
+                      },
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 1,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null
+                      },
+                      "m_IsExtendable": true
+                    },
+                    "DurationSeconds": 0.0,
+                    "IsFromSpell": true,
+                    "IsNotDispelable": true,
+                    "ToCaster": false,
+                    "AsChild": true,
+                    "SameDuration": false
+                  }
+                ]
+              },
+              "IfFalse": {
+                "Actions": [
+                  {
+                    "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
+                    "m_Buff": "!bp_8264b5e1-259a-45db-9812-95d6dd0a2ba2",
+                    "Permanent": false,
+                    "UseDurationSeconds": false,
+                    "DurationValue": {
+                      "Rate": "Rounds",
+                      "DiceType": "Zero",
+                      "DiceCountValue": {
+                        "ValueType": "Simple",
+                        "Value": 0,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null
+                      },
+                      "BonusValue": {
+                        "ValueType": "Simple",
+                        "Value": 1,
+                        "ValueRank": "Default",
+                        "ValueShared": "Damage",
+                        "Property": "None",
+                        "m_CustomProperty": null
+                      },
+                      "m_IsExtendable": true
+                    },
+                    "DurationSeconds": 0.0,
+                    "IsFromSpell": true,
+                    "IsNotDispelable": true,
+                    "ToCaster": false,
+                    "AsChild": true,
+                    "SameDuration": false
+                  }
+                ]
+              }
             }
           ]
         }

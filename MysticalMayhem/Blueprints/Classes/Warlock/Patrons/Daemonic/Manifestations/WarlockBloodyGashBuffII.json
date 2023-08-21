@@ -15,96 +15,219 @@
         "Activated": {
           "Actions": [
             {
-              "$type": "5e2f2046f3bd6984c8833bf019c8e8ad, ContextActionSavingThrow",
-              "name": "wr_bg2_s1",
-              "Type": "Fortitude",
-              "FromBuff": false,
-              "m_ConditionalDCIncrease": [],
-              "UseDCFromContextSavingThrow": false,
-              "HasCustomDC": true,
-              "CustomDC": {
-                "ValueType": "CasterCustomProperty",
-                "Value": 0,
-                "ValueRank": "Default",
-                "ValueShared": "Damage",
-                "Property": "None",
-                "m_CustomProperty": "!bp_55f4169b-d592-47c4-922c-c62ead9397d0",
-                "m_AbilityParameter": "Level"
+              "$type": "52d8973f2e470e14c97b74209680491a, Conditional",
+              "name": "lich_conditional0138e5ca-abbd-4150-bf91-76e38691679c",
+              "Comment": "",
+              "ConditionsChecker": {
+                "Operation": "And",
+                "Conditions": [
+                  {
+                    "$type": "43f75bd73450e1f4aa1f6163f51956e3, ContextConditionCasterHasFact",
+                    "name": "cond0138e5ca-abbd-4150-bf91-76e38691679c",
+                    "Not": false,
+                    "m_Fact": "!bp_bd9a5db280284025ab01474b0a4cd434"
+                  }
+                ]
               },
-              "Actions": {
+              "IfTrue": {
                 "Actions": [
                   {
-                    "$type": "d61949c589ee885458c9439b2aa202b6, ContextActionConditionalSaved",
-                    "Succeed": {
+                    "$type": "5e2f2046f3bd6984c8833bf019c8e8ad, ContextActionSavingThrow",
+                    "name": "wr_bg2_s1",
+                    "Type": "Fortitude",
+                    "FromBuff": false,
+                    "m_ConditionalDCIncrease": [],
+                    "UseDCFromContextSavingThrow": false,
+                    "HasCustomDC": true,
+                    "CustomDC": {
+                      "ValueType": "CasterCustomProperty",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": "!bp_b0049f71-aa81-4bea-9608-b4e55bee9cae",
+                      "m_AbilityParameter": "Level"
+                    },
+                    "Actions": {
                       "Actions": [
                         {
-                          "$type": "5e2f2046f3bd6984c8833bf019c8e8ad, ContextActionSavingThrow",
-                          "name": "wr_bg2_s2",
-                          "Type": "Fortitude",
-                          "FromBuff": false,
-                          "m_ConditionalDCIncrease": [],
-                          "UseDCFromContextSavingThrow": false,
-                          "HasCustomDC": true,
-                          "CustomDC": {
-                            "ValueType": "CasterCustomProperty",
-                            "Value": 0,
-                            "ValueRank": "Default",
-                            "ValueShared": "Damage",
-                            "Property": "None",
-                            "m_CustomProperty": "!bp_55f4169b-d592-47c4-922c-c62ead9397d0",
-                            "m_AbilityParameter": "Level"
-                          },
-                          "Actions": {
+                          "$type": "d61949c589ee885458c9439b2aa202b6, ContextActionConditionalSaved",
+                          "Succeed": {
                             "Actions": [
                               {
-                                "$type": "d61949c589ee885458c9439b2aa202b6, ContextActionConditionalSaved",
-                                "Succeed": {
-                                  "Actions": [
-                                    {
-                                      "$type": "1e0ebe55f7204066b7cdb0eb124b863a, ContextActionRemoveSelf"
-                                    }
-                                  ]
+                                "$type": "5e2f2046f3bd6984c8833bf019c8e8ad, ContextActionSavingThrow",
+                                "name": "wr_bg2_s2",
+                                "Type": "Fortitude",
+                                "FromBuff": false,
+                                "m_ConditionalDCIncrease": [],
+                                "UseDCFromContextSavingThrow": false,
+                                "HasCustomDC": true,
+                                "CustomDC": {
+                                  "ValueType": "CasterCustomProperty",
+                                  "Value": 0,
+                                  "ValueRank": "Default",
+                                  "ValueShared": "Damage",
+                                  "Property": "None",
+                                  "m_CustomProperty": "!bp_55f4169b-d592-47c4-922c-c62ead9397d0",
+                                  "m_AbilityParameter": "Level"
                                 },
-                                "Failed": {
+                                "Actions": {
                                   "Actions": [
                                     {
-                                      "$type": "49833c6b-bf5a-4b9f-a282-22bc17fa9b3c, ContextActionDrainHP",
-                                      "Value": {
-                                        "DiceType": "D6",
-                                        "DiceCountValue": {
-                                          "ValueType": "Simple",
-                                          "Value": 2,
-                                          "ValueRank": "Default",
-                                          "ValueShared": "Damage",
-                                          "Property": "None",
-                                          "m_CustomProperty": null,
-                                          "m_AbilityParameter": "Level"
-                                        }
+                                      "$type": "d61949c589ee885458c9439b2aa202b6, ContextActionConditionalSaved",
+                                      "Succeed": {
+                                        "Actions": [
+                                          {
+                                            "$type": "1e0ebe55f7204066b7cdb0eb124b863a, ContextActionRemoveSelf"
+                                          }
+                                        ]
+                                      },
+                                      "Failed": {
+                                        "Actions": [
+                                          {
+                                            "$type": "49833c6b-bf5a-4b9f-a282-22bc17fa9b3c, ContextActionDrainHP",
+                                            "Value": {
+                                              "DiceType": "D6",
+                                              "DiceCountValue": {
+                                                "ValueType": "Simple",
+                                                "Value": 2,
+                                                "ValueRank": "Default",
+                                                "ValueShared": "Damage",
+                                                "Property": "None",
+                                                "m_CustomProperty": null,
+                                                "m_AbilityParameter": "Level"
+                                              }
+                                            }
+                                          }
+                                        ]
                                       }
                                     }
                                   ]
                                 }
                               }
                             ]
+                          },
+                          "Failed": {
+                            "Actions": [
+                              {
+                                "$type": "49833c6b-bf5a-4b9f-a282-22bc17fa9b3c, ContextActionDrainHP",
+                                "Value": {
+                                  "DiceType": "D6",
+                                  "DiceCountValue": {
+                                    "ValueType": "Simple",
+                                    "Value": 2,
+                                    "ValueRank": "Default",
+                                    "ValueShared": "Damage",
+                                    "Property": "None",
+                                    "m_CustomProperty": null,
+                                    "m_AbilityParameter": "Level"
+                                  }
+                                }
+                              }
+                            ]
                           }
                         }
                       ]
+                    }
+                  }
+                ]
+              },
+              "IfFalse": {
+                "Actions": [
+                  {
+                    "$type": "5e2f2046f3bd6984c8833bf019c8e8ad, ContextActionSavingThrow",
+                    "name": "wr_bg2_s1",
+                    "Type": "Fortitude",
+                    "FromBuff": false,
+                    "m_ConditionalDCIncrease": [],
+                    "UseDCFromContextSavingThrow": false,
+                    "HasCustomDC": true,
+                    "CustomDC": {
+                      "ValueType": "CasterCustomProperty",
+                      "Value": 0,
+                      "ValueRank": "Default",
+                      "ValueShared": "Damage",
+                      "Property": "None",
+                      "m_CustomProperty": "!bp_55f4169b-d592-47c4-922c-c62ead9397d0",
+                      "m_AbilityParameter": "Level"
                     },
-                    "Failed": {
+                    "Actions": {
                       "Actions": [
                         {
-                          "$type": "49833c6b-bf5a-4b9f-a282-22bc17fa9b3c, ContextActionDrainHP",
-                          "Value": {
-                            "DiceType": "D6",
-                            "DiceCountValue": {
-                              "ValueType": "Simple",
-                              "Value": 2,
-                              "ValueRank": "Default",
-                              "ValueShared": "Damage",
-                              "Property": "None",
-                              "m_CustomProperty": null,
-                              "m_AbilityParameter": "Level"
-                            }
+                          "$type": "d61949c589ee885458c9439b2aa202b6, ContextActionConditionalSaved",
+                          "Succeed": {
+                            "Actions": [
+                              {
+                                "$type": "5e2f2046f3bd6984c8833bf019c8e8ad, ContextActionSavingThrow",
+                                "name": "wr_bg2_s2",
+                                "Type": "Fortitude",
+                                "FromBuff": false,
+                                "m_ConditionalDCIncrease": [],
+                                "UseDCFromContextSavingThrow": false,
+                                "HasCustomDC": true,
+                                "CustomDC": {
+                                  "ValueType": "CasterCustomProperty",
+                                  "Value": 0,
+                                  "ValueRank": "Default",
+                                  "ValueShared": "Damage",
+                                  "Property": "None",
+                                  "m_CustomProperty": "!bp_55f4169b-d592-47c4-922c-c62ead9397d0",
+                                  "m_AbilityParameter": "Level"
+                                },
+                                "Actions": {
+                                  "Actions": [
+                                    {
+                                      "$type": "d61949c589ee885458c9439b2aa202b6, ContextActionConditionalSaved",
+                                      "Succeed": {
+                                        "Actions": [
+                                          {
+                                            "$type": "1e0ebe55f7204066b7cdb0eb124b863a, ContextActionRemoveSelf"
+                                          }
+                                        ]
+                                      },
+                                      "Failed": {
+                                        "Actions": [
+                                          {
+                                            "$type": "49833c6b-bf5a-4b9f-a282-22bc17fa9b3c, ContextActionDrainHP",
+                                            "Value": {
+                                              "DiceType": "D6",
+                                              "DiceCountValue": {
+                                                "ValueType": "Simple",
+                                                "Value": 2,
+                                                "ValueRank": "Default",
+                                                "ValueShared": "Damage",
+                                                "Property": "None",
+                                                "m_CustomProperty": null,
+                                                "m_AbilityParameter": "Level"
+                                              }
+                                            }
+                                          }
+                                        ]
+                                      }
+                                    }
+                                  ]
+                                }
+                              }
+                            ]
+                          },
+                          "Failed": {
+                            "Actions": [
+                              {
+                                "$type": "49833c6b-bf5a-4b9f-a282-22bc17fa9b3c, ContextActionDrainHP",
+                                "Value": {
+                                  "DiceType": "D6",
+                                  "DiceCountValue": {
+                                    "ValueType": "Simple",
+                                    "Value": 2,
+                                    "ValueRank": "Default",
+                                    "ValueShared": "Damage",
+                                    "Property": "None",
+                                    "m_CustomProperty": null,
+                                    "m_AbilityParameter": "Level"
+                                  }
+                                }
+                              }
+                            ]
                           }
                         }
                       ]

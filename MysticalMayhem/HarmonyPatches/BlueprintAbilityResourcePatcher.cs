@@ -3,8 +3,10 @@ using Kingmaker.Blueprints;
 using Kingmaker.EntitySystem.Stats;
 using Kingmaker.PubSubSystem;
 using Kingmaker.UnitLogic;
+using MysticalMayhem.Helpers;
 using System;
 using System.Linq;
+using static Kingmaker.GameModes.GameModeType;
 
 namespace MysticalMayhem.HarmonyPatches
 {
@@ -30,6 +32,17 @@ namespace MysticalMayhem.HarmonyPatches
             {
                 // Half-step: when a resource is increased by a stat, only takes half the modifier.
                 if (_halfStepBps.Contains(__instance.AssetGuid.ToString())) __result = CalculateHalfStepResource(__instance, unit);
+                // Switch bonus stat from Constitution to Charisma for Liches.
+                if (__instance.m_MaxAmount.IncreasedByStat && __instance.m_MaxAmount.ResourceBonusStat == StatType.Constitution
+                    && unit.HasFact(BPLookup.Feature("LichTrueFeature")))
+                {
+                    __result = __instance.m_MaxAmount.BaseValue;
+                    ModifiableValueAttributeStat modifiableValueAttributeStat = unit.Stats.GetStat(__instance.m_MaxAmount.ResourceBonusStat) as ModifiableValueAttributeStat;
+                    if (modifiableValueAttributeStat != null)
+                    {
+                        __result += modifiableValueAttributeStat.BonusWithoutTemp;
+                    }
+                }
             }
         }
 

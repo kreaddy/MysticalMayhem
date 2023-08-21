@@ -1,6 +1,6 @@
 {
   "AssetId": "6cf3387e-b266-4ea5-963d-d4065388410f",
-  "PatchList": ["AddIcon:c_warlock_tastymorsel" ],
+  "PatchList": [ "AddIcon:c_warlock_tastymorsel" ],
   "Data": {
     "$type": "cb208b98ceacca84baee15dba53b1979, BlueprintFeature",
     "PrototypeLink": "",

@@ -86,6 +86,8 @@
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashCheck.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCProperty.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCPropertyII.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCPropertyIILich.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCPropertyLich.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Ab.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Buff.json" />
@@ -94,6 +96,7 @@
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFury.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFuryAbility.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFuryBuff.json" />
+    <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFuryBuffLich.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockFuriousFrenzy.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockFuriousFrenzyBuff.json" />
     <None Remove="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockPatronDaemonicDevotion.json" />
@@ -262,6 +265,8 @@
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashBuffII.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashBuff.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashCheck.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCPropertyIILich.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCPropertyLich.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCPropertyII.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockBloodyGashDCProperty.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFury.json" />
@@ -269,6 +274,7 @@
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Ab.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Res.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20.json" />
+    <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonicFuryBuffLich.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselDevour.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockDaemonic20Refresh.json" />
     <EmbeddedResource Include="Blueprints\Classes\Warlock\Patrons\Daemonic\Manifestations\WarlockTastyMorselSoulTapBuff.json" />
