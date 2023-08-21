@@ -1027,7 +1027,7 @@
     },
     {
       "Key": "MM_InvokerBlast_Desc",
-      "Value": "An invoker can channel the power of his patron to create a ray of destruction, dealing 1d6 unholy damage plus his Charisma modifier and an additional 1d6 for every warlock level as a ranged touch attack."
+      "Value": "An invoker can channel the power of his patron to create a ray of destruction, dealing 1d6 unholy damage plus his Charisma modifier and an additional 1d6 for every other warlock level as a ranged touch attack."
     },
     {
       "Key": "MM_InvokerLuck_Name",
