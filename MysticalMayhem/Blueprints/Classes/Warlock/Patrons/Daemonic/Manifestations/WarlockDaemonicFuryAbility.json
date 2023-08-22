@@ -135,7 +135,7 @@
                 "Actions": [
                   {
                     "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-                    "m_Buff": "!bp_aad6fed0-6d71-4960-875c-e244f370233b",
+                    "m_Buff": "!bp_8264b5e1-259a-45db-9812-95d6dd0a2ba2",
                     "Permanent": false,
                     "UseDurationSeconds": false,
                     "DurationValue": {
@@ -172,7 +172,7 @@
                 "Actions": [
                   {
                     "$type": "5d13a597de91e4746b804f8233518523, ContextActionApplyBuff",
-                    "m_Buff": "!bp_8264b5e1-259a-45db-9812-95d6dd0a2ba2",
+                    "m_Buff": "!bp_aad6fed0-6d71-4960-875c-e244f370233b",
                     "Permanent": false,
                     "UseDurationSeconds": false,
                     "DurationValue": {
