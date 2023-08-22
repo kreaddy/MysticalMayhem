@@ -14,7 +14,9 @@ namespace MysticalMayhem.HarmonyPatches
         [HarmonyPrefix]
         private static bool TickConfusion_MM(UnitConfusionController __instance, UnitEntityData unit)
         {
-            if ((bool)unit.Get<UnitPartWarlock>()?.TickConfusion()) return false;
+            if (unit.Get<UnitPartWarlock>() is null)
+                return true;
+            if (unit.Get<UnitPartWarlock>().TickConfusion()) return false;
             return true;
         }
 
