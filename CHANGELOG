@@ -1,3 +1,6 @@
+### Version 0.3.2i
+* Confused enemies now correctly pick random actions instead of always acting normally.
+
 ### Version 0.3.2h
 * Fixed Daemonic Fury.
 
