@@ -1064,6 +1064,14 @@
     {
       "Key": "MM_InvokerImpulse_Desc",
       "Value": "At 20th level, the invoker is a master at using his patron's power for the sake of destruction. He can use Eldritch Blast and Eldritch Chain as move actions."
+    },
+    {
+      "Key": "MM_S_NoWarlock",
+      "Value": "Disable Warlock"
+    },
+    {
+      "Key": "MM_S_NoWarlock_Desc",
+      "Value": "Removes Optical Sheanigans Games's version of Warlock from the class menu in case you have another mod interpreting the class, such as Microsoftenator's Homebrew Warlock mod."
     }
   ]
 }

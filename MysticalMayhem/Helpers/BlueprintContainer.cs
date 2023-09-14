@@ -11,6 +11,7 @@ using Newtonsoft.Json;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using UnityModManagerNet;
 
 namespace MysticalMayhem.Helpers
 {
@@ -250,6 +251,7 @@ namespace MysticalMayhem.Helpers
             FixComponentNames();
 
             if (Homebrew && Settings.IsEnabled("mm.no.hb")) return;
+            if (Blueprint.name.Contains("Warlock") && Settings.IsEnabled("mm.no.warlock")) return;
 
             ApplyPatches();
         }

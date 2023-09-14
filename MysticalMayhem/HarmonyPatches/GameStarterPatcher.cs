@@ -11,7 +11,7 @@ namespace MysticalMayhem.HarmonyPatches
         [HarmonyPostfix]
         private static void MM_FixTMPAssets()
         {
-            if (!Settings.IsEnabled("mm.no.hb")) { ModInterop.ApplyWarlockModPatches(); }
+            if (!Settings.IsEnabled("mm.no.hb") && !Settings.IsEnabled("mm.no.warlock")) { ModInterop.ApplyWarlockModPatches(); }
         }
     }
 }
