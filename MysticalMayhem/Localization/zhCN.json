@@ -1072,6 +1072,14 @@
     {
       "Key": "MM_S_NoWarlock_Desc",
       "Value": "Removes Optical Sheanigans Games's version of Warlock from the class menu in case you have another mod interpreting the class, such as Microsoftenator's Homebrew Warlock mod."
+    },
+    {
+      "Key": "MM_S_SpellbarFix",
+      "Value": "Allow duplicate spell slots"
+    },
+    {
+      "Key": "MM_S_SpellbarFix_Desc",
+      "Value": "When two different spellbooks have the same spell (prepared or known) with the same metamagic data at the same level, it can only be cast from the first spellbook the character obtained. Standalone mythic spellbooks are the most obvious case. This option changes this behavior so you can cast duplicate spells from any spellbook."
     }
   ]
 }

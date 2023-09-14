@@ -11,6 +11,8 @@ namespace MysticalMayhem
 
         public static UnityModManager.ModEntry Mod;
 
+        public static Harmony HarmonyInstance;
+
         public static void Log(string msg)
         {
             Mod.Logger.Log(msg);
@@ -33,8 +35,8 @@ namespace MysticalMayhem
         {
             Mod = modEntry;
             modEntry.OnToggle = OnToggle;
-            var harmony = new Harmony(modEntry.Info.Id);
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
+            HarmonyInstance = new Harmony(modEntry.Info.Id);
+            HarmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
             return true;
         }
 

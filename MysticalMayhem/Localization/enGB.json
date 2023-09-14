@@ -431,7 +431,7 @@
     },
     {
       "Key": "MM_S_Adnd_Stoneskin_Desc",
-      "Value": "Changes the Stoneskin spell to be closer to its Baldur's Gate version."
+      "Value": "Changes the Stoneskin spell to be closer to its Baldur's Gate version.\nThis option only takes effect after restarting the game."
     },
     {
       "Key": "MM_Stoneskin_Desc",
@@ -1071,7 +1071,15 @@
     },
     {
       "Key": "MM_S_NoWarlock_Desc",
-      "Value": "Removes Optical Sheanigans Games's version of Warlock from the class menu in case you have another mod interpreting the class, such as Microsoftenator's Homebrew Warlock mod."
+      "Value": "Removes Optical Sheanigans Games's version of Warlock from the class menu in case you have another mod interpreting the class, such as Microsoftenator's Homebrew Warlock mod.\nThis option only takes effect after restarting the game."
+    },
+    {
+      "Key": "MM_S_SpellbarFix",
+      "Value": "Allow duplicate spell slots"
+    },
+    {
+      "Key": "MM_S_SpellbarFix_Desc",
+      "Value": "When two different spellbooks have the same spell (prepared or known) with the same metamagic data at the same level, it can only be cast from the first spellbook the character obtained. Standalone mythic spellbooks are the most obvious case. This option changes this behavior so you can cast duplicate spells from any spellbook."
     }
   ]
 }

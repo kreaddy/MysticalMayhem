@@ -1,3 +1,7 @@
+### Version 0.3.3
+* Added back the spellbook behavior Owlcat patched out: you can now again double up spells with different spellbooks. This can be disabled again in the options.
+* Added a setting to disable the Warlock class alone, to avoid having both if you prefer Microsoftenator's.
+
 ### Version 0.3.2i
 * Confused enemies now correctly pick random actions instead of always acting normally.
 

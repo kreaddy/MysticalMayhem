@@ -1,5 +1,6 @@
 ﻿using HarmonyLib;
 using Kingmaker;
+using Kingmaker.UI.MVVM._VM.ActionBar;
 using MysticalMayhem.Helpers;
 
 namespace MysticalMayhem.HarmonyPatches

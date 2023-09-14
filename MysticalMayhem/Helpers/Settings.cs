@@ -26,7 +26,9 @@ namespace MysticalMayhem.Helpers
                 .AddToggle(Toggle.New(GetKey("mm.en.prebuff"), defaultValue: false, GetString("MM_S_Enemy_Prebuff"))
                 .WithLongDescription(GetString("MM_S_Enemy_Prebuff_Desc")))
                 .AddToggle(Toggle.New(GetKey("mm.no.warlock"), defaultValue: false, GetString("MM_S_NoWarlock"))
-                .WithLongDescription(GetString("MM_S_NoWarlock_Desc")));
+                .WithLongDescription(GetString("MM_S_NoWarlock_Desc")))
+                .AddToggle(Toggle.New(GetKey("mm.spellbar.fix"), defaultValue: true, GetString("MM_S_SpellbarFix"))
+                .WithLongDescription(GetString("MM_S_SpellbarFix_Desc")));
 
             Menu.AddSettings(settings);
         }
