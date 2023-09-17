@@ -12,7 +12,6 @@ using MysticalMayhem.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
 using UnityModManagerNet;
 
 namespace MysticalMayhem
@@ -148,6 +147,16 @@ namespace MysticalMayhem
 
             wwSelection.m_AllFeatures = ffSelection.m_AllFeatures;
 
+            #endregion
+
+            #region Spell Specialization
+            var ss = BPLookup.Progression("SpellSpecializationProgression");
+            ss.m_Classes = ss.m_Classes
+                .Push(
+                    new BlueprintProgression.ClassWithLevel()
+                    {
+                        m_Class = new BlueprintCharacterClassReference() { deserializedGuid = BlueprintGuid.Parse("297c08b0-201f-43c0-bd20-f4aa483cf97e") }
+                    });
             #endregion
 
             #region Tools

@@ -1,3 +1,7 @@
+### Version 0.3.3b
+* Fixed broken integration of the Warlock's spellbook with prestige classes.
+* Fixed Spell Specialization not working with Warlock.
+
 ### Version 0.3.3
 * Added back the spellbook behavior Owlcat patched out: you can now again double up spells with different spellbooks. This can be disabled again in the options.
 * Added a setting to disable the Warlock class alone, to avoid having both if you prefer Microsoftenator's.
