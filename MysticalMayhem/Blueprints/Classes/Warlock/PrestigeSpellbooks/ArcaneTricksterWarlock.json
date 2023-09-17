@@ -1,6 +1,6 @@
 {
   "AssetId": "3b7038ff-0103-47c9-9143-810c0d50bf6b",
-  "Patches": ["AddPrestigeClassSpellbook:ArcaneTricksterSpellbook"],
+  "PatchList": [ "AddPrestigeClassSpellbook:ArcaneTricksterSpellbook" ],
   "Data": {
     "$type": "43f1ee69992dc1848b97e623487f6442, BlueprintFeatureReplaceSpellbook",
     "PrototypeLink": null,

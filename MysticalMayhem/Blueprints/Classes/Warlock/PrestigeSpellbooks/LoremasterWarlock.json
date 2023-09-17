@@ -1,6 +1,6 @@
 {
   "AssetId": "efcb0a7b-f977-4628-b69c-52c711829485",
-  "Patches": ["AddPrestigeClassSpellbook:LoremasterSpellbook"],
+  "PatchList": ["AddPrestigeClassSpellbook:LoremasterSpellbook"],
   "Data": {
     "$type": "43f1ee69992dc1848b97e623487f6442, BlueprintFeatureReplaceSpellbook",
     "PrototypeLink": null,

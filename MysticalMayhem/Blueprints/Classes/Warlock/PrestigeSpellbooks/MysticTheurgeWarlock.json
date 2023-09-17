@@ -1,6 +1,6 @@
 {
   "AssetId": "b8fbe67a-a53d-4fc5-a59d-bfb389a9174d",
-  "Patches": ["AddPrestigeClassSpellbook:MysticTheurgeArcaneSpellbook"],
+  "PatchList": [ "AddPrestigeClassSpellbook:MysticTheurgeArcaneSpellbook" ],
   "Data": {
     "$type": "43f1ee69992dc1848b97e623487f6442, BlueprintFeatureReplaceSpellbook",
     "PrototypeLink": null,

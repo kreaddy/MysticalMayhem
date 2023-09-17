@@ -1,6 +1,6 @@
 {
   "AssetId": "410673c2-80b4-4f30-8f0b-e0b948be61df",
-  "Patches": ["AddPrestigeClassSpellbook:HellknightSigniferSpellbook"],
+  "PatchList": [ "AddPrestigeClassSpellbook:HellknightSigniferSpellbook" ],
   "Data": {
     "$type": "43f1ee69992dc1848b97e623487f6442, BlueprintFeatureReplaceSpellbook",
     "PrototypeLink": null,
