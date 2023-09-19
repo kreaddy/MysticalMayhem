@@ -1,3 +1,5 @@
+## This mod will soon be moved to https://gitgud.io/Kreaddy/mysticalmayhem
+
 # Mystical Mayhem
 A mod for Pathfinder: Wrath of the Righteous that adds character building options, both from tabletop and homebrew, mostly for spellcasters.
 
